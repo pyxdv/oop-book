@@ -1,13 +1,14 @@
-# บทที่ 6: Class Diagram พื้นฐาน
+# บทที่ 8: UML Class Diagrams และ Model-Based Coding
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
-1. อธิบายความหมายและความสำคัญของ Class Diagram ได้
+1. อธิบายความหมายและความสำคัญของ UML Class Diagram ได้
 2. อ่านและเข้าใจสัญลักษณ์ต่างๆ ใน Class Diagram ได้
 3. สร้าง Class Diagram พื้นฐานได้
 4. แสดง Relationships ระหว่าง Classes (Association, Inheritance, Composition) ได้
-5. แปลง Class Diagram เป็น Java Code และในทางกลับกันได้
+5. เขียนโค้ด Java ตาม Class Diagram ได้ **(CLO6)**
+6. ประยุกต์ใช้ Model-Based Coding ในการพัฒนาซอฟต์แวร์ได้ **(CLO6)**
 
 ## 1. ความหมายของ Class Diagram
 
@@ -323,7 +324,232 @@ public class Rectangle {
 └──────────────────────────────┘
 ```
 
-## 6. ตัวอย่างการใช้งานจริง
+## 6. Model-Based Coding (การเขียนโค้ดตามโมเดล) - CLO6
+
+**Model-Based Coding** คือการพัฒนาซอฟต์แวร์โดยเริ่มจาก**การสร้าง Model (Diagram)** ก่อนแล้วจึงเขียนโค้ดตาม Model นั้น
+
+### 6.1 ขั้นตอนการทำ Model-Based Coding
+
+**1. วิเคราะห์ความต้องการ (Requirements Analysis)**
+```
+ตัวอย่าง: ระบบห้องสมุด
+- ต้องการจัดการหนังสือ
+- ต้องการจัดการสมาชิก  
+- ต้องการบันทึกการยืม-คืน
+```
+
+**2. ระบุ Classes และ Responsibilities**
+```
+Classes ที่ต้องการ:
+- Book (หนังสือ)
+- Member (สมาชิก)
+- Loan (การยืม)
+- Library (ห้องสมุด)
+```
+
+**3. สร้าง Class Diagram**
+```
+┌─────────────┐       1       *  ┌─────────────┐
+│   Member    ├──────────────────┤    Loan     │
+├─────────────┤                  ├─────────────┤
+│ - memberId  │                  │ - loanId    │
+│ - name      │                  │ - loanDate  │
+├─────────────┤                  │ - dueDate   │
+│ + borrow()  │                  ├─────────────┤
+└─────────────┘                  │ + return()  │
+                                 └──────┬──────┘
+                                        │
+                                        │ *
+                                        │ references
+                                        │ 1
+                                 ┌──────┴──────┐
+                                 │    Book     │
+                                 ├─────────────┤
+                                 │ - isbn      │
+                                 │ - title     │
+                                 │ - author    │
+                                 ├─────────────┤
+                                 │ + getInfo() │
+                                 └─────────────┘
+```
+
+**4. เขียนโค้ดตาม Diagram **(CLO6)**
+
+```java
+// Step 1: สร้าง Classes ตามโครงสร้างใน Diagram
+class Member {
+    private String memberId;
+    private String name;
+    
+    public Member(String memberId, String name) {
+        this.memberId = memberId;
+        this.name = name;
+    }
+    
+    public void borrow(Book book) {
+        // Implementation
+    }
+}
+
+class Book {
+    private String isbn;
+    private String title;
+    private String author;
+    
+    public void getInfo() {
+        System.out.println(title + " by " + author);
+    }
+}
+
+class Loan {
+    private String loanId;
+    private Member member;    // Relationship
+    private Book book;        // Relationship
+    private Date loanDate;
+    private Date dueDate;
+    
+    public void returnBook() {
+        // Implementation
+    }
+}
+```
+
+### 6.2 ประโยชน์ของ Model-Based Coding
+
+**1. การสื่อสาร (Communication)**
+- ทีมเข้าใจโครงสร้างระบบเหมือนกัน
+- ง่ายต่อการ Review และ Feedback
+
+**2. การวางแผน (Planning)**
+- เห็นภาพรวมก่อนเขียนโค้ด
+- ประเมินความซับซ้อนได้
+
+**3. ลดข้อผิดพลาด (Error Reduction)**
+- พบปัญหาในการออกแบบก่อนเขียนโค้ด
+- แก้ไขได้ง่ายกว่าแก้โค้ด
+
+**4. การบำรุงรักษา (Maintenance)**
+- Document ที่ชัดเจน
+- เข้าใจโครงสร้างได้เร็ว
+
+### 6.3 ตัวอย่าง: ระบบ E-Commerce
+
+**Requirement:**
+ระบบขายของออนไลน์ที่มี Customer, Product, และ Order
+
+**Class Diagram:**
+```
+┌──────────────┐
+│   Customer   │
+├──────────────┤
+│ - customerId │
+│ - name       │
+│ - email      │
+├──────────────┤
+│ + placeOrder │
+└──────┬───────┘
+       │ 1
+       │ places
+       │ *
+┌──────┴───────┐      * contains *  ┌──────────────┐
+│    Order     ├───────────────────┤  OrderItem   │
+├──────────────┤                   ├──────────────┤
+│ - orderId    │                   │ - quantity   │
+│ - date       │                   │ - price      │
+│ - total      │                   └──────┬───────┘
+├──────────────┤                          │ *
+│ + addItem()  │                          │ references
+│ + calculate()│                          │ 1
+└──────────────┘                   ┌──────┴───────┐
+                                   │   Product    │
+                                   ├──────────────┤
+                                   │ - productId  │
+                                   │ - name       │
+                                   │ - price      │
+                                   ├──────────────┤
+                                   │ + getInfo()  │
+                                   └──────────────┘
+```
+
+**การเขียนโค้ดตาม Diagram:**
+
+```java
+// 1. อ่าน Diagram และระบุ Classes
+//    - Customer, Order, OrderItem, Product
+
+// 2. ระบุ Attributes จาก Diagram
+class Customer {
+    private String customerId;
+    private String name;
+    private String email;
+    
+    // 3. ระบุ Methods จาก Diagram
+    public Order placeOrder() {
+        return new Order(this);
+    }
+}
+
+class Product {
+    private String productId;
+    private String name;
+    private double price;
+    
+    public void getInfo() {
+        System.out.println(name + ": " + price);
+    }
+}
+
+// 4. ระบุ Relationships
+class OrderItem {
+    private Product product;   // references 1 Product
+    private int quantity;
+    private double price;
+    
+    public OrderItem(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+        this.price = product.getPrice();
+    }
+}
+
+class Order {
+    private String orderId;
+    private Customer customer;      // 1 Customer
+    private List<OrderItem> items;  // contains * OrderItems
+    private double total;
+    
+    public void addItem(Product product, int quantity) {
+        items.add(new OrderItem(product, quantity));
+    }
+    
+    public void calculateTotal() {
+        total = 0;
+        for (OrderItem item : items) {
+            total += item.getSubtotal();
+        }
+    }
+}
+```
+
+### 6.4 Best Practices สำหรับ Model-Based Coding
+
+**1. เริ่มง่ายๆ ก่อน**
+- สร้าง Diagram พื้นฐานก่อน
+- เพิ่มรายละเอียดทีละน้อย
+
+**2. อัพเดท Diagram เมื่อโค้ดเปลี่ยน**
+- Diagram ต้องสอดคล้องกับโค้ด
+- ใช้เป็น Living Document
+
+**3. ใช้ Tools ช่วย**
+- Draw.io, PlantUML, StarUML
+- บาง IDE สามารถ Generate Diagram จากโค้ดได้
+
+**4. Review Diagram ก่อนเขียนโค้ด**
+- ขอ Feedback จากทีม
+- ตรวจสอบความถูกต้องของ Relationships
+
+## 7. ตัวอย่างการใช้งานจริง
 
 ดูตัวอย่างโค้ด Java ที่สมบูรณ์: [ClassDiagramExample.java](../examples/ClassDiagramExample.java)
 
@@ -331,10 +557,10 @@ public class Rectangle {
 
 1. **การสร้าง Classes ตาม Class Diagram**
 2. **การแสดง Relationships ต่างๆ**
-3. **การแปลง Class Diagram เป็น Java Code**
+3. **การแปลง Class Diagram เป็น Java Code (Model-Based Coding)**
 4. **ตัวอย่างระบบร้านค้าออนไลน์แบบสมบูรณ์**
 
-## 7. เครื่องมือสำหรับสร้าง Class Diagram
+## 8. เครื่องมือสำหรับสร้าง Class Diagram
 
 ### เครื่องมือฟรี
 
@@ -363,7 +589,7 @@ Student "many" -- "many" Course : enrolls
 @enduml
 ```
 
-## 8. Best Practices
+## 9. Best Practices
 
 ### 8.1 ความชัดเจน
 - ใช้ชื่อที่สื่อความหมาย
@@ -378,7 +604,7 @@ Student "many" -- "many" Course : enrolls
 - Specification: แสดง Attributes และ Methods หลัก
 - Implementation: แสดงทุกรายละเอียด
 
-## 9. ข้อควรระวัง
+## 10. ข้อควรระวัง
 
 ### 9.1 ไม่ควรแสดงทุกอย่าง
 - แสดงเฉพาะสิ่งที่สำคัญ
@@ -392,7 +618,7 @@ Student "many" -- "many" Course : enrolls
 - เลือก Relationship ที่เหมาะสม
 - ไม่ใช้ Composition เมื่อควรเป็น Association
 
-## สรุป
+## 11. สรุป
 
 - **Class Diagram** แสดงโครงสร้าง Classes และความสัมพันธ์
 - **สัญลักษณ์พื้นฐาน**: +, -, #, ~ สำหรับ Access Modifiers
@@ -416,11 +642,11 @@ Student "many" -- "many" Course : enrolls
 
 ---
 
-[< บทก่อนหน้า: Polymorphism](05-polymorphism.md) | [กลับไปหน้าหลัก](../README.md)
+[< บทก่อนหน้า: Polymorphism](07-polymorphism.md) | [กลับไปหน้าหลัก](../README.md)
 
 ---
 
-## สรุปหนังสือ
+## 11. สรุปหนังสือ
 
 คุณได้เรียนรู้หลักการพื้นฐานของ Object-Oriented Programming (OOP) ครบทั้ง 4 หลักการ:
 

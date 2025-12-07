@@ -333,4 +333,4 @@ class Child extends Parent {
 
 ---
 
-[< บทก่อนหน้า: Inheritance](04-inheritance.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Class Diagrams >](06-class-diagrams.md)
+[< บทก่อนหน้า: Inheritance](06-inheritance.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: UML Diagrams >](08-uml-diagrams.md)

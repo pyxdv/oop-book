@@ -332,4 +332,4 @@ class Stack extends ArrayList { }  // Stack ไม่ใช่ ArrayList
 
 ---
 
-[< บทก่อนหน้า: Encapsulation](03-encapsulation.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Polymorphism >](05-polymorphism.md)
+[< บทก่อนหน้า: Encapsulation](05-encapsulation.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Polymorphism >](07-polymorphism.md)

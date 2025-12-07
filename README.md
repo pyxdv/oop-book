@@ -2,57 +2,103 @@
 
 ## เกี่ยวกับหนังสือเล่มนี้
 
-หนังสือเล่มนี้มีวัตถุประสงค์เพื่อสอนหลักการ Object-Oriented Programming (OOP) โดยใช้ภาษา Java เป็นตัวอย่าง เนื้อหาเขียนเป็นภาษาไทย โดยมีคำศัพท์เทคนิคเป็นภาษาอังกฤษ (ไทย) เพื่อให้ง่ายต่อการเข้าใจและสามารถนำไปใช้ในการพัฒนาซอฟต์แวร์ที่สะอาด ถูกต้อง และดูแลรักษาได้ง่าย
+หนังสือเล่มนี้มีวัตถุประสงค์เพื่อสอนการเขียนโปรแกรม Java และหลักการ Object-Oriented Programming (OOP) เนื้อหาเขียนเป็นภาษาไทย โดยมีคำศัพท์เทคนิคเป็นภาษาอังกฤษ (ไทย) เพื่อให้ง่ายต่อการเข้าใจและสามารถนำไปใช้ในการพัฒนาซอฟต์แวร์ที่สะอาด ถูกต้อง และดูแลรักษาได้ง่าย
 
-## เป้าหมายการเรียนรู้
+หนังสือเล่มนี้เริ่มต้นจากพื้นฐาน Java Syntax และ Control Flow จนถึงหลักการ OOP ขั้นสูง รวมถึงการเขียนโปรแกรมตาม Class Diagram และการจัดการ Error
+
+## เป้าหมายการเรียนรู้ (Course Learning Outcomes)
 
 หลังจากเรียนจบหนังสือเล่มนี้ นักเรียนจะสามารถ:
-- เข้าใจหลักการพื้นฐานของ Object-Oriented Programming (OOP)
-- ออกแบบและพัฒนาโปรแกรมโดยใช้หลักการ OOP
-- เขียนโค้ด Java ที่สะอาด ถูกต้อง และดูแลรักษาได้ง่าย
-- ประยุกต์ใช้หลักการ OOP ในการแก้ปัญหาจริง
-- อ่านและสร้าง Class Diagram พื้นฐาน
+
+**CLO1:** เขียนโปรแกรมที่ถูกต้องโดยใช้ Syntax พื้นฐานและ Control Flow (Write correct programs using basic syntax + control flow)
+
+**CLO2:** ประยุกต์ใช้ Abstraction เพื่อกำหนดความรับผิดชอบของ Class (Apply abstraction to define class responsibilities)
+
+**CLO3:** ใช้ Encapsulation และ Access Control ในการออกแบบ Class (Use encapsulation and access control in class design)
+
+**CLO4:** สร้างโครงสร้างที่นำกลับมาใช้ได้โดยใช้ Inheritance (Build reusable structures using inheritance)
+
+**CLO5:** ใช้งาน Polymorphism เพื่อเปลี่ยนแปลงพฤติกรรมของ Object (Implement polymorphism to vary object behavior)
+
+**CLO6:** เขียนโค้ดตาม Class Diagram (Code according to class diagrams)
+
+**CLO7:** พัฒนาซอฟต์แวร์ OOP ที่สะอาด ถูกต้อง และดูแลรักษาได้ง่าย (Develop clean, correct, maintainable OOP software)
 
 ## โครงสร้างเนื้อหา
 
-### [บทที่ 1: บทนำ Object-Oriented Programming](lessons/01-introduction.md)
-- ความหมายและประวัติของ OOP
-- ความแตกต่างระหว่าง Procedural Programming และ OOP
-- หลักการพื้นฐานของ OOP
-- ประโยชน์ของ OOP
+### ส่วนที่ 1: พื้นฐาน Java Programming
 
-### [บทที่ 2: Class และ Object](lessons/02-class-and-object.md)
-- ความหมายของ Class และ Object
-- การสร้าง Class
-- การสร้าง Object (Instantiation)
-- Attributes (Fields) และ Methods
-- ตัวอย่างการใช้งาน
+### [บทที่ 1: Program Structure และ Basic Syntax](lessons/01-java-basics.md)
+- โครงสร้างโปรแกรม Java
+- Variables และ Data Types
+- User Input และ Output
+- Operators (Arithmetic, Relational, Logical)
+- **รองรับ CLO1**
 
-### [บทที่ 3: Encapsulation (การห่อหุ้ม)](lessons/03-encapsulation.md)
+### [บทที่ 2: Control Flow และ Loops](lessons/02-control-flow.md)
+- Conditional Statements (if, else, switch)
+- Loops (for, while, do-while)
+- Break และ Continue
+- **รองรับ CLO1**
+
+### [บทที่ 3: Arrays](lessons/03-arrays.md)
+- การประกาศและใช้งาน Arrays
+- Array Manipulation
+- Multi-dimensional Arrays
+- **รองรับ CLO1**
+
+### ส่วนที่ 2: Object-Oriented Programming Fundamentals
+
+### [บทที่ 4: Introduction to OOP และ Abstraction](lessons/04-oop-abstraction.md)
+- ความหมายของ OOP
+- หลักการ Abstraction
+- การกำหนดความรับผิดชอบของ Class
+- Class และ Object พื้นฐาน
+- **รองรับ CLO2**
+
+### [บทที่ 5: Encapsulation และ Access Control](lessons/05-encapsulation.md)
 - ความหมายของ Encapsulation
 - Access Modifiers (public, private, protected, default)
 - Getters และ Setters
-- ประโยชน์ของ Encapsulation
+- การออกแบบ Class ที่ดี
+- **รองรับ CLO3**
 
-### [บทที่ 4: Inheritance (การสืบทอด)](lessons/04-inheritance.md)
+### [บทที่ 6: Inheritance](lessons/06-inheritance.md)
 - ความหมายของ Inheritance
 - Superclass และ Subclass
 - การใช้ extends keyword
-- การเข้าถึง Members ของ Superclass
-- ประโยชน์ของ Inheritance
+- Code Reusability
+- **รองรับ CLO4**
 
-### [บทที่ 5: Polymorphism (พหุสัณฐาน)](lessons/05-polymorphism.md)
+### [บทที่ 7: Polymorphism](lessons/07-polymorphism.md)
 - ความหมายของ Polymorphism
 - Method Overloading
 - Method Overriding
 - Dynamic Binding
-- ประโยชน์ของ Polymorphism
+- **รองรับ CLO5**
 
-### [บทที่ 6: Class Diagram พื้นฐาน](lessons/06-class-diagrams.md)
-- ความหมายของ Class Diagram
-- สัญลักษณ์ต่างๆ ใน Class Diagram
+### ส่วนที่ 3: Design และ Best Practices
+
+### [บทที่ 8: UML Class Diagrams และ Model-Based Coding](lessons/08-uml-diagrams.md)
+- UML Class Diagram พื้นฐาน
 - Relationships (Association, Inheritance, Composition)
 - การอ่านและสร้าง Class Diagram
+- Model-Based Coding: การเขียนโค้ดตาม Diagram
+- **รองรับ CLO6**
+
+### [บทที่ 9: Error Handling](lessons/09-error-handling.md)
+- Try-Catch Blocks
+- Exception Types
+- Basic Error Handling Strategies
+- **รองรับ CLO7**
+
+### [บทที่ 10: Maintainable Code Principles](lessons/10-maintainable-code.md)
+- Clean Code Principles
+- Code Organization
+- Naming Conventions
+- Comments และ Documentation
+- Refactoring Basics
+- **รองรับ CLO7**
 
 ## วิธีการใช้งานหนังสือเล่มนี้
 

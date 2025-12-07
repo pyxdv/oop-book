@@ -281,4 +281,4 @@ public List<String> getStudents() {
 
 ---
 
-[< บทก่อนหน้า: Class และ Object](02-class-and-object.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Inheritance >](04-inheritance.md)
+[< บทก่อนหน้า: OOP และ Abstraction](04-oop-abstraction.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Inheritance >](06-inheritance.md)
