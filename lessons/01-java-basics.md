@@ -1,8 +1,13 @@
+---
+icon: '1'
+---
+
 # บทที่ 1: Program Structure และ Basic Syntax
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. เข้าใจโครงสร้างพื้นฐานของโปรแกรม Java ได้
 2. ประกาศและใช้งาน Variables และ Data Types ต่างๆ ได้
 3. รับ Input จากผู้ใช้และแสดง Output ได้
@@ -23,9 +28,10 @@ public class HelloWorld {
 ```
 
 **องค์ประกอบ:**
-- `public class HelloWorld` - ชื่อ Class (ต้องตรงกับชื่อไฟล์)
-- `public static void main(String[] args)` - Method หลักที่โปรแกรมเริ่มทำงาน
-- `System.out.println()` - แสดงผลบนหน้าจอ
+
+* `public class HelloWorld` - ชื่อ Class (ต้องตรงกับชื่อไฟล์)
+* `public static void main(String[] args)` - Method หลักที่โปรแกรมเริ่มทำงาน
+* `System.out.println()` - แสดงผลบนหน้าจอ
 
 ### 1.2 Comments (คำอธิบาย)
 
@@ -94,6 +100,7 @@ final int MAX_STUDENTS = 50;
 ### 2.4 Naming Conventions
 
 **ดี:**
+
 ```java
 int studentAge;
 String firstName;
@@ -101,6 +108,7 @@ double totalPrice;
 ```
 
 **ไม่ดี:**
+
 ```java
 int a;        // ชื่อไม่สื่อความหมาย
 String N;     // ควรเป็นตัวเล็ก
@@ -275,28 +283,29 @@ double d = Double.parseDouble("3.14");
 ดูตัวอย่าง: [JavaBasicsExample.java](../examples/JavaBasicsExample.java)
 
 โปรแกรมนี้แสดงการใช้งาน:
-- Variables และ Data Types
-- Input/Output
-- Operators ทุกประเภท
-- Type Conversion
+
+* Variables และ Data Types
+* Input/Output
+* Operators ทุกประเภท
+* Type Conversion
 
 ## สรุป
 
-- **Program Structure**: `public class` + `main method`
-- **Variables**: ประกาศด้วย `type name = value;`
-- **Data Types**: Primitive (int, double, boolean, char) และ Reference (String)
-- **Input**: ใช้ `Scanner` class
-- **Output**: ใช้ `System.out.println()`, `print()`, `printf()`
-- **Operators**: Arithmetic (+, -, *, /, %), Relational (==, !=, <, >), Logical (&&, ||, !)
-- **Type Conversion**: Implicit (อัตโนมัติ) และ Explicit (casting)
+* **Program Structure**: `public class` + `main method`
+* **Variables**: ประกาศด้วย `type name = value;`
+* **Data Types**: Primitive (int, double, boolean, char) และ Reference (String)
+* **Input**: ใช้ `Scanner` class
+* **Output**: ใช้ `System.out.println()`, `print()`, `printf()`
+* **Operators**: Arithmetic (+, -, \*, /, %), Relational (==, !=, <, >), Logical (&&, ||, !)
+* **Type Conversion**: Implicit (อัตโนมัติ) และ Explicit (casting)
 
 ## แบบฝึกหัด
 
 1. เขียนโปรแกรมรับชื่อและอายุจากผู้ใช้ แล้วแสดงผล
 2. เขียนโปรแกรมคำนวณพื้นที่วงกลม (π × r²) โดยรับค่ารัศมีจากผู้ใช้
-3. เขียนโปรแกรมรับตัวเลข 2 ตัว และแสดงผลการคำนวณ +, -, *, /, %
+3. เขียนโปรแกรมรับตัวเลข 2 ตัว และแสดงผลการคำนวณ +, -, \*, /, %
 4. เขียนโปรแกรมแปลงอุณหภูมิจาก Celsius เป็น Fahrenheit (F = C × 9/5 + 32)
 
----
+***
 
-[กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Control Flow และ Loops >](02-control-flow.md)
+[กลับไปหน้าหลัก](../) | [บทถัดไป: Control Flow และ Loops >](02-control-flow.md)
