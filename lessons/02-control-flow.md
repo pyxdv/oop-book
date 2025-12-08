@@ -26,6 +26,11 @@ if (age >= 18) {
 }
 ```
 
+```java
+// Some code
+a >= b
+```
+
 ### 1.2 if-else Statement
 
 ```java
