@@ -1,8 +1,13 @@
+---
+icon: '2'
+---
+
 # บทที่ 2: Control Flow และ Loops
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. ใช้ Conditional Statements (if, else, switch) ในการควบคุมการทำงานของโปรแกรมได้
 2. ใช้ Loops (for, while, do-while) ในการทำงานซ้ำได้
 3. ใช้ break และ continue เพื่อควบคุม Loop ได้
@@ -146,6 +151,7 @@ switch (grade) {
 ### 2.1 for Loop
 
 **Syntax:**
+
 ```java
 for (initialization; condition; update) {
     // code to repeat
@@ -153,6 +159,7 @@ for (initialization; condition; update) {
 ```
 
 **ตัวอย่าง:**
+
 ```java
 // พิมพ์ 1 ถึง 5
 for (int i = 1; i <= 5; i++) {
@@ -173,6 +180,7 @@ for (int i = 0; i <= 10; i += 2) {
 ### 2.2 while Loop
 
 **Syntax:**
+
 ```java
 while (condition) {
     // code to repeat
@@ -180,6 +188,7 @@ while (condition) {
 ```
 
 **ตัวอย่าง:**
+
 ```java
 int count = 1;
 
@@ -203,6 +212,7 @@ System.out.println("Valid number: " + number);
 ### 2.3 do-while Loop
 
 **Syntax:**
+
 ```java
 do {
     // code to repeat
@@ -210,6 +220,7 @@ do {
 ```
 
 **ตัวอย่าง:**
+
 ```java
 int count = 1;
 
@@ -325,29 +336,34 @@ for (int i = 1; i <= 5; i++) {
 ### 4.1 if vs switch
 
 **ใช้ if เมื่อ:**
-- ต้องการเปรียบเทียบช่วงค่า (ranges)
-- มีเงื่อนไขที่ซับซ้อน
-- ตรวจสอบหลายตัวแปร
+
+* ต้องการเปรียบเทียบช่วงค่า (ranges)
+* มีเงื่อนไขที่ซับซ้อน
+* ตรวจสอบหลายตัวแปร
 
 **ใช้ switch เมื่อ:**
-- ตรวจสอบค่าที่เฉพาะเจาะจง
-- มีหลายทางเลือก (หลาย case)
-- ตรวจสอบตัวแปรเดียว
+
+* ตรวจสอบค่าที่เฉพาะเจาะจง
+* มีหลายทางเลือก (หลาย case)
+* ตรวจสอบตัวแปรเดียว
 
 ### 4.2 for vs while vs do-while
 
 **for Loop:**
-- รู้จำนวนรอบที่แน่นอน
-- มี counter ชัดเจน
+
+* รู้จำนวนรอบที่แน่นอน
+* มี counter ชัดเจน
 
 **while Loop:**
-- ไม่รู้จำนวนรอบ
-- ตรวจสอบเงื่อนไขก่อนทำงาน
-- อาจไม่ทำงานเลย (ถ้าเงื่อนไขเป็น false ตั้งแต่แรก)
+
+* ไม่รู้จำนวนรอบ
+* ตรวจสอบเงื่อนไขก่อนทำงาน
+* อาจไม่ทำงานเลย (ถ้าเงื่อนไขเป็น false ตั้งแต่แรก)
 
 **do-while Loop:**
-- ต้องการทำงานอย่างน้อย 1 ครั้ง
-- ตรวจสอบเงื่อนไขหลังทำงาน
+
+* ต้องการทำงานอย่างน้อย 1 ครั้ง
+* ตรวจสอบเงื่อนไขหลังทำงาน
 
 ## 5. Common Patterns (รูปแบบที่ใช้บ่อย)
 
@@ -396,26 +412,28 @@ System.out.println("Maximum: " + max);
 ดูตัวอย่าง: [ControlFlowExample.java](../examples/ControlFlowExample.java)
 
 โปรแกรมนี้แสดงการใช้งาน:
-- Conditional statements (if, switch)
-- Loops ทุกประเภท
-- break และ continue
-- Nested loops
+
+* Conditional statements (if, switch)
+* Loops ทุกประเภท
+* break และ continue
+* Nested loops
 
 ## สรุป
 
-- **if-else**: ตรวจสอบเงื่อนไข มีทางเลือก 2 ทาง
-- **switch**: เลือกทางเดียวจากหลายทางเลือก
-- **for**: วนซ้ำจำนวนครั้งที่รู้
-- **while**: วนซ้ำจนกว่าเงื่อนไขเป็น false
-- **do-while**: วนซ้ำอย่างน้อย 1 ครั้ง
-- **break**: หยุด loop ทันที
-- **continue**: ข้ามไปรอบถัดไป
+* **if-else**: ตรวจสอบเงื่อนไข มีทางเลือก 2 ทาง
+* **switch**: เลือกทางเดียวจากหลายทางเลือก
+* **for**: วนซ้ำจำนวนครั้งที่รู้
+* **while**: วนซ้ำจนกว่าเงื่อนไขเป็น false
+* **do-while**: วนซ้ำอย่างน้อย 1 ครั้ง
+* **break**: หยุด loop ทันที
+* **continue**: ข้ามไปรอบถัดไป
 
 ## แบบฝึกหัด
 
 1. เขียนโปรแกรมตรวจสอบว่าตัวเลขเป็นเลขคู่หรือคี่
 2. เขียนโปรแกรมหาค่า factorial (n!)
 3. เขียนโปรแกรมพิมพ์สามเหลี่ยม:
+
 ```
 *
 **
@@ -423,9 +441,10 @@ System.out.println("Maximum: " + max);
 ****
 *****
 ```
+
 4. เขียนโปรแกรมตรวจสอบว่าเลขเป็นจำนวนเฉพาะหรือไม่
 5. เขียนโปรแกรมหาตัวเลข Fibonacci 10 ตัวแรก
 
----
+***
 
-[< บทก่อนหน้า: Java Basics](01-java-basics.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Arrays >](03-arrays.md)
+[< บทก่อนหน้า: Java Basics](01-java-basics.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: Arrays >](03-arrays.md)
