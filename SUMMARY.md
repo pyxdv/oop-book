@@ -1,6 +1,6 @@
 # Table of contents
 
-* [หนังสือสอน Object-Oriented Programming (OOP) ภาษา Java](README.md)
+* [Object-Oriented Programming (OOP)](README.md)
 * [lessons](lessons/README.md)
   * [บทที่ 1: Program Structure และ Basic Syntax](lessons/01-java-basics.md)
   * [บทที่ 2: Control Flow และ Loops](lessons/02-control-flow.md)
