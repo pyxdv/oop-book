@@ -1,8 +1,13 @@
+---
+icon: '3'
+---
+
 # บทที่ 3: Arrays
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. ประกาศและสร้าง Arrays ในภาษา Java ได้
 2. เข้าถึงและแก้ไขข้อมูลใน Arrays ได้
 3. ใช้ Loops เพื่อประมวลผล Arrays ได้
@@ -16,6 +21,7 @@
 ### ทำไมต้องใช้ Array?
 
 **ไม่ใช้ Array:**
+
 ```java
 int score1 = 85;
 int score2 = 90;
@@ -27,6 +33,7 @@ int average = (score1 + score2 + score3 + score4 + score5) / 5;
 ```
 
 **ใช้ Array:**
+
 ```java
 int[] scores = {85, 90, 78, 92, 88};
 
@@ -112,6 +119,7 @@ for (int i = 0; i < numbers.length; i++) {
 ```
 
 **ข้อควรระวัง:**
+
 ```java
 int[] numbers = {10, 20, 30};
 
@@ -151,8 +159,9 @@ for (String name : names) {
 ```
 
 **ข้อจำกัดของ for-each:**
-- ไม่สามารถแก้ไขค่าใน array ได้
-- ไม่ทราบ index
+
+* ไม่สามารถแก้ไขค่าใน array ได้
+* ไม่ทราบ index
 
 ```java
 int[] numbers = {1, 2, 3, 4, 5};
@@ -330,6 +339,7 @@ for (int[] row : matrix) {
 ### 6.3 ตัวอย่างการใช้งาน 2D Array
 
 **ตารางคะแนน:**
+
 ```java
 // นักเรียน 3 คน, วิชา 4 วิชา
 int[][] scores = {
@@ -398,20 +408,21 @@ System.out.println(Arrays.equals(arr1, arr2));  // true
 ดูตัวอย่าง: [ArraysExample.java](../examples/ArraysExample.java)
 
 โปรแกรมนี้แสดงการใช้งาน:
-- การสร้างและใช้งาน Arrays
-- Array operations (sum, average, max, min)
-- 2D Arrays
-- Array manipulation
+
+* การสร้างและใช้งาน Arrays
+* Array operations (sum, average, max, min)
+* 2D Arrays
+* Array manipulation
 
 ## สรุป
 
-- **Array**: เก็บข้อมูลหลายค่าชนิดเดียวกัน
-- **Index**: เริ่มนับจาก 0
-- **Length**: `array.length` บอกขนาดของ array
-- **for Loop**: ใช้เมื่อต้องการ index
-- **for-each**: ใช้เมื่อต้องการอ่านค่าเท่านั้น
-- **2D Array**: Array ของ arrays (แถวและคอลัมน์)
-- **Arrays class**: มี methods ช่วยเหลือต่างๆ (sort, copyOf, equals, toString)
+* **Array**: เก็บข้อมูลหลายค่าชนิดเดียวกัน
+* **Index**: เริ่มนับจาก 0
+* **Length**: `array.length` บอกขนาดของ array
+* **for Loop**: ใช้เมื่อต้องการ index
+* **for-each**: ใช้เมื่อต้องการอ่านค่าเท่านั้น
+* **2D Array**: Array ของ arrays (แถวและคอลัมน์)
+* **Arrays class**: มี methods ช่วยเหลือต่างๆ (sort, copyOf, equals, toString)
 
 ## แบบฝึกหัด
 
@@ -421,6 +432,6 @@ System.out.println(Arrays.equals(arr1, arr2));  // true
 4. เขียนโปรแกรมสร้างตารางสูตรคูณ 12x12 โดยใช้ 2D array
 5. เขียนโปรแกรมรวม 2 arrays เข้าด้วยกัน
 
----
+***
 
-[< บทก่อนหน้า: Control Flow](02-control-flow.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: OOP และ Abstraction >](04-oop-abstraction.md)
+[< บทก่อนหน้า: Control Flow](02-control-flow.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: OOP และ Abstraction >](04-oop-abstraction.md)

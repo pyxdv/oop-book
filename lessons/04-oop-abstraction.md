@@ -1,8 +1,13 @@
+---
+icon: '4'
+---
+
 # บทที่ 4: Introduction to OOP และ Abstraction
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. อธิบายความหมายและหลักการของ Object-Oriented Programming (OOP) ได้
 2. เข้าใจและประยุกต์ใช้ Abstraction ได้ **(CLO2)**
 3. กำหนดความรับผิดชอบ (Responsibilities) ของ Class ได้ **(CLO2)**
@@ -16,6 +21,7 @@
 ### ความแตกต่างจาก Procedural Programming
 
 **Procedural Programming:**
+
 ```java
 // แยก Data และ Functions
 String studentName = "สมชาย";
@@ -30,6 +36,7 @@ void printStudent(String name, int age, double gpa) {
 ```
 
 **Object-Oriented Programming:**
+
 ```java
 // รวม Data และ Behavior ใน Class
 class Student {
@@ -66,14 +73,16 @@ student.displayInfo();
 ### การเปรียบเทียบในชีวิตจริง
 
 **รถยนต์:**
-- **ที่เห็น (Abstract)**: พวงมาลัย, เบรก, คันเร่ง
-- **ที่ซ่อนไว้ (Hidden)**: เครื่องยนต์, ระบบเกียร์, ระบบไฟฟ้า
+
+* **ที่เห็น (Abstract)**: พวงมาลัย, เบรก, คันเร่ง
+* **ที่ซ่อนไว้ (Hidden)**: เครื่องยนต์, ระบบเกียร์, ระบบไฟฟ้า
 
 คุณไม่ต้องรู้ว่าเครื่องยนต์ทำงานอย่างไร แค่รู้ว่าเหยียบคันเร่งแล้วรถจะวิ่ง
 
 **โทรศัพท์มือถือ:**
-- **ที่เห็น**: ปุ่มโทร, แป้นพิมพ์
-- **ที่ซ่อนไว้**: สัญญาณ, การเชื่อมต่อเครือข่าย
+
+* **ที่เห็น**: ปุ่มโทร, แป้นพิมพ์
+* **ที่ซ่อนไว้**: สัญญาณ, การเชื่อมต่อเครือข่าย
 
 ### Abstraction ในโปรแกรม
 
@@ -157,6 +166,7 @@ student2.displayInfo();
 **Class แต่ละ Class ควรมีความรับผิดชอบเพียงอย่างเดียว**
 
 **ไม่ดี - มีหลายความรับผิดชอบ:**
+
 ```java
 class Student {
     String name;
@@ -172,6 +182,7 @@ class Student {
 ```
 
 **ดี - แยกความรับผิดชอบ:**
+
 ```java
 class Student {
     String name;
@@ -257,6 +268,7 @@ class Library {
 **Verbs:** สั่งอาหาร, เสิร์ฟ, จ่ายเงิน, จองโต๊ะ
 
 **Classes:**
+
 ```java
 class Customer {
     String name;
@@ -289,11 +301,13 @@ class Table {
 ## 5. Abstraction Levels (ระดับของ Abstraction)
 
 ### Level 1: High-Level (Abstract)
+
 ```java
 restaurant.processOrder(customer, items);
 ```
 
 ### Level 2: Mid-Level
+
 ```java
 Order order = new Order();
 order.addItems(items);
@@ -302,6 +316,7 @@ order.process();
 ```
 
 ### Level 3: Low-Level (Detailed)
+
 ```java
 for (MenuItem item : items) {
     validateItem(item);
@@ -321,35 +336,39 @@ generateReceipt();
 ดูตัวอย่าง: [AbstractionExample.java](../examples/AbstractionExample.java)
 
 โปรแกรมนี้แสดง:
-- การออกแบบ Class ที่มี Abstraction ที่ดี
-- Single Responsibility Principle
-- การกำหนดความรับผิดชอบของแต่ละ Class
-- ระบบธนาคารอย่างง่าย
+
+* การออกแบบ Class ที่มี Abstraction ที่ดี
+* Single Responsibility Principle
+* การกำหนดความรับผิดชอบของแต่ละ Class
+* ระบบธนาคารอย่างง่าย
 
 ## 7. Best Practices
 
 ### 7.1 ตั้งชื่อ Class
-- ใช้คำนาม (Noun)
-- ใช้ PascalCase: `Student`, `BankAccount`, `OrderService`
-- ชื่อควรสื่อความหมาย
+
+* ใช้คำนาม (Noun)
+* ใช้ PascalCase: `Student`, `BankAccount`, `OrderService`
+* ชื่อควรสื่อความหมาย
 
 ### 7.2 ตั้งชื่อ Method
-- ใช้คำกริยา (Verb)
-- ใช้ camelCase: `calculateTotal()`, `sendEmail()`, `displayInfo()`
-- ชื่อควรบอกว่าทำอะไร
+
+* ใช้คำกริยา (Verb)
+* ใช้ camelCase: `calculateTotal()`, `sendEmail()`, `displayInfo()`
+* ชื่อควรบอกว่าทำอะไร
 
 ### 7.3 Keep It Simple
-- Class ไม่ควรมีความรับผิดชอบมากเกินไป
-- Method ควรทำงานเดียว
-- Abstraction ต้องไม่ซับซ้อนเกินไป
+
+* Class ไม่ควรมีความรับผิดชอบมากเกินไป
+* Method ควรทำงานเดียว
+* Abstraction ต้องไม่ซับซ้อนเกินไป
 
 ## สรุป
 
-- **OOP** คือการจัดระเบียบโค้ดด้วย Objects ที่รวม Data และ Behavior
-- **Abstraction** คือการแสดงเฉพาะสิ่งสำคัญ ซ่อนรายละเอียด **(CLO2)**
-- **Class** คือแบบพิมพ์ **Object** คือตัวอย่างจริง
-- **Single Responsibility** คือแต่ละ Class มีความรับผิดชอบเดียว **(CLO2)**
-- การออกแบบที่ดีเริ่มจากการระบุความรับผิดชอบของแต่ละ Class
+* **OOP** คือการจัดระเบียบโค้ดด้วย Objects ที่รวม Data และ Behavior
+* **Abstraction** คือการแสดงเฉพาะสิ่งสำคัญ ซ่อนรายละเอียด **(CLO2)**
+* **Class** คือแบบพิมพ์ **Object** คือตัวอย่างจริง
+* **Single Responsibility** คือแต่ละ Class มีความรับผิดชอบเดียว **(CLO2)**
+* การออกแบบที่ดีเริ่มจากการระบุความรับผิดชอบของแต่ละ Class
 
 ## แบบฝึกหัด
 
@@ -359,6 +378,6 @@ generateReceipt();
 4. ออกแบบ Classes สำหรับระบบโรงพยาบาล และอธิบายความรับผิดชอบ
 5. เปรียบเทียบ Procedural และ OOP approach สำหรับระบบจัดการนักเรียน
 
----
+***
 
-[< บทก่อนหน้า: Arrays](03-arrays.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Encapsulation >](05-encapsulation.md)
+[< บทก่อนหน้า: Arrays](03-arrays.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: Encapsulation >](05-encapsulation.md)
