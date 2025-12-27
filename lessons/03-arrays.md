@@ -432,6 +432,10 @@ System.out.println(Arrays.equals(arr1, arr2));  // true
 4. เขียนโปรแกรมสร้างตารางสูตรคูณ 12x12 โดยใช้ 2D array
 5. เขียนโปรแกรมรวม 2 arrays เข้าด้วยกัน
 
+## แนวข้อสอบ
+
+1. การนับสมาชิก array ตามเงื่อนไขที่โจทย์กำหนด [https://onlinegdb.com/usPeZEuDUG](https://onlinegdb.com/usPeZEuDUG)
+
 ***
 
 [< บทก่อนหน้า: Control Flow](02-control-flow.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: OOP และ Abstraction >](04-oop-abstraction.md)
