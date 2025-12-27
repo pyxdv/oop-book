@@ -435,6 +435,8 @@ System.out.println(Arrays.equals(arr1, arr2));  // true
 ## แนวข้อสอบ
 
 1. การนับสมาชิก array ตามเงื่อนไขที่โจทย์กำหนด [https://onlinegdb.com/usPeZEuDUG](https://onlinegdb.com/usPeZEuDUG)
+2. เมื่อโจทย์ให้ input มาเป็น 2D array และให้เช็คเงื่อนไขตามที่โจทย์กำหนด\*\*
+3. หาผลรวมของสมาชิกใน  2D array ที่เป็นไปตามเงื่อนไขที่โจทย์กำหนด&#x20;
 
 ***
 
