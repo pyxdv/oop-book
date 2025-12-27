@@ -6,6 +6,7 @@
   * [บทที่ 2: Control Flow และ Loops](lessons/02-control-flow.md)
   * [บทที่ 3: Arrays](lessons/03-arrays.md)
   * [บทที่ 4: Introduction to OOP และ Abstraction](lessons/04-oop-abstraction.md)
+  * [เตรียมสอบกลางภาค](lessons/undefined.md)
   * [บทที่ 3: Encapsulation (การห่อหุ้ม)](lessons/05-encapsulation.md)
   * [บทที่ 4: Inheritance (การสืบทอด)](lessons/06-inheritance.md)
   * [บทที่ 5: Polymorphism (พหุสัณฐาน)](lessons/07-polymorphism.md)
