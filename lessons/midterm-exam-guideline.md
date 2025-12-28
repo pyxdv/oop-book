@@ -162,9 +162,11 @@ public int[] checkStock(int[] stock, int[] order) {
 
 
 
-<a href="https://onlinegdb.com/QWCJ_OJ7l" class="button primary" data-icon="terminal">คลิกเพื่อทดลองรันโค้ด</a>
 
 
+<a href="https://onlinegdb.com/Bvb6ImpG2" class="button primary" data-icon="rectangle-code">คลิกเพื่อทดลองรันโค้ด</a>
+
+{% include "../.gitbook/includes/fork-onlinegdb.md" %}
 
 {% hint style="info" %}
 **💡 Tips: การตีความคำว่า "ช่วงข้อมูล" (Range Logic)**
