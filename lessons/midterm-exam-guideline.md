@@ -204,7 +204,11 @@ class Main {
 }
 ```
 
+<a href="https://onlinegdb.com/Q82to3165" class="button primary" data-icon="rectangle-code">คลิกเพื่อทดลองรัน Project 1</a>
 
+{% hint style="info" %}
+สามารถกดปุ่ม Fork เพื่อสร้างสำเนาโปรเจกต์ก่อนเริ่มทำแบบฝึกหัด
+{% endhint %}
 
 ***
 
@@ -322,8 +326,6 @@ class Main {
 
 
 <a href="https://onlinegdb.com/Bvb6ImpG2" class="button primary" data-icon="rectangle-code">คลิกเพื่อทดลองรันโค้ด</a>
-
-{% include "../.gitbook/includes/fork-onlinegdb.md" %}
 
 {% hint style="info" %}
 **💡 Tips: การตีความคำว่า "ช่วงข้อมูล" (Range Logic)**
