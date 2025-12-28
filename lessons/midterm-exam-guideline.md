@@ -162,6 +162,8 @@ public int[] checkStock(int[] stock, int[] order) {
 
 
 
+<a href="https://onlinegdb.com/QWCJ_OJ7l" class="button primary" data-icon="terminal">คลิกเพื่อทดลองรันโค้ด</a>
+
 
 
 {% hint style="info" %}
