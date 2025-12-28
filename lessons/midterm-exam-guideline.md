@@ -309,7 +309,7 @@ public class SensorCheck {
 💡 ข้อสังเกต:
 
 * Goal: หา ผลรวม (Sum) ➕
-* Logic: หาค่าหลุดช่วง จึงต้องใช้ หรือ (`||`) ห้ามใช้ `&&` เด็ดขาด
+* Logic: ต้องหาค่าที่ อยู่นอกช่วง จึงต้องใช้ หรือ (`||`) ห้ามใช้ `&&` เด็ดขาด
 {% endhint %}
 
 #### 💻 ไฟล์: Main.java
@@ -329,6 +329,8 @@ class Main {
     }
 }
 ```
+
+<a href="https://onlinegdb.com/vmGfrGjni" class="button primary" data-icon="rectangle-code">คลิกเพื่อทดลองรัน Project 3</a>
 
 ***
 
