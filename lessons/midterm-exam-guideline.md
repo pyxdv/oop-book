@@ -75,7 +75,7 @@ public class ScoreCounter {
         // ใช้ for-each loop: วนลูปดึงคะแนนออกมาทีละตัว (score) จากถัง (scores)
         for (int score : scores) {
             
-            // เช็คเงื่อนไข: ถ้าน้อยกว่าเกณฑ์ ให้ยิ้มนิ้วนับ
+            // เช็คเงื่อนไข: ถ้าน้อยกว่าเกณฑ์ ให้นับจำนวนสะสมไว้ 
             if (score < threshold) {
                 count += 1; // หรือใช้ count++; ก็ได้
             }
