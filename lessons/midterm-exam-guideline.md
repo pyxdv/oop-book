@@ -324,7 +324,7 @@ class Main {
         SensorCheck sensor = new SensorCheck();
         int errorSum = sensor.sumErrors(data, 20, 80);
         
-        System.out.println("ผลรวมค่าผิดปกติ (ควรได้ 100): " + errorSum);
+        System.out.println("ผลรวมค่าผิดปกติ: " + errorSum);
         // คำอธิบาย: 10 + 90 = 100
     }
 }
@@ -333,12 +333,6 @@ class Main {
 <a href="https://onlinegdb.com/vmGfrGjni" class="button primary" data-icon="rectangle-code">คลิกเพื่อทดลองรัน Project 3</a>
 
 ***
-
-
-
-
-
-
 
 
 
