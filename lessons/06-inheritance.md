@@ -1,8 +1,13 @@
-# บทที่ 4: Inheritance (การสืบทอด)
+---
+icon: '6'
+---
+
+# บทที่ 6: Inheritance (การสืบทอด)
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. อธิบายความหมายและความสำคัญของ Inheritance ได้
 2. สร้าง Subclass ที่สืบทอดจาก Superclass ได้
 3. ใช้ extends keyword ในการสร้าง Inheritance ได้
@@ -15,8 +20,8 @@
 
 ### แนวคิดพื้นฐาน
 
-- **Superclass (Parent Class/Base Class)**: Class ต้นแบบที่ถูกสืบทอด
-- **Subclass (Child Class/Derived Class)**: Class ใหม่ที่สืบทอดจาก Superclass
+* **Superclass (Parent Class/Base Class)**: Class ต้นแบบที่ถูกสืบทอด
+* **Subclass (Child Class/Derived Class)**: Class ใหม่ที่สืบทอดจาก Superclass
 
 ### การเปรียบเทียบในชีวิตจริง
 
@@ -192,6 +197,7 @@ class Dog extends Animal {
 ## 6. Types of Inheritance
 
 ### 6.1 Single Inheritance
+
 Java รองรับ Single Inheritance เท่านั้น
 
 ```
@@ -256,20 +262,24 @@ class Bird extends Animal { }
 ## 7. ประโยชน์ของ Inheritance
 
 ### 7.1 Code Reusability (นำโค้ดกลับมาใช้ได้)
-- ไม่ต้องเขียนโค้ดซ้ำ
-- ใช้โค้ดที่ทดสอบแล้วซ้ำได้
+
+* ไม่ต้องเขียนโค้ดซ้ำ
+* ใช้โค้ดที่ทดสอบแล้วซ้ำได้
 
 ### 7.2 Extensibility (ขยายได้)
-- เพิ่มความสามารถใหม่ได้ง่าย
-- ไม่กระทบโค้ดเดิม
+
+* เพิ่มความสามารถใหม่ได้ง่าย
+* ไม่กระทบโค้ดเดิม
 
 ### 7.3 Maintainability (ดูแลรักษาได้ง่าย)
-- แก้ไขที่ Superclass ส่งผลไปยัง Subclass ทั้งหมด
-- ลดจุดที่ต้องแก้ไข
+
+* แก้ไขที่ Superclass ส่งผลไปยัง Subclass ทั้งหมด
+* ลดจุดที่ต้องแก้ไข
 
 ### 7.4 Polymorphism
-- รองรับ Polymorphism (จะเรียนในบทถัดไป)
-- เพิ่มความยืดหยุ่นของโค้ด
+
+* รองรับ Polymorphism (จะเรียนในบทถัดไป)
+* เพิ่มความยืดหยุ่นของโค้ด
 
 ## 8. ตัวอย่างการใช้งานจริง
 
@@ -286,41 +296,47 @@ class Bird extends Animal { }
 ## 9. หลักการออกแบบที่ดี
 
 ### 9.1 Favor Composition Over Inheritance
-- ไม่ใช่ทุกกรณีที่ควรใช้ Inheritance
-- บางครั้ง Composition เหมาะสมกว่า
+
+* ไม่ใช่ทุกกรณีที่ควรใช้ Inheritance
+* บางครั้ง Composition เหมาะสมกว่า
 
 ### 9.2 Liskov Substitution Principle
-- Subclass ต้องสามารถแทนที่ Superclass ได้
-- พฤติกรรมต้องสอดคล้องกัน
+
+* Subclass ต้องสามารถแทนที่ Superclass ได้
+* พฤติกรรมต้องสอดคล้องกัน
 
 ### 9.3 Don't Break Encapsulation
-- ไม่ควรทำให้ private members เป็น public
-- ใช้ protected อย่างระมัดระวัง
+
+* ไม่ควรทำให้ private members เป็น public
+* ใช้ protected อย่างระมัดระวัง
 
 ## 10. ข้อควรระวัง
 
 ### 10.1 ไม่ควรใช้ Inheritance เพื่อ Code Reuse เพียงอย่างเดียว
+
 ```java
 // ไม่ดี: ไม่มีความสัมพันธ์ IS-A
 class Stack extends ArrayList { }  // Stack ไม่ใช่ ArrayList
 ```
 
 ### 10.2 Fragile Base Class Problem
-- การเปลี่ยนแปลง Superclass อาจกระทบ Subclass
-- ควรออกแบบอย่างระมัดระวัง
+
+* การเปลี่ยนแปลง Superclass อาจกระทบ Subclass
+* ควรออกแบบอย่างระมัดระวัง
 
 ### 10.3 ไม่ควร Inherit จาก Concrete Class หลายๆ ชั้น
-- ทำให้โครงสร้างซับซ้อน
-- ดูแลรักษายาก
+
+* ทำให้โครงสร้างซับซ้อน
+* ดูแลรักษายาก
 
 ## สรุป
 
-- **Inheritance** คือการสืบทอดคุณสมบัติและพฤติกรรมจาก Superclass
-- **extends** keyword ใช้สร้าง Inheritance
-- **super** keyword ใช้เข้าถึง Members ของ Superclass
-- **IS-A** relationship: Subclass IS-A Superclass
-- **ประโยชน์**: Code Reusability, Extensibility, Maintainability
-- Java รองรับ **Single Inheritance** เท่านั้น
+* **Inheritance** คือการสืบทอดคุณสมบัติและพฤติกรรมจาก Superclass
+* **extends** keyword ใช้สร้าง Inheritance
+* **super** keyword ใช้เข้าถึง Members ของ Superclass
+* **IS-A** relationship: Subclass IS-A Superclass
+* **ประโยชน์**: Code Reusability, Extensibility, Maintainability
+* Java รองรับ **Single Inheritance** เท่านั้น
 
 ## แบบฝึกหัด
 
@@ -330,6 +346,6 @@ class Stack extends ArrayList { }  // Stack ไม่ใช่ ArrayList
 4. ทดสอบการสร้าง Objects และเรียกใช้ Methods
 5. อธิบายประโยชน์ของการใช้ Inheritance ในตัวอย่างนี้
 
----
+***
 
-[< บทก่อนหน้า: Encapsulation](05-encapsulation.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Polymorphism >](07-polymorphism.md)
+[< บทก่อนหน้า: Encapsulation](05-encapsulation.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: Polymorphism >](07-polymorphism.md)

@@ -1,9 +1,14 @@
+---
+icon: '9'
+---
+
 # บทที่ 9: Error Handling
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
-1. เข้าใจความหมายและประเภทของ Exceptions ใน Java ได้
+
+1. บอกความหมายและประเภทของ Exceptions ใน Java ได้
 2. ใช้ try-catch blocks เพื่อจัดการ Errors ได้
 3. สร้างโปรแกรมที่จัดการกับ Errors ได้อย่างเหมาะสม
 4. เขียนโค้ดที่ Robust และไม่ crash ง่าย **(CLO7)**
@@ -15,12 +20,14 @@
 ### ทำไมต้อง Handle Errors?
 
 **ไม่มี Error Handling:**
+
 ```java
 int result = 10 / 0;  // โปรแกรม crash!
 System.out.println(result);  // ไม่ทำงาน
 ```
 
 **มี Error Handling:**
+
 ```java
 try {
     int result = 10 / 0;
@@ -34,12 +41,14 @@ System.out.println("Program continues...");
 ## 2. Exception Types (ประเภทของ Exception)
 
 ### 2.1 Checked Exceptions
+
 Exception ที่ต้อง handle หรือ declare (Compiler บังคับ)
 
 **ตัวอย่าง:**
-- `IOException` - ปัญหาเกี่ยวกับ Input/Output
-- `FileNotFoundException` - หาไฟล์ไม่เจอ
-- `SQLException` - ปัญหาเกี่ยวกับ Database
+
+* `IOException` - ปัญหาเกี่ยวกับ Input/Output
+* `FileNotFoundException` - หาไฟล์ไม่เจอ
+* `SQLException` - ปัญหาเกี่ยวกับ Database
 
 ```java
 import java.io.*;
@@ -62,13 +71,15 @@ public void readFile() {
 ```
 
 ### 2.2 Unchecked Exceptions (Runtime Exceptions)
+
 Exception ที่ไม่บังคับให้ handle
 
 **ตัวอย่าง:**
-- `NullPointerException` - ใช้ object ที่เป็น null
-- `ArrayIndexOutOfBoundsException` - Index เกินขนาด array
-- `ArithmeticException` - ข้อผิดพลาดทางคณิตศาสตร์
-- `IllegalArgumentException` - Parameter ไม่ถูกต้อง
+
+* `NullPointerException` - ใช้ object ที่เป็น null
+* `ArrayIndexOutOfBoundsException` - Index เกินขนาด array
+* `ArithmeticException` - ข้อผิดพลาดทางคณิตศาสตร์
+* `IllegalArgumentException` - Parameter ไม่ถูกต้อง
 
 ```java
 // NullPointerException
@@ -84,11 +95,13 @@ int result = 10 / 0;  // Error!
 ```
 
 ### 2.3 Errors
+
 ปัญหาร้ายแรงที่โปรแกรมไม่สามารถ recover ได้
 
 **ตัวอย่าง:**
-- `OutOfMemoryError` - หน่วยความจำเต็ม
-- `StackOverflowError` - Stack overflow (เช่น recursion ไม่สิ้นสุด)
+
+* `OutOfMemoryError` - หน่วยความจำเต็ม
+* `StackOverflowError` - Stack overflow (เช่น recursion ไม่สิ้นสุด)
 
 ## 3. try-catch Blocks
 
@@ -180,9 +193,10 @@ try {
 ### การใช้งาน finally
 
 **ใช้สำหรับ:**
-- ปิด resources (files, database connections)
-- ทำความสะอาด (cleanup)
-- Release resources
+
+* ปิด resources (files, database connections)
+* ทำความสะอาด (cleanup)
+* Release resources
 
 ```java
 Scanner scanner = null;
@@ -217,14 +231,16 @@ try (Scanner scanner = new Scanner(System.in)) {
 ```
 
 **ใช้ได้กับ classes ที่ implement `AutoCloseable`:**
-- `Scanner`
-- `FileReader`, `FileWriter`
-- `BufferedReader`, `BufferedWriter`
-- Database connections
+
+* `Scanner`
+* `FileReader`, `FileWriter`
+* `BufferedReader`, `BufferedWriter`
+* Database connections
 
 ## 6. Exception Information
 
 ### 6.1 getMessage()
+
 ```java
 try {
     int result = 10 / 0;
@@ -235,6 +251,7 @@ try {
 ```
 
 ### 6.2 printStackTrace()
+
 ```java
 try {
     int result = 10 / 0;
@@ -245,6 +262,7 @@ try {
 ```
 
 ### 6.3 toString()
+
 ```java
 try {
     int result = 10 / 0;
@@ -259,6 +277,7 @@ try {
 ### 7.1 Catch Specific Exceptions
 
 **ไม่ดี:**
+
 ```java
 try {
     // โค้ด
@@ -268,6 +287,7 @@ try {
 ```
 
 **ดี:**
+
 ```java
 try {
     // โค้ด
@@ -281,6 +301,7 @@ try {
 ### 7.2 Don't Ignore Exceptions
 
 **ไม่ดี:**
+
 ```java
 try {
     // โค้ด
@@ -290,6 +311,7 @@ try {
 ```
 
 **ดี:**
+
 ```java
 try {
     // โค้ด
@@ -391,22 +413,23 @@ public void printLength(String text) {
 ดูตัวอย่าง: [ErrorHandlingExample.java](../examples/ErrorHandlingExample.java)
 
 โปรแกรมนี้แสดง:
-- การใช้ try-catch blocks
-- Multiple catch blocks
-- finally block
-- try-with-resources
-- Input validation
-- Robust error handling
+
+* การใช้ try-catch blocks
+* Multiple catch blocks
+* finally block
+* try-with-resources
+* Input validation
+* Robust error handling
 
 ## สรุป
 
-- **try-catch** ใช้จัดการ exceptions
-- **finally** ทำงานเสมอ เหมาะสำหรับ cleanup
-- **try-with-resources** ปิด resources อัตโนมัติ
-- Catch **specific exceptions** แทน generic Exception
-- ให้ **meaningful error messages**
-- **Don't ignore exceptions**
-- Error handling ทำให้โปรแกรม **robust** และไม่ crash ง่าย **(CLO7)**
+* **try-catch** ใช้จัดการ exceptions
+* **finally** ทำงานเสมอ เหมาะสำหรับ cleanup
+* **try-with-resources** ปิด resources อัตโนมัติ
+* Catch **specific exceptions** แทน generic Exception
+* ให้ **meaningful error messages**
+* **Don't ignore exceptions**
+* Error handling ทำให้โปรแกรม **robust** และไม่ crash ง่าย **(CLO7)**
 
 ## แบบฝึกหัด
 
@@ -416,6 +439,6 @@ public void printLength(String text) {
 4. เขียนโปรแกรมรับ input จาก user พร้อม validate ด้วย exception handling
 5. สร้าง Calculator class ที่มี error handling สำหรับการหาร
 
----
+***
 
-[< บทก่อนหน้า: UML Diagrams](08-uml-diagrams.md) | [กลับไปหน้าหลัก](../README.md) | [บทถัดไป: Maintainable Code >](10-maintainable-code.md)
+[< บทก่อนหน้า: UML Diagrams](08-uml-diagrams.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: Maintainable Code >](10-maintainable-code.md)

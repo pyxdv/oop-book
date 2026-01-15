@@ -1,8 +1,13 @@
+---
+icon: '8'
+---
+
 # บทที่ 8: UML Class Diagrams และ Model-Based Coding
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
 หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+
 1. อธิบายความหมายและความสำคัญของ UML Class Diagram ได้
 2. อ่านและเข้าใจสัญลักษณ์ต่างๆ ใน Class Diagram ได้
 3. สร้าง Class Diagram พื้นฐานได้
@@ -13,16 +18,17 @@
 ## 1. ความหมายของ Class Diagram
 
 **Class Diagram** คือแผนภาพที่แสดง:
-- **โครงสร้างของ Classes** ในระบบ
-- **Attributes** และ **Methods** ของแต่ละ Class
-- **ความสัมพันธ์** (Relationships) ระหว่าง Classes
+
+* **โครงสร้างของ Classes** ในระบบ
+* **Attributes** และ **Methods** ของแต่ละ Class
+* **ความสัมพันธ์** (Relationships) ระหว่าง Classes
 
 ### ประโยชน์
 
-- **การสื่อสาร**: แสดงโครงสร้างระบบให้เข้าใจง่าย
-- **การออกแบบ**: วางแผนก่อนเขียนโค้ด
-- **Documentation**: เอกสารประกอบระบบ
-- **การวิเคราะห์**: เข้าใจระบบที่มีอยู่
+* **การสื่อสาร**: แสดงโครงสร้างระบบให้เข้าใจง่าย
+* **การออกแบบ**: วางแผนก่อนเขียนโค้ด
+* **Documentation**: เอกสารประกอบระบบ
+* **การวิเคราะห์**: เข้าใจระบบที่มีอยู่
 
 ## 2. สัญลักษณ์พื้นฐาน
 
@@ -134,8 +140,9 @@ Symbols:
 └─────────┘  teaches   └─────────┘
 ```
 
-- 1 Teacher สอนได้หลาย (*) Students
-- * Students เรียนกับ 1 Teacher
+* 1 Teacher สอนได้หลาย (\*) Students
+*
+  * Students เรียนกับ 1 Teacher
 
 ### 3.3 Inheritance (Generalization)
 
@@ -173,9 +180,9 @@ class Cat extends Animal { }
 └─────────┘             └─────────┘
 ```
 
-- **◆ (Filled Diamond)** = Composition
-- Engine เป็นส่วนหนึ่งของ Car
-- ถ้า Car ถูกทำลาย Engine ก็ถูกทำลายด้วย
+* **◆ (Filled Diamond)** = Composition
+* Engine เป็นส่วนหนึ่งของ Car
+* ถ้า Car ถูกทำลาย Engine ก็ถูกทำลายด้วย
 
 **Java Code:**
 
@@ -199,9 +206,9 @@ class Car {
 └────────────┘             └─────────┘
 ```
 
-- **◇ (Empty Diamond)** = Aggregation
-- Department มี Teachers
-- ถ้า Department ถูกลบ Teachers ยังอยู่ได้
+* **◇ (Empty Diamond)** = Aggregation
+* Department มี Teachers
+* ถ้า Department ถูกลบ Teachers ยังอยู่ได้
 
 **Java Code:**
 
@@ -260,6 +267,7 @@ class Department {
 ### จาก Class Diagram เป็น Java Code
 
 **Class Diagram:**
+
 ```
 ┌──────────────────────┐
 │      BankAccount     │
@@ -274,6 +282,7 @@ class Department {
 ```
 
 **Java Code:**
+
 ```java
 public class BankAccount {
     private int accountNumber;
@@ -296,6 +305,7 @@ public class BankAccount {
 ### จาก Java Code เป็น Class Diagram
 
 **Java Code:**
+
 ```java
 public class Rectangle {
     private double width;
@@ -312,6 +322,7 @@ public class Rectangle {
 ```
 
 **Class Diagram:**
+
 ```
 ┌──────────────────────────────┐
 │        Rectangle             │
@@ -331,6 +342,7 @@ public class Rectangle {
 ### 6.1 ขั้นตอนการทำ Model-Based Coding
 
 **1. วิเคราะห์ความต้องการ (Requirements Analysis)**
+
 ```
 ตัวอย่าง: ระบบห้องสมุด
 - ต้องการจัดการหนังสือ
@@ -339,6 +351,7 @@ public class Rectangle {
 ```
 
 **2. ระบุ Classes และ Responsibilities**
+
 ```
 Classes ที่ต้องการ:
 - Book (หนังสือ)
@@ -348,6 +361,7 @@ Classes ที่ต้องการ:
 ```
 
 **3. สร้าง Class Diagram**
+
 ```
 ┌─────────────┐       1       *  ┌─────────────┐
 │   Member    ├──────────────────┤    Loan     │
@@ -373,7 +387,7 @@ Classes ที่ต้องการ:
                                  └─────────────┘
 ```
 
-**4. เขียนโค้ดตาม Diagram **(CLO6)**
+\*\*4. เขียนโค้ดตาม Diagram **(CLO6)**
 
 ```java
 // Step 1: สร้าง Classes ตามโครงสร้างใน Diagram
@@ -417,27 +431,31 @@ class Loan {
 ### 6.2 ประโยชน์ของ Model-Based Coding
 
 **1. การสื่อสาร (Communication)**
-- ทีมเข้าใจโครงสร้างระบบเหมือนกัน
-- ง่ายต่อการ Review และ Feedback
+
+* ทีมเข้าใจโครงสร้างระบบเหมือนกัน
+* ง่ายต่อการ Review และ Feedback
 
 **2. การวางแผน (Planning)**
-- เห็นภาพรวมก่อนเขียนโค้ด
-- ประเมินความซับซ้อนได้
+
+* เห็นภาพรวมก่อนเขียนโค้ด
+* ประเมินความซับซ้อนได้
 
 **3. ลดข้อผิดพลาด (Error Reduction)**
-- พบปัญหาในการออกแบบก่อนเขียนโค้ด
-- แก้ไขได้ง่ายกว่าแก้โค้ด
+
+* พบปัญหาในการออกแบบก่อนเขียนโค้ด
+* แก้ไขได้ง่ายกว่าแก้โค้ด
 
 **4. การบำรุงรักษา (Maintenance)**
-- Document ที่ชัดเจน
-- เข้าใจโครงสร้างได้เร็ว
+
+* Document ที่ชัดเจน
+* เข้าใจโครงสร้างได้เร็ว
 
 ### 6.3 ตัวอย่าง: ระบบ E-Commerce
 
-**Requirement:**
-ระบบขายของออนไลน์ที่มี Customer, Product, และ Order
+**Requirement:** ระบบขายของออนไลน์ที่มี Customer, Product, และ Order
 
 **Class Diagram:**
+
 ```
 ┌──────────────┐
 │   Customer   │
@@ -534,20 +552,24 @@ class Order {
 ### 6.4 Best Practices สำหรับ Model-Based Coding
 
 **1. เริ่มง่ายๆ ก่อน**
-- สร้าง Diagram พื้นฐานก่อน
-- เพิ่มรายละเอียดทีละน้อย
+
+* สร้าง Diagram พื้นฐานก่อน
+* เพิ่มรายละเอียดทีละน้อย
 
 **2. อัพเดท Diagram เมื่อโค้ดเปลี่ยน**
-- Diagram ต้องสอดคล้องกับโค้ด
-- ใช้เป็น Living Document
+
+* Diagram ต้องสอดคล้องกับโค้ด
+* ใช้เป็น Living Document
 
 **3. ใช้ Tools ช่วย**
-- Draw.io, PlantUML, StarUML
-- บาง IDE สามารถ Generate Diagram จากโค้ดได้
+
+* Draw.io, PlantUML, StarUML
+* บาง IDE สามารถ Generate Diagram จากโค้ดได้
 
 **4. Review Diagram ก่อนเขียนโค้ด**
-- ขอ Feedback จากทีม
-- ตรวจสอบความถูกต้องของ Relationships
+
+* ขอ Feedback จากทีม
+* ตรวจสอบความถูกต้องของ Relationships
 
 ## 7. ตัวอย่างการใช้งานจริง
 
@@ -592,59 +614,62 @@ Student "many" -- "many" Course : enrolls
 ## 9. Best Practices
 
 ### 8.1 ความชัดเจน
-- ใช้ชื่อที่สื่อความหมาย
-- ไม่แสดงรายละเอียดมากเกินไป
+
+* ใช้ชื่อที่สื่อความหมาย
+* ไม่แสดงรายละเอียดมากเกินไป
 
 ### 8.2 ความสม่ำเสมอ
-- ใช้ Naming Convention เดียวกัน
-- จัดวาง Layout อย่างเป็นระเบียบ
+
+* ใช้ Naming Convention เดียวกัน
+* จัดวาง Layout อย่างเป็นระเบียบ
 
 ### 8.3 ระดับของรายละเอียด
-- Conceptual: แสดงแค่ชื่อ Class และ Relationships
-- Specification: แสดง Attributes และ Methods หลัก
-- Implementation: แสดงทุกรายละเอียด
+
+* Conceptual: แสดงแค่ชื่อ Class และ Relationships
+* Specification: แสดง Attributes และ Methods หลัก
+* Implementation: แสดงทุกรายละเอียด
 
 ## 10. ข้อควรระวัง
 
 ### 9.1 ไม่ควรแสดงทุกอย่าง
-- แสดงเฉพาะสิ่งที่สำคัญ
-- Getters/Setters อาจไม่ต้องแสดง
+
+* แสดงเฉพาะสิ่งที่สำคัญ
+* Getters/Setters อาจไม่ต้องแสดง
 
 ### 9.2 อัพเดทให้ตรงกับโค้ด
-- Diagram ควรสอดคล้องกับ Implementation
-- อัพเดทเมื่อโค้ดเปลี่ยน
+
+* Diagram ควรสอดคล้องกับ Implementation
+* อัพเดทเมื่อโค้ดเปลี่ยน
 
 ### 9.3 ใช้ Relationships ที่ถูกต้อง
-- เลือก Relationship ที่เหมาะสม
-- ไม่ใช้ Composition เมื่อควรเป็น Association
+
+* เลือก Relationship ที่เหมาะสม
+* ไม่ใช้ Composition เมื่อควรเป็น Association
 
 ## 11. สรุป
 
-- **Class Diagram** แสดงโครงสร้าง Classes และความสัมพันธ์
-- **สัญลักษณ์พื้นฐาน**: +, -, #, ~ สำหรับ Access Modifiers
-- **Relationships**: Association, Inheritance, Composition, Aggregation
-- **Multiplicity**: 1, *, 0..1, 1..* แสดงจำนวนความสัมพันธ์
-- **ประโยชน์**: การสื่อสาร, ออกแบบ, Documentation
-- สามารถแปลงระหว่าง Class Diagram และ Java Code ได้
+* **Class Diagram** แสดงโครงสร้าง Classes และความสัมพันธ์
+* **สัญลักษณ์พื้นฐาน**: +, -, #, \~ สำหรับ Access Modifiers
+* **Relationships**: Association, Inheritance, Composition, Aggregation
+* **Multiplicity**: 1, _, 0..1, 1.._ แสดงจำนวนความสัมพันธ์
+* **ประโยชน์**: การสื่อสาร, ออกแบบ, Documentation
+* สามารถแปลงระหว่าง Class Diagram และ Java Code ได้
 
 ## แบบฝึกหัด
 
 1. สร้าง Class Diagram สำหรับระบบโรงพยาบาล:
-   - Classes: Patient, Doctor, Appointment, MedicalRecord
-   - แสดง Relationships ที่เหมาะสม
-   - ระบุ Multiplicity
-
+   * Classes: Patient, Doctor, Appointment, MedicalRecord
+   * แสดง Relationships ที่เหมาะสม
+   * ระบุ Multiplicity
 2. แปลง Class Diagram ที่สร้างเป็น Java Code
-
 3. สร้าง Class Diagram จาก Java Code ที่มีอยู่ในโปรเจกต์ของคุณ
-
 4. อธิบายความแตกต่างระหว่าง Composition และ Aggregation พร้อมยกตัวอย่าง
 
----
+***
 
-[< บทก่อนหน้า: Polymorphism](07-polymorphism.md) | [กลับไปหน้าหลัก](../README.md)
+[< บทก่อนหน้า: Polymorphism](07-polymorphism.md) | [กลับไปหน้าหลัก](../)
 
----
+***
 
 ## 11. สรุปหนังสือ
 
@@ -658,8 +683,9 @@ Student "many" -- "many" Course : enrolls
 พร้อมทั้งได้เรียนรู้วิธีการสร้าง Class Diagram เพื่อออกแบบและสื่อสารโครงสร้างของระบบ
 
 **ขั้นตอนต่อไป:**
-- ฝึกเขียนโค้ด OOP ให้มากขึ้น
-- ศึกษาหัวข้อขั้นสูง: Abstract Classes, Interfaces, Design Patterns
-- ประยุกต์ใช้ OOP ในโปรเจกต์จริง
+
+* ฝึกเขียนโค้ด OOP ให้มากขึ้น
+* ศึกษาหัวข้อขั้นสูง: Abstract Classes, Interfaces, Design Patterns
+* ประยุกต์ใช้ OOP ในโปรเจกต์จริง
 
 **ขอให้โชคดีในการเรียนรู้และพัฒนาซอฟต์แวร์!** 🚀
