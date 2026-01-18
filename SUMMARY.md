@@ -13,3 +13,4 @@
   * [บทที่ 8: UML Class Diagrams และ Model-Based Coding](lessons/08-uml-diagrams.md)
   * [บทที่ 9: Error Handling](lessons/09-error-handling.md)
   * [บทที่ 10: Maintainable Code Principles](lessons/10-maintainable-code.md)
+  * [🎓 Summary](lessons/summary.md)
