@@ -1,5 +1,5 @@
 ---
-description: คุณได้เรียนจบหนังสือ Object-Oriented Programming แล้ว
+description: คุณได้เรียนจบคอร์ส  Object-Oriented Programming แล้ว
 ---
 
 # 🎓 Summary
