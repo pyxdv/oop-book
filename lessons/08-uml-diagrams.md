@@ -46,6 +46,19 @@ icon: '8'
 └─────────────────────┘
 ```
 
+```mermaid
+classDiagram
+    class Student {
+        -String studentId
+        -String name
+        -double gpa
+        +getStudentId() String
+        +setName(String name) void
+        +calculateGrade() String
+    }
+
+```
+
 ### 2.2 Access Modifiers
 
 ```
