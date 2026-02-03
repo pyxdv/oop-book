@@ -668,12 +668,4 @@ Student "many" -- "many" Course : enrolls
 * **ประโยชน์**: การสื่อสาร, ออกแบบ, Documentation
 * สามารถแปลงระหว่าง Class Diagram และ Java Code ได้
 
-## แบบฝึกหัด
-
-1. สร้าง Class Diagram สำหรับระบบโรงพยาบาล:
-   * Classes: Patient, Doctor, Appointment, MedicalRecord
-   * แสดง Relationships ที่เหมาะสม
-   * ระบุ Multiplicity
-2. แปลง Class Diagram ที่สร้างเป็น Java Code
-3. สร้าง Class Diagram จาก Java Code ที่มีอยู่ในโปรเจกต์ของคุณ
-4. อธิบายความแตกต่างระหว่าง Composition และ Aggregation พร้อมยกตัวอย่าง
+## &#x20;
