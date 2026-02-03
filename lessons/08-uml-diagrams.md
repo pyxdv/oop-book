@@ -46,19 +46,6 @@ icon: '8'
 └─────────────────────┘
 ```
 
-```mmd
-classDiagram
-    class Student {
-        -String studentId
-        -String name
-        -double gpa
-        +getStudentId() String
-        +setName(String name) void
-        +calculateGrade() String
-    }
-
-```
-
 ```mermaid
 classDiagram
     class Student {
