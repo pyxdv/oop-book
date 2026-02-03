@@ -624,7 +624,7 @@ Student "many" -- "many" Course : enrolls
 @enduml
 ```
 
-## 9. Best Practices
+## Best Practices
 
 ### 8.1 ความชัดเจน
 
@@ -642,7 +642,7 @@ Student "many" -- "many" Course : enrolls
 * Specification: แสดง Attributes และ Methods หลัก
 * Implementation: แสดงทุกรายละเอียด
 
-## 10. ข้อควรระวัง
+## 9. ข้อควรระวัง
 
 ### 9.1 ไม่ควรแสดงทุกอย่าง
 
@@ -659,7 +659,7 @@ Student "many" -- "many" Course : enrolls
 * เลือก Relationship ที่เหมาะสม
 * ไม่ใช้ Composition เมื่อควรเป็น Association
 
-## 11. สรุป
+## 10. สรุป
 
 * **Class Diagram** แสดงโครงสร้าง Classes และความสัมพันธ์
 * **สัญลักษณ์พื้นฐาน**: +, -, #, \~ สำหรับ Access Modifiers
