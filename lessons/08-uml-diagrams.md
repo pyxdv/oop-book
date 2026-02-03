@@ -6,14 +6,14 @@ icon: '8'
 
 ## Learning Outcomes (ผลลัพธ์การเรียนรู้)
 
-หลังจากเรียนจบบทนี้ นักเรียนจะสามารถ:
+หลังจากเรียนจบบทนี้ นักศึกษาจะสามารถ:
 
-1. อธิบายความหมายและความสำคัญของ UML Class Diagram ได้
-2. อ่านและเข้าใจสัญลักษณ์ต่างๆ ใน Class Diagram ได้
-3. สร้าง Class Diagram พื้นฐานได้
-4. แสดง Relationships ระหว่าง Classes (Association, Inheritance, Composition) ได้
-5. เขียนโค้ด Java ตาม Class Diagram ได้ **(CLO6)**
-6. ประยุกต์ใช้ Model-Based Coding ในการพัฒนาซอฟต์แวร์ได้ **(CLO6)**
+1. ระบุ (Identify) องค์ประกอบพื้นฐานของ UML Class Diagram เช่น ชื่อคลาส (Class Name), คุณลักษณะ (Attributes) และ เมธอด (Methods) ได้
+2. อธิบาย (Describe) ความหมายของระดับการเข้าถึงพื้นฐาน (Public และ Private) รวมถึงสัญลักษณ์ที่ใช้แทนได้
+3. วาด (Draw) Class Diagram พื้นฐานเพื่อจำลองวัตถุอย่างง่าย ตามโจทย์ที่กำหนดได้
+4. จดจำและแยกแยะ (Recognize) สัญลักษณ์ของความสัมพันธ์หลัก 3 แบบได้แก่ Inheritance, Association และ Composition
+5. แปลง (Translate) แผนภาพ Class Diagram อย่างง่าย ให้เป็นโครงสร้างคลาสในภาษา Java (ชื่อคลาสและตัวแปร) ได้ (CLO6)
+6. เขียนโค้ดตามแบบที่กำหนด (Follow) โดยใช้ Model ที่กำหนดให้เป็นแนวทางในการสร้างโครงสร้างโปรแกรมเบื้องต้นได้ (CLO6)
 
 ## 1. ความหมายของ Class Diagram
 
