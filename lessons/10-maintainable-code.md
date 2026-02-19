@@ -484,7 +484,7 @@ class StudentPrinter {
 
 **Subclass ต้องสามารถแทนที่ Superclass ได้**
 
-Subclass ต้องทำงานเหมือน Superclass
+ถ้า Class แม่ (Superclass) สัญญาว่า "ทำสิ่งนี้ได้" Class ลูก (Subclass) ต้องทำสิ่งนั้นได้จริง โดยไม่ทำให้โปรแกรมพัง ถ้าลูกไปเปลี่ยนพฤติกรรมจนคนใช้งานตกใจ หรือโปรแกรม Error นั่นคือผิดหลัก LSP
 
 ## 8. Code Smells (สัญญาณโค้ดไม่ดี)
 
