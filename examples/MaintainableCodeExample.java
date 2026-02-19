@@ -98,7 +98,7 @@ public class MaintainableCodeExample {
 }
 
 /* 
- * CLEAN CODE PRINCIPLES สุ่มที่ใช้ในตัวอย่างนี้:
+ * CLEAN CODE PRINCIPLES ที่ใช้ในตัวอย่างนี้:
  * 
  * 1. Meaningful Names:
  *    - calculateFinalPrice() แทน calc()
