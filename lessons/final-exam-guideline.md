@@ -4,30 +4,6 @@ icon: lightbulb-exclamation-on
 
 # Final Exam Guideline
 
-### Gemini said
-
-English Version:
-
-You are absolutely right. Because I wrapped the entire response in a ` ```markdown ` code block, your Markdown editor treated everything—including the HTML `<mark>` tags and the tables—as raw code instead of rendering them properly.
-
-To fix this and ensure it works perfectly in any Markdown editor (like VS Code or Obsidian), I have removed the outer code block. I also replaced the HTML highlight tags with clean Markdown emojis (🔵, 🟢, 🟠, 🔴) to represent the colors, which matches the style you used in your original Midterm template.
-
-You can simply copy the text below (starting from the `# Final Exam Guideline` heading) and paste it directly into your `.md` file!
-
-***
-
-Thai Version:
-
-คุณสังเกตได้ถูกต้องเลยครับ! เป็นเพราะผมครอบข้อความทั้งหมดด้วยบล็อกโค้ด ` ```markdown ` โปรแกรม Markdown Editor ของคุณเลยอ่านแท็ก HTML `<mark>` รวมถึงตารางต่างๆ ว่าเป็นเพียงโค้ดดิบ (Raw text) และไม่ยอมเรนเดอร์ผลลัพธ์ให้
-
-เพื่อแก้ไขปัญหานี้และเพื่อให้ไฟล์ `.md` ของคุณแสดงผลได้อย่างสมบูรณ์แบบในทุกโปรแกรม (เช่น VS Code หรือ Obsidian) ผมได้เอาบล็อกโค้ดที่ครอบอยู่ออกแล้วครับ นอกจากนี้ผมยังได้เปลี่ยนแท็ก HTML ให้เป็นข้อความ Markdown แบบมาตรฐาน โดยใช้ Emoji สีต่างๆ (🔵, 🟢, 🟠, 🔴) แทน ซึ่งจะตรงกับรูปแบบโปรเจกต์ที่คุณเคยใช้ในไฟล์ Midterm พอดีครับ
-
-คุณสามารถคัดลอกข้อความด้านล่างนี้ (เริ่มตั้งแต่บรรทัด `# Final Exam Guideline`) ไปวางในไฟล์ `.md` ของคุณได้เลยครับ!
-
-***
-
-## Final Exam Guideline
-
 ### 📘 รายละเอียดเนื้อหาการสอบปลายภาค (Final Exam)
 
 วิชา 31-407-101-105 / 31-407-102-201 การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming) 🎯 คะแนนเต็ม: 100 คะแนน | 🕒 เวลาสอบ: 3 ชั่วโมง
