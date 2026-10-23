@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-label="โปรแกรม CoffeeOrder รับค่าสามค่าด้วย Scanner คำนวณราคารวม VAT แล้วพิมพ์ใบเสร็จ">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="36" font-size="22" font-weight="bold" text-anchor="middle">รับค่า → ประมวลผล → แสดงผล (โปรแกรม CoffeeOrder)</text>
+    <rect x="20" y="60" width="225" height="320" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <rect x="280" y="60" width="225" height="320" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <rect x="540" y="60" width="240" height="320" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="132" y="88" font-size="17" font-weight="bold" text-anchor="middle" fill="#2563eb">1. รับค่า (input)</text>
+    <text x="392" y="88" font-size="17" font-weight="bold" text-anchor="middle" fill="#d97706">2. ประมวลผล</text>
+    <text x="660" y="88" font-size="17" font-weight="bold" text-anchor="middle" fill="#059669">3. แสดงผล (output)</text>
+    <!-- input items -->
+    <g font-size="14">
+      <rect x="35" y="105" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="47" y="128" fill="#4b5563">ผู้ใช้พิมพ์ มานี แล้วกด Enter</text>
+      <text x="47" y="150" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">nextLine()</text>
+      <text x="47" y="170" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">→ name = "มานี"</text>
+      <rect x="35" y="190" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="47" y="213" fill="#4b5563">ผู้ใช้พิมพ์ 2</text>
+      <text x="47" y="235" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">nextInt()</text>
+      <text x="47" y="255" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">→ cups = 2</text>
+      <rect x="35" y="275" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="47" y="298" fill="#4b5563">ผู้ใช้พิมพ์ 55.5</text>
+      <text x="47" y="320" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">nextDouble()</text>
+      <text x="47" y="340" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">→ pricePerCup = 55.5</text>
+    </g>
+    <!-- process -->
+    <g font-size="14" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <rect x="295" y="105" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="307" y="133">subtotal = 2 * 55.5</text>
+      <text x="307" y="160" font-weight="bold">= 111.0</text>
+      <rect x="295" y="190" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="307" y="218">vat = 111.0 * 0.07</text>
+      <text x="307" y="245" font-weight="bold">≈ 7.77</text>
+      <rect x="295" y="275" width="195" height="74" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+      <text x="307" y="303">total = 111.0 + vat</text>
+      <text x="307" y="330" font-weight="bold">≈ 118.77</text>
+    </g>
+    <!-- output receipt -->
+    <rect x="555" y="105" width="210" height="244" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <g font-size="14">
+      <text x="660" y="135" text-anchor="middle">----- ใบเสร็จ -----</text>
+      <text x="567" y="170">ลูกค้า: มานี</text>
+      <text x="567" y="205">ค่ากาแฟ 2 แก้ว: 111.00 บาท</text>
+      <text x="567" y="240">VAT 7%: 7.77 บาท</text>
+      <text x="567" y="275" font-weight="bold">รวมทั้งหมด: 118.77 บาท</text>
+      <text x="567" y="325" fill="#4b5563">พิมพ์ด้วย println / printf</text>
+    </g>
+    <text x="132" y="408" font-size="14" text-anchor="middle" fill="#4b5563">จากคีย์บอร์ดผ่าน System.in</text>
+    <text x="392" y="408" font-size="14" text-anchor="middle" fill="#4b5563">ใช้ตัวแปรที่รับมา</text>
+    <text x="660" y="408" font-size="14" text-anchor="middle" fill="#4b5563">ออกหน้าจอผ่าน System.out</text>
+  </g>
+  <g stroke="#4b5563" stroke-width="2.5" fill="none">
+    <line x1="246" y1="220" x2="278" y2="220" marker-end="url(#arr)"/>
+    <line x1="506" y1="220" x2="538" y2="220" marker-end="url(#arr)"/>
+  </g>
+</svg>

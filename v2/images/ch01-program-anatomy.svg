@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350" role="img" aria-label="โครงสร้างโปรแกรม HelloWorld: คลาสครอบเมธอด main และเมธอดครอบคำสั่ง">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7"><circle cx="5" cy="5" r="4" fill="#4b5563"/></marker></defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" font-size="22" font-weight="bold" text-anchor="middle">โครงสร้างโปรแกรม Java หนึ่งไฟล์</text>
+    <text x="40" y="70" font-size="15" fill="#4b5563">ไฟล์ HelloWorld.java</text>
+  </g>
+  <rect x="40" y="80" width="460" height="205" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="70" y="124" width="415" height="114" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect x="100" y="165" width="375" height="36" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <g style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" fill="#1f2937">
+    <text x="55" y="108">public class HelloWorld {</text>
+    <text x="82" y="150">public static void main(String[] args) {</text>
+    <text x="112" y="188">System.out.println("Hello, World!");</text>
+    <text x="82" y="228">}</text>
+    <text x="55" y="272">}</text>
+  </g>
+  <g stroke="#4b5563" stroke-width="1.5" fill="none">
+    <line x1="500" y1="100" x2="520" y2="100" marker-start="url(#dot)"/>
+    <polyline points="485,145 505,145 520,165" marker-start="url(#dot)"/>
+    <polyline points="475,190 495,190 520,232" marker-start="url(#dot)"/>
+  </g>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+    <text x="528" y="105" font-size="17" font-weight="bold" fill="#2563eb">คลาส (class) HelloWorld</text>
+    <text x="528" y="127" font-size="14" fill="#4b5563">ชื่อต้องตรงกับชื่อไฟล์ .java</text>
+    <text x="528" y="170" font-size="17" font-weight="bold" fill="#059669">เมธอด (method) main</text>
+    <text x="528" y="192" font-size="14" fill="#4b5563">จุดที่โปรแกรมเริ่มทำงาน</text>
+    <text x="528" y="237" font-size="17" font-weight="bold" fill="#d97706">คำสั่ง (statement)</text>
+    <text x="528" y="259" font-size="14" fill="#4b5563">ปิดท้ายด้วย ; ทุกครั้ง</text>
+    <text x="40" y="320" font-size="15" fill="#4b5563">วงเล็บปีกกา { } ต้องเปิดและปิดเป็นคู่ กล่องสีแสดงขอบเขตที่แต่ละคู่ครอบไว้</text>
+  </g>
+</svg>

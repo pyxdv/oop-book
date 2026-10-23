@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="แผนภูมิแท่งขนาดบิตของชนิดข้อมูลพื้นฐานทั้ง 8 ชนิดใน Java">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937"><text x="400" y="38" font-size="22" font-weight="bold" text-anchor="middle">ขนาดของชนิดข้อมูลพื้นฐาน (หน่วย: บิต)</text>
+<rect x="150" y="62" width="16" height="16" rx="3" fill="#2563eb"/><text x="172" y="76" font-size="15" fill="#4b5563">จำนวนเต็ม</text>
+<rect x="270" y="62" width="16" height="16" rx="3" fill="#059669"/><text x="292" y="76" font-size="15" fill="#4b5563">ทศนิยม</text>
+<rect x="400" y="62" width="16" height="16" rx="3" fill="#d97706"/><text x="422" y="76" font-size="15" fill="#4b5563">ตัวอักษร</text>
+<rect x="530" y="62" width="16" height="16" rx="3" fill="#7c3aed"/><text x="552" y="76" font-size="15" fill="#4b5563">จริง/เท็จ</text>
+</g>
+<line x1="220" y1="98" x2="220" y2="436" stroke="#9ca3af" stroke-width="1" stroke-dasharray="0"/>
+<text x="220" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">0</text>
+<line x1="276" y1="98" x2="276" y2="436" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="276" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">8</text>
+<line x1="332" y1="98" x2="332" y2="436" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="332" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">16</text>
+<line x1="444" y1="98" x2="444" y2="436" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="444" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">32</text>
+<line x1="668" y1="98" x2="668" y2="436" stroke="#9ca3af" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="668" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">64</text>
+<text x="444" y="482" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563" text-anchor="middle">จำนวนบิต (8 บิต = 1 ไบต์)</text>
+<text x="30" y="128.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">byte</text>
+<text x="112" y="128.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">จำนวนเต็ม</text>
+<rect x="220" y="110" width="56" height="26" rx="4" fill="#2563eb"/>
+<text x="284" y="128.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">8 บิต (1 ไบต์)</text>
+<text x="30" y="170.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">short</text>
+<text x="112" y="170.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">จำนวนเต็ม</text>
+<rect x="220" y="152" width="112" height="26" rx="4" fill="#2563eb"/>
+<text x="340" y="170.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">16 บิต (2 ไบต์)</text>
+<text x="30" y="212.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">int</text>
+<text x="112" y="212.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">จำนวนเต็ม</text>
+<rect x="220" y="194" width="224" height="26" rx="4" fill="#2563eb"/>
+<text x="452" y="212.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">32 บิต (4 ไบต์)</text>
+<text x="30" y="254.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">long</text>
+<text x="112" y="254.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">จำนวนเต็ม</text>
+<rect x="220" y="236" width="448" height="26" rx="4" fill="#2563eb"/>
+<text x="676" y="254.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">64 บิต (8 ไบต์)</text>
+<text x="30" y="296.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">float</text>
+<text x="112" y="296.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">ทศนิยม</text>
+<rect x="220" y="278" width="224" height="26" rx="4" fill="#059669"/>
+<text x="452" y="296.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">32 บิต (4 ไบต์)</text>
+<text x="30" y="338.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">double</text>
+<text x="112" y="338.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">ทศนิยม</text>
+<rect x="220" y="320" width="448" height="26" rx="4" fill="#059669"/>
+<text x="676" y="338.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">64 บิต (8 ไบต์)</text>
+<text x="30" y="380.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">char</text>
+<text x="112" y="380.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">ตัวอักษร</text>
+<rect x="220" y="362" width="112" height="26" rx="4" fill="#d97706"/>
+<text x="340" y="380.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">16 บิต (2 ไบต์)</text>
+<text x="30" y="422.0" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="16" font-weight="bold" fill="#1f2937">boolean</text>
+<text x="112" y="422.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">จริง/เท็จ</text>
+<rect x="220" y="404" width="56" height="26" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="284" y="422.0" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" fill="#1f2937" stroke="#ffffff" stroke-width="5" paint-order="stroke">ขึ้นกับ JVM (เก็บแค่ true หรือ false)</text>
+</svg>
