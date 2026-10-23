@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360" role="img" aria-label="อาร์เรย์ scores มี 5 ช่อง เลขช่อง 0 ถึง 4 แต่ละช่องเก็บคะแนนหนึ่งค่า">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <g style="font-variant-ligatures:none" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="380" y="40" font-size="22" font-weight="bold" text-anchor="middle">อาร์เรย์เหมือนตู้ล็อกเกอร์ที่มีเลขช่องเรียงกัน</text>
+    <text x="380" y="72" font-size="16" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#4b5563">int[] scores = {85, 90, 78, 92, 88};</text>
+
+    <!-- lockers -->
+    <g font-size="15" text-anchor="middle">
+      <text x="156" y="108" fill="#4b5563">ช่อง 0</text>
+      <text x="268" y="108" fill="#4b5563">ช่อง 1</text>
+      <text x="380" y="108" fill="#2563eb" font-weight="bold">ช่อง 2</text>
+      <text x="492" y="108" fill="#4b5563">ช่อง 3</text>
+      <text x="604" y="108" fill="#4b5563">ช่อง 4</text>
+    </g>
+    <g stroke="#9ca3af" stroke-width="2">
+      <rect x="106" y="118" width="100" height="110" rx="8" fill="#f9fafb"/>
+      <rect x="218" y="118" width="100" height="110" rx="8" fill="#f9fafb"/>
+      <rect x="330" y="118" width="100" height="110" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+      <rect x="442" y="118" width="100" height="110" rx="8" fill="#f9fafb"/>
+      <rect x="554" y="118" width="100" height="110" rx="8" fill="#f9fafb"/>
+    </g>
+    <g fill="#9ca3af">
+      <rect x="186" y="128" width="12" height="4" rx="2"/>
+      <rect x="298" y="128" width="12" height="4" rx="2"/>
+      <rect x="410" y="128" width="12" height="4" rx="2"/>
+      <rect x="522" y="128" width="12" height="4" rx="2"/>
+      <rect x="634" y="128" width="12" height="4" rx="2"/>
+    </g>
+    <g font-size="30" font-weight="bold" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="156" y="185">85</text>
+      <text x="268" y="185">90</text>
+      <text x="380" y="185" fill="#2563eb">78</text>
+      <text x="492" y="185">92</text>
+      <text x="604" y="185">88</text>
+    </g>
+
+    <!-- callout for scores[2] -->
+    <line x1="380" y1="262" x2="380" y2="234" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+    <text x="380" y="284" font-size="16" text-anchor="middle" fill="#2563eb"><tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">scores[2]</tspan> หยิบค่าในช่อง 2 ได้ 78</text>
+
+    <!-- length bracket -->
+    <path d="M106,306 L106,316 L654,316 L654,306" fill="none" stroke="#4b5563" stroke-width="2"/>
+    <text x="380" y="342" font-size="16" text-anchor="middle" fill="#4b5563"><tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">scores.length = 5</tspan>   ช่องแรกคือ 0 ช่องสุดท้ายคือ length - 1 = 4</text>
+  </g>
+</svg>
