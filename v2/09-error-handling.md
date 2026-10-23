@@ -930,7 +930,7 @@ public class ErrorHandlingExample {
 ```
 
 {% hint style="warning" %}
-ไฟล์ตัวอย่างเดิม [ErrorHandlingExample.java](../examples/ErrorHandlingExample.java) ปิด `Scanner` ที่อ่านจาก `System.in` ในตัวอย่างที่ 4 แล้วสร้าง `Scanner` ตัวใหม่จาก `System.in` อีกครั้งในตัวอย่างที่ 5 เมื่อลองรันจริง ตัวอย่างที่ 5 พังด้วย `NoSuchElementException` ทันที เพราะปิด `Scanner` แล้ว `System.in` ก็ปิดตามไปด้วย และเปิดใหม่ไม่ได้ ตัวอย่างข้างบนแก้แล้ว โดยใช้ `Scanner` ตัวเดียวตลอดโปรแกรม
+ไฟล์ [ErrorHandlingExample.java](../examples/ErrorHandlingExample.java) รุ่นแรกเคยปิด `Scanner` ที่อ่านจาก `System.in` ในตัวอย่างที่ 4 แล้วสร้าง `Scanner` ตัวใหม่จาก `System.in` อีกครั้งในตัวอย่างที่ 5 ผลคือตัวอย่างที่ 5 พังด้วย `NoSuchElementException` ทันที เพราะปิด `Scanner` แล้ว `System.in` ก็ปิดตามไปด้วย และเปิดใหม่ไม่ได้ ตอนนี้แก้ไฟล์นั้นแล้ว ตัวอย่างที่ 4 เปลี่ยนไปอ่านจากข้อความแทน ส่วนตัวอย่างที่ 5 ใช้ `Scanner` ของ `System.in` ตัวเดียว ปิดครั้งเดียวด้วย try-with-resources
 {% endhint %}
 
 ## ข้อผิดพลาดที่เจอบ่อย
