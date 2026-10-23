@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="font-variant-ligatures:none" viewBox="0 0 780 400" width="780" height="400" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker>
+<marker id="op" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#4b5563" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="24" y="40" font-size="22" font-weight="bold" fill="#1f2937">Single Responsibility: หนึ่งคลาส หนึ่งเหตุผลที่ต้องแก้</text>
+<text x="24" y="78" font-size="16" font-weight="bold" fill="#dc2626">✗ คลาสเดียวทำ 3 เรื่อง</text>
+<text x="320" y="78" font-size="16" font-weight="bold" fill="#059669">✓ แยกเป็น 3 คลาส แต่ละคลาสมีเหตุผลเดียว</text>
+<rect x="24" y="96" width="250" height="160" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+<rect x="24" y="96" width="250" height="34" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="149.0" y="119" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" text-anchor="middle" fill="#1f2937">Student</text>
+<line x1="24" y1="182" x2="274" y2="182" stroke="#dc2626" stroke-width="1.5"/>
+<text x="34" y="152" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">- name</text>
+<text x="34" y="174" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">- gpa</text>
+<text x="34" y="204" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ getGpa()</text>
+<text x="34" y="226" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ saveToFile()</text>
+<text x="34" y="248" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ printCard()</text>
+<text x="24" y="286" font-size="15" fill="#1f2937">ต้องแก้คลาสนี้เมื่อ</text>
+<circle cx="34" cy="306" r="5" fill="#2563eb"/><text x="46" y="311" font-size="15" fill="#1f2937">ข้อมูลนักศึกษาเปลี่ยน</text>
+<circle cx="34" cy="330" r="5" fill="#059669"/><text x="46" y="335" font-size="15" fill="#1f2937">วิธีบันทึกเปลี่ยน</text>
+<circle cx="34" cy="354" r="5" fill="#d97706"/><text x="46" y="359" font-size="15" fill="#1f2937">รูปแบบพิมพ์เปลี่ยน</text>
+<rect x="320" y="106" width="200" height="116" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<rect x="320" y="106" width="200" height="34" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="420.0" y="129" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" text-anchor="middle" fill="#1f2937">Student</text>
+<line x1="320" y1="192" x2="520" y2="192" stroke="#2563eb" stroke-width="1.5"/>
+<text x="330" y="162" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">- name</text>
+<text x="330" y="184" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">- gpa</text>
+<text x="330" y="214" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ getGpa()</text>
+<rect x="560" y="96" width="200" height="72" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+<rect x="560" y="96" width="200" height="34" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="660.0" y="119" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" text-anchor="middle" fill="#1f2937">StudentRepository</text>
+<line x1="560" y1="138" x2="760" y2="138" stroke="#059669" stroke-width="1.5"/>
+<text x="570" y="160" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ save(Student)</text>
+<rect x="560" y="236" width="200" height="72" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+<rect x="560" y="236" width="200" height="34" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="660.0" y="259" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" text-anchor="middle" fill="#1f2937">StudentPrinter</text>
+<line x1="560" y1="278" x2="760" y2="278" stroke="#d97706" stroke-width="1.5"/>
+<text x="570" y="300" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">+ print(Student)</text>
+<line x1="560" y1="130" x2="522" y2="150" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#op)"/>
+<line x1="560" y1="270" x2="522" y2="210" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="6 4" marker-end="url(#op)"/>
+<text x="532" y="250" font-size="14" fill="#4b5563" text-anchor="end">ใช้</text>
+<text x="540" y="130" font-size="14" fill="#4b5563" text-anchor="end">ใช้</text>
+<circle cx="328" cy="243" r="5" fill="#2563eb"/><text x="340" y="248" font-size="14" fill="#1f2937">ข้อมูลนักศึกษาเปลี่ยน</text>
+<circle cx="568" cy="189" r="5" fill="#059669"/><text x="580" y="194" font-size="14" fill="#1f2937">วิธีบันทึกเปลี่ยน</text>
+<circle cx="568" cy="329" r="5" fill="#d97706"/><text x="580" y="334" font-size="14" fill="#1f2937">รูปแบบพิมพ์เปลี่ยน</text>
+<text x="320" y="376" font-size="14" fill="#4b5563">เปลี่ยนจากเขียนไฟล์เป็นฐานข้อมูล แก้แค่ StudentRepository</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg style="font-variant-ligatures:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780" height="440" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker></defs>
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="24" y="40" font-size="22" font-weight="bold" fill="#1f2937">if ซ้อนลึก กับ guard clause (ออกก่อนเมื่อไม่ผ่าน)</text>
+<text x="24" y="76" font-size="16" font-weight="bold" fill="#dc2626">✗ ซ้อน 5 ชั้น ต้องจำเงื่อนไขทุกชั้น</text>
+<text x="410" y="76" font-size="16" font-weight="bold" fill="#059669">✓ ตรวจทีละข้อ ไม่ผ่านก็ return</text>
+<rect x="24" y="92" width="360" height="318" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="36" y="120" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (order != null) {</text>
+<rect x="40" y="138" width="328" height="266" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+<text x="52" y="166" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (order.isValid()) {</text>
+<rect x="56" y="184" width="296" height="214" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="68" y="212" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (order.hasItems()) {</text>
+<rect x="72" y="230" width="264" height="162" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="84" y="258" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (customer != null) {</text>
+<rect x="88" y="276" width="232" height="110" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="100" y="304" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (hasCreditCard()) {</text>
+<rect x="104" y="322" width="200" height="40" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="1.5"/>
+<text x="116" y="348" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#1f2937">processPayment()</text>
+<text x="24" y="428" font-size="14" fill="#4b5563">งานหลักจมอยู่ชั้นในสุด ต้องไล่อ่านถึง 5 ชั้น</text>
+<rect x="410" y="92" width="230" height="40" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="422" y="118" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (order == null)</text>
+<line x1="640" y1="112" x2="690" y2="112" stroke="#dc2626" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="696" y="117" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">return</text>
+<rect x="410" y="144" width="230" height="40" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="422" y="170" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (!order.isValid())</text>
+<line x1="640" y1="164" x2="690" y2="164" stroke="#dc2626" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="696" y="169" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">return</text>
+<rect x="410" y="196" width="230" height="40" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="422" y="222" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (!order.hasItems())</text>
+<line x1="640" y1="216" x2="690" y2="216" stroke="#dc2626" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="696" y="221" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">return</text>
+<rect x="410" y="248" width="230" height="40" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="422" y="274" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (customer == null)</text>
+<line x1="640" y1="268" x2="690" y2="268" stroke="#dc2626" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="696" y="273" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">return</text>
+<rect x="410" y="300" width="230" height="40" rx="6" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="422" y="326" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">if (!hasCreditCard())</text>
+<line x1="640" y1="320" x2="690" y2="320" stroke="#dc2626" stroke-width="1.8" marker-end="url(#ah)"/>
+<text x="696" y="325" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">return</text>
+<rect x="410" y="352" width="230" height="40" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+<text x="422" y="378" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#1f2937">processPayment()</text>
+<line x1="525" y1="340" x2="525" y2="352" stroke="#059669" stroke-width="1.8"/>
+<text x="410" y="428" font-size="14" fill="#4b5563">ผ่านครบ 5 ข้อแล้วค่อยทำงานหลัก ทุกบรรทัดลึกแค่ 1 ชั้น</text>
+</svg>
