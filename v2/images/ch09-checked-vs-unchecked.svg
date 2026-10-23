@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="ตารางเปรียบเทียบ checked exception, unchecked exception และ Error">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937" font-size="14">
+    <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold">checked กับ unchecked ต่างกันตรงไหน</text>
+
+    <!-- column headers -->
+    <rect x="170" y="58" width="196" height="48" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="268" y="80" text-anchor="middle" font-size="16" font-weight="bold">checked</text>
+    <text x="268" y="98" text-anchor="middle" fill="#4b5563">exception</text>
+    <rect x="376" y="58" width="196" height="48" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="474" y="80" text-anchor="middle" font-size="16" font-weight="bold">unchecked</text>
+    <text x="474" y="98" text-anchor="middle" fill="#4b5563">RuntimeException</text>
+    <rect x="582" y="58" width="196" height="48" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="680" y="80" text-anchor="middle" font-size="16" font-weight="bold">Error</text>
+    <text x="680" y="98" text-anchor="middle" fill="#4b5563">(unchecked เช่นกัน)</text>
+
+    <!-- row lines -->
+    <g stroke="#9ca3af" stroke-width="1">
+      <line x1="22" y1="116" x2="778" y2="116"/>
+      <line x1="22" y1="176" x2="778" y2="176"/>
+      <line x1="22" y1="236" x2="778" y2="236"/>
+      <line x1="22" y1="296" x2="778" y2="296"/>
+      <line x1="22" y1="356" x2="778" y2="356"/>
+      <line x1="22" y1="416" x2="778" y2="416"/>
+      <line x1="22" y1="530" x2="778" y2="530"/>
+    </g>
+
+    <!-- row labels -->
+    <g font-weight="bold" fill="#4b5563" font-size="15">
+      <text x="30" y="151">สืบทอดจาก</text>
+      <text x="30" y="202">คอมไพเลอร์</text>
+      <text x="30" y="220">บังคับไหม</text>
+      <text x="30" y="271">ถ้าไม่จัดการ</text>
+      <text x="30" y="322">สาเหตุมักมาจาก</text>
+      <text x="30" y="391">ควรทำอย่างไร</text>
+      <text x="30" y="478">ตัวอย่าง</text>
+    </g>
+
+    <!-- row 1 -->
+    <text x="268" y="142" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Exception</text>
+    <text x="268" y="162" text-anchor="middle" fill="#4b5563">(ยกเว้นสาย Runtime)</text>
+    <text x="474" y="151" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">RuntimeException</text>
+    <text x="680" y="151" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Error</text>
+
+    <!-- row 2 -->
+    <text x="268" y="202" text-anchor="middle" font-weight="bold" fill="#059669">✓ บังคับ</text>
+    <text x="268" y="222" text-anchor="middle">ต้อง catch หรือ throws</text>
+    <text x="474" y="211" text-anchor="middle" font-weight="bold" fill="#dc2626">✗ ไม่บังคับ</text>
+    <text x="680" y="211" text-anchor="middle" font-weight="bold" fill="#dc2626">✗ ไม่บังคับ</text>
+
+    <!-- row 3 -->
+    <text x="268" y="271" text-anchor="middle">คอมไพล์ไม่ผ่าน</text>
+    <text x="474" y="262" text-anchor="middle">คอมไพล์ผ่าน</text>
+    <text x="474" y="282" text-anchor="middle">แต่พังตอนรัน</text>
+    <text x="680" y="262" text-anchor="middle">คอมไพล์ผ่าน</text>
+    <text x="680" y="282" text-anchor="middle">แต่พังตอนรัน</text>
+
+    <!-- row 4 -->
+    <text x="268" y="322" text-anchor="middle">ของนอกโปรแกรม</text>
+    <text x="268" y="342" text-anchor="middle" fill="#4b5563">ไฟล์ เครือข่าย ฐานข้อมูล</text>
+    <text x="474" y="331" text-anchor="middle">บั๊กในโค้ดของเราเอง</text>
+    <text x="680" y="331" text-anchor="middle">JVM มีปัญหาร้ายแรง</text>
+
+    <!-- row 5 -->
+    <text x="268" y="382" text-anchor="middle">เตรียม catch ไว้รับมือ</text>
+    <text x="268" y="402" text-anchor="middle" fill="#4b5563">เพราะห้ามไม่ให้เกิดไม่ได้</text>
+    <text x="474" y="382" text-anchor="middle">แก้โค้ด ตรวจค่าก่อนใช้</text>
+    <text x="474" y="402" text-anchor="middle" fill="#4b5563">catch เฉพาะตอนจำเป็น</text>
+    <text x="680" y="382" text-anchor="middle">ปกติไม่ catch</text>
+    <text x="680" y="402" text-anchor="middle" fill="#4b5563">แก้ที่ต้นเหตุ</text>
+
+    <!-- row 6 -->
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="268" y="448" text-anchor="middle">IOException</text>
+      <text x="268" y="474" text-anchor="middle">FileNotFound-</text>
+      <text x="268" y="492" text-anchor="middle">Exception</text>
+      <text x="268" y="518" text-anchor="middle">SQLException</text>
+      <text x="474" y="448" text-anchor="middle">NullPointerException</text>
+      <text x="474" y="474" text-anchor="middle">ArithmeticException</text>
+      <text x="474" y="500" text-anchor="middle">NumberFormatException</text>
+      <text x="680" y="460" text-anchor="middle">OutOfMemoryError</text>
+      <text x="680" y="490" text-anchor="middle">StackOverflowError</text>
+    </g>
+  </g>
+</svg>

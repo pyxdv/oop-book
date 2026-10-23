@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="เรียง catch จากเฉพาะไปทั่วไปถูกต้อง ถ้าเอา Exception ไว้บนสุด catch ด้านล่างจะไม่มีวันทำงานและคอมไพล์ไม่ผ่าน">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="cGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4b5563"/></marker>
+  </defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold">Java ตรวจ catch จากบนลงล่าง แล้วหยุดที่ตัวแรกที่ตรง</text>
+
+    <!-- panels -->
+    <rect x="20" y="60" width="370" height="440" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+    <rect x="410" y="60" width="370" height="440" rx="12" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <text x="205" y="90" text-anchor="middle" font-size="17" font-weight="bold" fill="#059669">✓ เฉพาะเจาะจง → กว้าง</text>
+    <text x="595" y="90" text-anchor="middle" font-size="17" font-weight="bold" fill="#dc2626">✗ กว้างสุดไว้บนสุด</text>
+
+    <!-- left -->
+    <text x="205" y="122" text-anchor="middle" font-size="14" fill="#4b5563">ช่องกว้างขึ้นเรื่อย ๆ จับได้มากขึ้นเรื่อย ๆ</text>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+      <rect x="70" y="140" width="270" height="44" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+      <text x="205" y="167" text-anchor="middle">catch (ArithmeticException e)</text>
+      <rect x="50" y="210" width="310" height="44" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+      <text x="205" y="237" text-anchor="middle">catch (RuntimeException e)</text>
+      <rect x="30" y="280" width="350" height="44" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="205" y="307" text-anchor="middle">catch (Exception e)</text>
+    </g>
+    <line x1="205" y1="184" x2="205" y2="206" stroke="#4b5563" stroke-width="2" marker-end="url(#cGray)"/>
+    <line x1="205" y1="254" x2="205" y2="276" stroke="#4b5563" stroke-width="2" marker-end="url(#cGray)"/>
+    <text x="215" y="200" font-size="14" fill="#4b5563">ไม่ตรง ลงไปต่อ</text>
+    <text x="215" y="270" font-size="14" fill="#4b5563">ไม่ตรง ลงไปต่อ</text>
+
+    <text x="40" y="360" font-size="15" font-weight="bold">เกิดอะไร ไปหยุดที่ไหน</text>
+    <g font-size="14">
+      <text x="40" y="388"><tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">ArithmeticException</tspan> → ช่องที่ 1</text>
+      <text x="40" y="414"><tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">NullPointerException</tspan> → ช่องที่ 2</text>
+      <text x="40" y="440"><tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">IOException</tspan> → ช่องที่ 3</text>
+      <text x="40" y="476" fill="#059669">✓ ทุกช่องมีโอกาสได้ทำงาน</text>
+    </g>
+
+    <!-- right -->
+    <text x="595" y="122" text-anchor="middle" font-size="14" fill="#4b5563">ช่องแรกกว้างจนรับไปหมดทุกอย่าง</text>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+      <rect x="420" y="140" width="350" height="44" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="595" y="167" text-anchor="middle">catch (Exception e)</text>
+      <rect x="440" y="210" width="310" height="44" rx="8" fill="#f3f4f6" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="595" y="237" text-anchor="middle" fill="#4b5563">catch (RuntimeException e)</text>
+      <rect x="460" y="280" width="270" height="44" rx="8" fill="#f3f4f6" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="595" y="307" text-anchor="middle" fill="#4b5563">catch (ArithmeticException e)</text>
+    </g>
+    <text x="595" y="200" text-anchor="middle" font-size="14" fill="#dc2626">✗ ไม่มีวันมาถึงช่องนี้</text>
+    <text x="595" y="270" text-anchor="middle" font-size="14" fill="#dc2626">✗ ไม่มีวันมาถึงช่องนี้</text>
+
+    <text x="430" y="360" font-size="15" font-weight="bold">ผลตอนคอมไพล์</text>
+    <rect x="430" y="374" width="330" height="62" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626">
+      <text x="442" y="400">error: exception RuntimeException</text>
+      <text x="442" y="422">has already been caught</text>
+    </g>
+    <text x="430" y="476" font-size="14" fill="#dc2626">✗ javac ไม่ยอมคอมไพล์ให้</text>
+  </g>
+</svg>
