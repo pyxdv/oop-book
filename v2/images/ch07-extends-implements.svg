@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 650" width="800" height="650" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="tri" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M1,1 L15,8 L1,15 z" fill="#ffffff" stroke="#1f2937" stroke-width="1.8" stroke-dasharray="none"/>
+    </marker>
+  </defs>
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="bold" fill="#1f2937">คลาสเดียว extends คลาสนามธรรม และ implements สองอินเทอร์เฟซ</text>
+
+  <!-- กรอบคลาส -->
+  <g fill="#ffffff" stroke="#1f2937" stroke-width="2">
+    <rect x="15" y="60" width="250" height="140"/>
+    <rect x="275" y="60" width="250" height="140"/>
+    <rect x="535" y="60" width="250" height="140"/>
+    <rect x="215" y="330" width="370" height="156"/>
+  </g>
+  <g>
+    <rect x="16" y="61" width="248" height="51" fill="#dbeafe"/>
+    <rect x="276" y="61" width="248" height="51" fill="#d1fae5"/>
+    <rect x="536" y="61" width="248" height="51" fill="#d1fae5"/>
+    <rect x="216" y="331" width="368" height="37" fill="#fef3c7"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="2">
+    <line x1="15" y1="112" x2="265" y2="112"/><line x1="15" y1="142" x2="265" y2="142"/>
+    <line x1="275" y1="112" x2="525" y2="112"/><line x1="275" y1="142" x2="525" y2="142"/>
+    <line x1="535" y1="112" x2="785" y2="112"/><line x1="535" y1="142" x2="785" y2="142"/>
+    <line x1="215" y1="368" x2="585" y2="368"/><line x1="215" y1="384" x2="585" y2="384"/>
+  </g>
+
+  <!-- ชื่อคลาส -->
+  <g font-size="14" fill="#4b5563" text-anchor="middle">
+    <text x="140" y="104">{abstract}</text>
+    <text x="400" y="80">«interface»</text>
+    <text x="660" y="80">«interface»</text>
+  </g>
+  <g font-size="18" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    <text x="140" y="86" font-style="italic">Payment</text>
+    <text x="400" y="104">Refundable</text>
+    <text x="660" y="104">Rewardable</text>
+    <text x="400" y="355">CreditCardPayment</text>
+  </g>
+
+  <!-- สมาชิก -->
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="27" y="133"># amount : double</text>
+    <text x="27" y="166">+ Payment(amount : double)</text>
+    <text x="27" y="190" font-style="italic">+ processPayment() : void</text>
+
+    <text x="287" y="178" font-style="italic">+ refund(v : double) : void</text>
+
+    <text x="547" y="133" text-decoration="underline">+ BAHT_PER_POINT : int = 25</text>
+    <text x="547" y="178" font-style="italic">+ earnPoints() : int</text>
+
+    <text x="227" y="406">+ CreditCardPayment(amount : double)</text>
+    <text x="227" y="430">+ processPayment() : void</text>
+    <text x="227" y="454">+ refund(v : double) : void</text>
+    <text x="227" y="478">+ earnPoints() : int</text>
+  </g>
+
+  <!-- Generalization: เส้นทึบ สามเหลี่ยมโปร่ง ชี้คลาสแม่ -->
+  <path d="M270,330 V270 H140 V200" fill="none" stroke="#1f2937" stroke-width="2" marker-end="url(#tri)"/>
+  <!-- Realization: เส้นประ สามเหลี่ยมโปร่ง ชี้อินเทอร์เฟซ -->
+  <path d="M400,330 V200" fill="none" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#tri)"/>
+  <path d="M530,330 V270 H660 V200" fill="none" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#tri)"/>
+
+  <g font-size="15" font-weight="bold">
+    <text x="150" y="262" fill="#2563eb">extends</text>
+    <text x="410" y="262" fill="#059669">implements</text>
+    <text x="670" y="262" fill="#059669">implements</text>
+  </g>
+
+  <!-- โค้ดที่ตรงกับภาพ -->
+  <rect x="20" y="504" width="760" height="40" rx="8" fill="#f3f4f6" stroke="#9ca3af"/>
+  <text x="400" y="529" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">class CreditCardPayment extends Payment implements Refundable, Rewardable</text>
+
+  <!-- คำอธิบายสัญลักษณ์ -->
+  <g font-size="14" fill="#1f2937">
+    <line x1="34" y1="568" x2="104" y2="568" stroke="#1f2937" stroke-width="2" marker-end="url(#tri)"/>
+    <text x="116" y="573">เส้นทึบ หัวสามเหลี่ยมโปร่ง = สืบทอด (extends)</text>
+    <line x1="34" y1="598" x2="104" y2="598" stroke="#1f2937" stroke-width="2" stroke-dasharray="8 5" marker-end="url(#tri)"/>
+    <text x="116" y="603">เส้นประ หัวสามเหลี่ยมโปร่ง = Realization (implements)</text>
+    <text x="470" y="573"><tspan font-style="italic">ตัวเอียง</tspan> = คลาสหรือเมธอดนามธรรม</text>
+    <text x="470" y="603"><tspan text-decoration="underline">ขีดเส้นใต้</tspan> = static (ค่าคงที่)</text>
+    <text x="34" y="633" fill="#4b5563">หัวสามเหลี่ยมอยู่ฝั่งคลาสแม่หรืออินเทอร์เฟซเสมอ</text>
+  </g>
+</svg>

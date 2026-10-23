@@ -16,6 +16,7 @@ icon: '7'
 4. อธิบายความต่างระหว่าง compile-time polymorphism กับ runtime polymorphism (dynamic binding)
 5. ใช้ upcasting, downcasting และ `instanceof` ได้อย่างปลอดภัย
 6. นำพหุสัณฐานไปออกแบบโปรแกรมที่เพิ่มของใหม่ได้โดยไม่ต้องแก้โค้ดเดิม
+7. เขียนคลาสนามธรรม (abstract class) และอินเทอร์เฟซ (interface) เบื้องต้น ใช้ `extends` กับ `implements` ได้ถูก และบอกได้ว่าเมื่อไรควรใช้แบบไหน
 
 ## 1. พหุสัณฐานคืออะไร
 
@@ -641,6 +642,268 @@ error: display() in Child cannot override display() in Parent
 
 ใช้ `final` เมื่อต้องการล็อกพฤติกรรมไว้ เช่น ขั้นตอนตรวจสิทธิ์ที่ไม่อยากให้คลาสลูกเปลี่ยน
 
+## 10. คลาสนามธรรม (abstract class) และอินเทอร์เฟซ (interface)
+
+### 10.1 รูปทรงลอย ๆ คำนวณพื้นที่ไม่ได้
+
+ย้อนกลับไปดูคลาส `Shape` ในหัวข้อ 5.1 เมธอด `area()` ของมันคืนค่า `0` เพราะรูปทรงที่ไม่บอกว่าเป็นรูปอะไร เราก็ไม่รู้ว่าควรมีพื้นที่เท่าไร
+
+ปัญหาคือ Java ยังยอมให้เขียน `new Shape()` ได้ แล้วเราก็ได้รูปทรงที่พื้นที่เป็น 0 ซึ่งไม่มีความหมายอะไร อีกเรื่องคือ ถ้าคลาสลูกตัวไหนลืม override `area()` โปรแกรมก็คอมไพล์ผ่านเงียบ ๆ แล้วคืน 0 ออกมาเหมือนกัน
+
+สิ่งที่เราอยากบอก Java จริง ๆ มีสองข้อ
+
+- "รูปทรง" เป็นแค่แนวคิดรวม ห้ามสร้างออบเจกต์ของมันตรง ๆ
+- รูปทรงทุกแบบ**ต้อง**คำนวณพื้นที่ได้ แต่สูตรให้คลาสลูกแต่ละตัวเขียนเอง
+
+Java มีเครื่องมือสองตัวสำหรับเรื่องนี้ คือ**คลาสนามธรรม (abstract class)** และ**อินเทอร์เฟซ (interface)** หัวข้อนี้สอนเฉพาะพื้นฐานที่ใช้ในวิชานี้
+
+### 10.2 คลาสนามธรรม (abstract class)
+
+เขียน `Shape` ใหม่ โดยใส่ keyword `abstract` ไว้หน้าคลาสและหน้าเมธอด `area()`
+
+```java
+abstract class Shape {
+    protected String name;          // คลาสนามธรรมมีแอตทริบิวต์ได้
+
+    Shape(String name) {            // มีคอนสตรักเตอร์ได้ คลาสลูกเรียกผ่าน super(...)
+        this.name = name;
+    }
+
+    abstract double area();         // เมธอดนามธรรม ไม่มีปีกกา คลาสลูกต้องเขียนเอง
+
+    void describe() {               // เมธอดปกติ มีโค้ดได้ คลาสลูกได้ไปใช้เลย
+        System.out.printf("%s พื้นที่ %.2f%n", name, area());
+    }
+}
+
+class Circle extends Shape {
+    private double radius;
+
+    Circle(double radius) {
+        super("วงกลม");
+        this.radius = radius;
+    }
+
+    @Override
+    double area() {
+        return Math.PI * radius * radius;
+    }
+}
+
+class Rectangle extends Shape {
+    private double width, height;
+
+    Rectangle(double width, double height) {
+        super("สี่เหลี่ยม");
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    double area() {
+        return width * height;
+    }
+}
+
+public class AbstractShapeDemo {
+    public static void main(String[] args) {
+        Shape[] shapes = { new Circle(2), new Rectangle(4, 5) };
+        for (Shape s : shapes) {
+            s.describe();           // describe() ของ Shape เรียก area() ของออบเจกต์จริง
+        }
+    }
+}
+```
+
+ผลการรัน
+
+```
+วงกลม พื้นที่ 12.57
+สี่เหลี่ยม พื้นที่ 20.00
+```
+
+อ่านโค้ดทีละส่วน
+
+- `abstract class Shape` ทำให้ `Shape` เป็นคลาสนามธรรม
+- `abstract double area();` คือ**เมธอดนามธรรม (abstract method)** มีแค่หัวเมธอดแล้วปิดด้วย `;` ไม่มีปีกกาและไม่มีโค้ด
+- คลาสนามธรรมยังมีแอตทริบิวต์ (`name`) คอนสตรักเตอร์ และเมธอดปกติ (`describe()`) ได้เหมือนคลาสทั่วไป คลาสลูกได้ของพวกนี้ไปใช้ตามหลักการสืบทอดในบทที่ 6
+- `describe()` เรียก `area()` ทั้งที่ `Shape` ไม่มีสูตรของตัวเอง ตอนรัน dynamic binding จะเลือก `area()` ของออบเจกต์จริงให้
+
+คลาสนามธรรมมีกฎสองข้อที่คอมไพเลอร์ตรวจให้
+
+**กฎข้อ 1 สร้างออบเจกต์จากคลาสนามธรรมด้วย `new` ไม่ได้** ลองเพิ่มบรรทัดนี้ใน `main` ก่อนลูป แล้วคอมไพล์
+
+```java
+Shape blob = new Shape("อะไรสักอย่าง");   // คอมไพล์ไม่ผ่าน
+```
+
+```
+AbstractShapeDemo.java:47: error: Shape is abstract; cannot be instantiated
+        Shape blob = new Shape("อะไรสักอย่าง");
+                     ^
+1 error
+```
+
+ที่ห้ามคือ `new Shape(...)` เท่านั้น ส่วนการประกาศตัวแปรชนิด `Shape` ยังทำได้ตามปกติ เช่น `Shape s = new Circle(2);` หรืออาร์เรย์ `Shape[]` ในตัวอย่าง
+
+**กฎข้อ 2 คลาสลูกต้อง override เมธอดนามธรรมให้ครบทุกตัว ถ้าไม่ครบ คลาสลูกต้องเป็นคลาสนามธรรมด้วย**
+
+```java
+class Square extends Shape {
+    Square() {
+        super("จัตุรัส");
+    }
+    // ลืมเขียน area()
+}
+```
+
+```
+error: Square is not abstract and does not override abstract method area() in Shape
+```
+
+แก้ได้สองทาง คือเขียน `area()` ให้ครบ หรือประกาศเป็น `abstract class Square` ถ้าตั้งใจให้คลาสลูกชั้นถัดไปเป็นคนเขียน กฎข้อนี้คือสิ่งที่ `Shape` เวอร์ชันหัวข้อ 5.1 ทำไม่ได้ ตอนนี้ลืม override เมื่อไร คอมไพเลอร์ฟ้องทันที
+
+เทียบกับหัวข้อ 9.3 จะเห็นว่า `final` ห้าม override ส่วน `abstract` บังคับให้ override จึงใช้สองคำนี้กับเมธอดเดียวกันไม่ได้ (คอมไพเลอร์แจ้ง `illegal combination of modifiers: abstract and final`)
+
+### 10.3 อินเทอร์เฟซ (interface)
+
+ร้านกาแฟในหัวข้อที่ 1 รับจ่ายได้หลายแบบ บางแบบคืนเงินได้ บางแบบสะสมแต้มได้ บัตรเครดิตทำได้ทั้งสองอย่าง ส่วนเงินสดไม่ทำทั้งสองอย่าง
+
+"คืนเงินได้" กับ "สะสมแต้มได้" ไม่ได้บอกว่าออบเจกต์**เป็น**อะไร แต่บอกว่า**ทำ**อะไรได้ ความสามารถแบบนี้เหมาะกับอินเทอร์เฟซ
+
+**อินเทอร์เฟซ** คือรายการเมธอดที่คลาสสัญญาว่าจะมีให้ครบ คลาสที่รับสัญญาเขียน `implements` ตามด้วยชื่ออินเทอร์เฟซ แล้ว override เมธอดทุกตัวในอินเทอร์เฟซนั้น
+
+```java
+// คลาสนามธรรม: วิธีจ่ายทุกแบบ "เป็น" การชำระเงิน และมีของร่วมกัน
+abstract class Payment {
+    protected double amount;
+
+    public Payment(double amount) {
+        this.amount = amount;
+    }
+
+    public abstract void processPayment();
+}
+
+// อินเทอร์เฟซ: ความสามารถ "คืนเงินได้"
+interface Refundable {
+    void refund(double value);          // เป็น public abstract ให้อัตโนมัติ
+}
+
+// อินเทอร์เฟซ: ความสามารถ "สะสมแต้มได้"
+interface Rewardable {
+    int BAHT_PER_POINT = 25;            // เป็นค่าคงที่ public static final ให้อัตโนมัติ
+
+    int earnPoints();
+}
+
+// extends ได้คลาสเดียว แต่ implements ได้หลายอินเทอร์เฟซ
+class CreditCardPayment extends Payment implements Refundable, Rewardable {
+    public CreditCardPayment(double amount) {
+        super(amount);
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("ตัดบัตรเครดิต " + amount + " บาท");
+    }
+
+    @Override
+    public void refund(double value) {
+        System.out.println("คืนเงินเข้าบัตร " + value + " บาท");
+    }
+
+    @Override
+    public int earnPoints() {
+        return (int) (amount / BAHT_PER_POINT);
+    }
+}
+
+// เงินสดเป็นการชำระเงิน แต่ไม่สะสมแต้มและไม่คืนเงินผ่านระบบ
+class CashPayment extends Payment {
+    public CashPayment(double amount) {
+        super(amount);
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("รับเงินสด " + amount + " บาท");
+    }
+}
+
+public class PaymentInterfaceDemo {
+    public static void main(String[] args) {
+        // ตัวแปรชนิดคลาสนามธรรม เก็บออบเจกต์ของคลาสลูกได้
+        Payment[] payments = { new CreditCardPayment(850), new CashPayment(300) };
+        for (Payment p : payments) {
+            p.processPayment();
+            if (p instanceof Rewardable w) {
+                System.out.println("  ได้แต้ม " + w.earnPoints() + " แต้ม");
+            }
+        }
+
+        // ตัวแปรชนิดอินเทอร์เฟซ เรียกได้เฉพาะเมธอดที่อินเทอร์เฟซนั้นประกาศไว้
+        Refundable r = new CreditCardPayment(1200);
+        r.refund(200);
+
+        System.out.println("ทุก " + Rewardable.BAHT_PER_POINT + " บาท ได้ 1 แต้ม");
+    }
+}
+```
+
+ผลการรัน
+
+```
+ตัดบัตรเครดิต 850.0 บาท
+  ได้แต้ม 34 แต้ม
+รับเงินสด 300.0 บาท
+คืนเงินเข้าบัตร 200.0 บาท
+ทุก 25 บาท ได้ 1 แต้ม
+```
+
+บัตรเครดิต 850 บาท ได้ 850 / 25 = 34 แต้ม ส่วนเงินสดไม่ได้ implements `Rewardable` จึงไม่มีบรรทัดแต้ม
+
+![แผนภาพคลาส CreditCardPayment สืบทอดจากคลาสนามธรรม Payment ด้วยเส้นทึบ และทำตามอินเทอร์เฟซ Refundable กับ Rewardable ด้วยเส้นประ ทุกเส้นมีหัวสามเหลี่ยมโปร่ง](images/ch07-extends-implements.svg)
+
+*ภาพที่ 7.6 `CreditCardPayment` สืบทอดจากคลาสนามธรรมหนึ่งคลาส และทำตามอินเทอร์เฟซสองตัวพร้อมกัน*
+
+ภาพที่ 7.6 วาดโค้ดชุดนี้เป็นแผนภาพคลาส (UML class diagram) ชื่อคลาสนามธรรมและเมธอดนามธรรมเขียนเป็นตัวเอียง อินเทอร์เฟซมี `«interface»` อยู่เหนือชื่อ เส้นทึบหัวสามเหลี่ยมโปร่งคือ `extends` ส่วนเส้นประหัวสามเหลี่ยมโปร่งคือ `implements` (UML เรียกว่า Realization) รายละเอียดของสัญลักษณ์เหล่านี้อยู่ใน[บทที่ 8: แผนภาพคลาส (UML Class Diagram) และการเขียนโค้ดตามโมเดล](08-uml-diagrams.md)
+
+กฎของอินเทอร์เฟซที่ต้องรู้
+
+1. **เมธอดเป็น `public abstract` ให้อัตโนมัติ** ไม่ต้องเขียนเอง แต่ตอน override ในคลาสต้องใส่ `public` เสมอ ถ้าลืม คอมไพล์ไม่ผ่าน (ดูข้อผิดพลาดข้อ 9)
+2. **ตัวแปรในอินเทอร์เฟซเป็นค่าคงที่** Java ใส่ `public static final` ให้อัตโนมัติ ต้องกำหนดค่าตอนประกาศ และเรียกผ่านชื่ออินเทอร์เฟซได้ เช่น `Rewardable.BAHT_PER_POINT`
+3. **ไม่มีคอนสตรักเตอร์ และ `new` ไม่ได้** เขียน `new Refundable()` ได้ error แบบเดียวกับคลาสนามธรรม คือ `Refundable is abstract; cannot be instantiated`
+4. **คลาสหนึ่ง `implements` ได้หลายอินเทอร์เฟซ** คั่นด้วยจุลภาค และ `extends` คลาสแม่ได้อีกหนึ่งคลาสพร้อมกัน โดยเขียน `extends` ก่อน `implements` เสมอ
+5. **implements แล้วต้องเขียนเมธอดให้ครบ** ถ้าไม่ครบ คลาสนั้นต้องเป็นคลาสนามธรรม เหมือนกฎข้อ 2 ในหัวข้อ 10.2
+
+ข้อ 4 ตอบคำถามที่ค้างไว้ในบทที่ 6 ว่าทำไม `extends` สองคลาสไม่ได้ แต่ `implements` หลายตัวได้ เมธอดในอินเทอร์เฟซไม่มีโค้ด จึงไม่เกิดปัญหาว่า Java ต้องเลือกโค้ดของใคร คลาสที่ implements เป็นคนเขียนโค้ดเพียงชุดเดียว
+
+ตั้งแต่ Java 8 อินเทอร์เฟซมีเมธอดแบบ `default` ที่มีโค้ดข้างในได้ด้วย แต่เรื่องนี้เกินขอบเขตของวิชานี้
+
+### 10.4 เลือกใช้แบบไหนดี
+
+![ตารางเปรียบเทียบคลาสนามธรรมกับอินเทอร์เฟซ เรื่องการสร้างออบเจกต์ โค้ดในเมธอด แอตทริบิวต์ คอนสตรักเตอร์ จำนวนที่คลาสหนึ่งรับได้ keyword และกรณีที่ควรใช้](images/ch07-abstract-vs-interface.svg)
+
+*ภาพที่ 7.7 คลาสนามธรรมกับอินเทอร์เฟซต่างกันตรงไหน และควรเลือกใช้เมื่อไร*
+
+ภาพที่ 7.7 สรุปความต่างทั้งหมด เวลาต้องเลือก ให้ลองพูดประโยคสองแบบนี้
+
+- **"X เป็น Y ชนิดหนึ่ง" (is-a)** และคลาสลูกมีโค้ดหรือข้อมูลใช้ร่วมกัน ให้ใช้**คลาสนามธรรม** เช่น บัตรเครดิตเป็นการชำระเงินชนิดหนึ่ง และวิธีจ่ายทุกแบบมี `amount` เหมือนกัน
+- **"X ทำ Y ได้" (can-do)** และความสามารถนั้นอาจไปอยู่กับคลาสที่ไม่เกี่ยวกันเลย ให้ใช้**อินเทอร์เฟซ** เช่น "คืนเงินได้" อาจใช้กับตั๋วหนังหรือคำสั่งซื้อออนไลน์ด้วย ซึ่งไม่ได้เป็นการชำระเงิน
+
+ใช้ร่วมกันก็ได้ ตามภาพที่ 7.6 คลาสนามธรรมเป็นแกนหลักว่า "เป็นอะไร" ส่วนอินเทอร์เฟซเติมความสามารถเสริมว่า "ทำอะไรได้บ้าง"
+
+### 10.5 ใช้กับพหุสัณฐานอย่างไร
+
+ทุกอย่างในหัวข้อ 4 ถึง 6 ใช้กับคลาสนามธรรมและอินเทอร์เฟซได้เหมือนเดิม เพราะทั้งสองแบบใช้เป็นชนิดของตัวแปรได้
+
+- **ตัวแปรชนิดคลาสนามธรรม** `Payment[] payments` เก็บได้ทั้งบัตรเครดิตและเงินสด แล้ว `p.processPayment()` เลือกเวอร์ชันของออบเจกต์จริงตอนรัน
+- **ตัวแปรชนิดอินเทอร์เฟซ** `Refundable r = new CreditCardPayment(1200);` เรียกได้แค่ `refund()` เพราะคอมไพเลอร์ดูชนิดของตัวแปร (กฎเดียวกับหัวข้อ 4.2) ถึงออบเจกต์จริงจะมี `earnPoints()` ก็เรียกผ่าน `r` ไม่ได้
+- **`instanceof` ใช้กับอินเทอร์เฟซได้** `p instanceof Rewardable w` ถามว่า "ออบเจกต์นี้สะสมแต้มได้ไหม" ถ้าได้ก็ใช้ `w` เรียก `earnPoints()` ต่อได้เลย
+
+ถ้าวันหน้าร้านรับจ่ายด้วยคริปโต เราเขียน `CryptoPayment extends Payment` แล้วคอมไพเลอร์จะบังคับให้เขียน `processPayment()` ให้ครบ โค้ดที่วนลูป `Payment[]` ไม่ต้องแก้เลย แนวคิดนี้ใช้ต่อในหัวข้อ Open/Closed Principle ของ[บทที่ 10: เขียนโค้ดให้ดูแลต่อได้ง่าย (Maintainable Code)](10-maintainable-code.md) ซึ่งใช้อินเทอร์เฟซ `DiscountPolicy` เพิ่มโปรโมชันใหม่ได้โดยไม่ต้องแก้โค้ดคิดเงิน
+
 ## ข้อผิดพลาดที่เจอบ่อย
 
 **1. คิดว่าเปลี่ยนแค่ return type ก็ overload ได้** คอมไพล์ไม่ผ่าน ต้องเปลี่ยนรายการพารามิเตอร์ (ดูหัวข้อ 2.4)
@@ -669,6 +932,17 @@ error: reference to add is ambiguous
 
 **7. เข้าใจว่าเมธอด `static` ทำ dynamic binding** ไม่ใช่ เมธอด `static` เลือกตามชื่อคลาสหรือชนิดตัวแปรเสมอ
 
+**8. `new` คลาสนามธรรมหรืออินเทอร์เฟซ** เช่น `new Shape("x")` หรือ `new Refundable()` คอมไพเลอร์ฟ้อง `Shape is abstract; cannot be instantiated` ให้ `new` คลาสลูกหรือคลาสที่ implements แทน แล้วเก็บไว้ในตัวแปรชนิดคลาสนามธรรมหรืออินเทอร์เฟซก็ได้
+
+**9. ลืม `public` ตอน override เมธอดของอินเทอร์เฟซ** เมธอดในอินเทอร์เฟซเป็น `public` อยู่แล้ว ถ้าคลาสเขียนแค่ `void refund(double value)` ถือว่าลดสิทธิ์การเข้าถึง
+
+```
+error: refund(double) in CreditCardPayment cannot implement refund(double) in Refundable
+  attempting to assign weaker access privileges; was public
+```
+
+**10. สลับ `extends` กับ `implements`** คลาสต่อจากคลาส (รวมคลาสนามธรรม) ใช้ `extends` คลาสต่อจากอินเทอร์เฟซใช้ `implements` ถ้าเขียน `class Fish extends Swimmable` จะได้ `error: no interface expected here` ส่วน `class Dog implements Animal` จะได้ `error: interface expected here`
+
 ## สรุปท้ายบท
 
 - **พหุสัณฐาน** คือชื่อเมธอดเดียว ให้ผลได้หลายแบบ
@@ -677,6 +951,9 @@ error: reference to add is ambiguous
 - **Dynamic binding** ตอนคอมไพล์ดูชนิดตัวแปรว่าเรียกได้ไหม ตอนรันดูชนิดออบเจกต์จริงว่าใช้เวอร์ชันของใคร (runtime polymorphism)
 - **Upcasting** ปลอดภัยและเกิดเอง **downcasting** ต้องเขียนเองและควรเช็กด้วย `instanceof` ก่อน
 - เมธอด `static`, `private` และ `final` override ไม่ได้
+- **คลาสนามธรรม** (`abstract class`) สร้างออบเจกต์ด้วย `new` ไม่ได้ แต่มีแอตทริบิวต์ คอนสตรักเตอร์ และเมธอดปกติได้ ส่วนเมธอด `abstract` บังคับให้คลาสลูก override
+- **อินเทอร์เฟซ** (`interface`) บอกความสามารถที่คลาสต้องมี เมธอดเป็น `public abstract` และตัวแปรเป็นค่าคงที่ให้อัตโนมัติ คลาสหนึ่ง `extends` ได้คลาสเดียว แต่ `implements` ได้หลายอินเทอร์เฟซ
+- เลือกคลาสนามธรรมเมื่อเป็นชนิดเดียวกันและมีโค้ดร่วมกัน (is-a) เลือกอินเทอร์เฟซเมื่อบอกความสามารถ (can-do) และทั้งสองแบบใช้เป็นชนิดตัวแปรเพื่อทำพหุสัณฐานได้
 - ประโยชน์หลักคือ ยืดหยุ่น ดูแลง่าย ขยายง่าย และใช้โค้ดซ้ำได้
 
 ## แบบฝึกหัด
@@ -859,6 +1136,112 @@ if (a instanceof Dog dog) {
 - **ยืดหยุ่น** ส่งการชำระเงินแบบไหนเข้าไปก็ได้ แต่ละแบบทำงานถูกต้องเองจาก dynamic binding
 - **ขยายง่าย** ถ้าต้องรองรับวิธีจ่ายใหม่ เช่น `CryptoPayment` ก็สร้างคลาสลูกใหม่แล้ว override `processPayment()` โดยไม่ต้องแก้ `PaymentProcessor` เลย
 - ถ้าไม่ใช้พหุสัณฐาน เราต้องเขียน `if` หรือ `switch` เช็กชนิดใน `PaymentProcessor` และต้องกลับมาแก้ทุกครั้งที่มีวิธีจ่ายใหม่
+
+</details>
+
+**ข้อ 7** (เติมคำในช่องว่าง) เลือกคำจาก `extends`, `implements`, `abstract`, `@Override`, `public` ไปเติมในช่อง (1) ถึง (6) ให้โปรแกรมคอมไพล์ผ่าน และพิมพ์ผลตามที่กำหนด บางคำใช้ได้มากกว่าหนึ่งครั้ง
+
+```java
+___(1)___ class Animal {
+    protected String name;
+
+    Animal(String name) {
+        this.name = name;
+    }
+
+    ___(2)___ void makeSound();
+}
+
+interface Swimmable {
+    void swim();
+}
+
+class Duck ___(3)___ Animal ___(4)___ Swimmable {
+    Duck(String name) {
+        super(name);
+    }
+
+    ___(5)___
+    void makeSound() {
+        System.out.println(name + ": ก้าบ ก้าบ");
+    }
+
+    @Override
+    ___(6)___ void swim() {
+        System.out.println(name + " ว่ายน้ำในบึง");
+    }
+}
+
+public class DuckDemo {
+    public static void main(String[] args) {
+        Animal a = new Duck("เป็ดน้อย");
+        a.makeSound();
+        Swimmable s = new Duck("เป็ดใหญ่");
+        s.swim();
+    }
+}
+```
+
+ผลที่ต้องการ
+
+```
+เป็ดน้อย: ก้าบ ก้าบ
+เป็ดใหญ่ ว่ายน้ำในบึง
+```
+
+<details>
+<summary>ดูเฉลย</summary>
+
+| ช่อง | คำตอบ | เหตุผล |
+|---|---|---|
+| (1) | `abstract` | `Animal` มีเมธอดนามธรรม คลาสจึงต้องเป็นคลาสนามธรรม |
+| (2) | `abstract` | `makeSound();` ไม่มีปีกกา ต้องเป็นเมธอดนามธรรม ถ้าเว้นว่างจะคอมไพล์ไม่ผ่าน |
+| (3) | `extends` | `Animal` เป็นคลาส |
+| (4) | `implements` | `Swimmable` เป็นอินเทอร์เฟซ และต้องเขียนหลัง `extends` |
+| (5) | `@Override` | `makeSound()` เขียนทับเมธอดนามธรรมของ `Animal` (ถ้าเว้นว่างก็คอมไพล์ผ่าน แต่ควรใส่เสมอ) |
+| (6) | `public` | `swim()` ในอินเทอร์เฟซเป็น `public` อัตโนมัติ ถ้าไม่ใส่จะคอมไพล์ไม่ผ่าน |
+
+`a` เป็นตัวแปรชนิดคลาสนามธรรม ส่วน `s` เป็นตัวแปรชนิดอินเทอร์เฟซ ทั้งคู่เก็บออบเจกต์ `Duck` ได้ เพราะเป็ด "เป็น" สัตว์ และ "ว่ายน้ำได้"
+
+</details>
+
+**ข้อ 8** ใช้คลาส `Shape`, `Circle` จากหัวข้อ 10.2 และ `CreditCardPayment`, `Refundable`, `Rewardable` จากหัวข้อ 10.3 บรรทัดไหนคอมไพล์ผ่าน บรรทัดไหนไม่ผ่าน เพราะอะไร
+
+```java
+Shape s1 = new Circle(1);                    // (ก)
+Shape s2 = new Shape("รูปทรง");               // (ข)
+Rewardable w = new CreditCardPayment(100);   // (ค)
+w.refund(10);                                // (ง)
+```
+
+<details>
+<summary>ดูเฉลย</summary>
+
+- **(ก) ผ่าน** ตัวแปรชนิดคลาสนามธรรมเก็บออบเจกต์ของคลาสลูกได้
+- **(ข) ไม่ผ่าน** `error: Shape is abstract; cannot be instantiated` เพราะ `new` คลาสนามธรรมไม่ได้
+- **(ค) ผ่าน** `CreditCardPayment` implements `Rewardable` จึงเก็บในตัวแปรชนิด `Rewardable` ได้
+- **(ง) ไม่ผ่าน** `error: cannot find symbol` เพราะคอมไพเลอร์ดูชนิดของตัวแปร `w` ซึ่งเป็น `Rewardable` และ `Rewardable` ไม่มี `refund()` ถึงออบเจกต์จริงจะมีก็ตาม ถ้าต้องการคืนเงิน ให้เก็บในตัวแปรชนิด `Refundable` หรือเช็ก `w instanceof Refundable r` ก่อน
+
+</details>
+
+**ข้อ 9** แต่ละสถานการณ์ควรใช้คลาสนามธรรมหรืออินเทอร์เฟซ เพราะอะไร
+
+1. ระบบเงินเดือน พนักงานประจำกับพนักงานพาร์ตไทม์มีชื่อและรหัสพนักงานเหมือนกัน แต่คิดเงินเดือนต่างกัน
+2. โทรศัพท์ รถยนต์ไฟฟ้า และลำโพงบลูทูธ ชาร์จไฟได้ทั้งหมด
+3. รถยนต์ไฟฟ้าเป็นยานพาหนะชนิดหนึ่ง (มีทะเบียนรถเหมือนยานพาหนะอื่น) และชาร์จไฟได้ด้วย ให้เขียนหัวคลาส `ElectricCar`
+
+<details>
+<summary>ดูเฉลย</summary>
+
+1. **คลาสนามธรรม** `Employee` เก็บชื่อและรหัสไว้ที่เดียว แล้วประกาศ `abstract double calculateSalary();` ให้คลาสลูกแต่ละแบบเขียนสูตรเอง เพราะเป็นชนิดเดียวกัน (is-a) และมีข้อมูลร่วมกัน
+2. **อินเทอร์เฟซ** `Chargeable` ที่มีเมธอด `charge()` เพราะเป็นความสามารถ (can-do) ของของสามอย่างที่ไม่ได้เป็นชนิดเดียวกันเลย
+3. ใช้ทั้งสองแบบ `Vehicle` เป็นคลาสนามธรรม ส่วน `Chargeable` เป็นอินเทอร์เฟซ
+
+```java
+class ElectricCar extends Vehicle implements Chargeable {
+    // ...
+}
+```
 
 </details>
 
