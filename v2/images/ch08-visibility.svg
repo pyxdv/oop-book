@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" width="780" height="430" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">สัญลักษณ์สิทธิ์การเข้าถึง ใครเรียกใช้ได้บ้าง (กติกาของ Java)</text>
+
+  <!-- หัวตาราง -->
+  <g font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">
+    <text x="50" y="86">สัญลักษณ์</text>
+    <text x="155" y="86">keyword</text>
+    <text x="300" y="76">ในคลาส</text><text x="300" y="96">เดียวกัน</text>
+    <text x="440" y="76">คลาสอื่น</text><text x="440" y="96">แพ็กเกจเดียวกัน</text>
+    <text x="580" y="76">คลาสลูก</text><text x="580" y="96">ต่างแพ็กเกจ</text>
+    <text x="710" y="76">คลาสอื่น</text><text x="710" y="96">ต่างแพ็กเกจ</text>
+  </g>
+  <line x1="20" y1="110" x2="760" y2="110" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- แถว -->
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">
+    <text x="50" y="152" text-anchor="middle" font-size="26" font-weight="bold">+</text>
+    <text x="50" y="222" text-anchor="middle" font-size="26" font-weight="bold">#</text>
+    <text x="50" y="292" text-anchor="middle" font-size="26" font-weight="bold">~</text>
+    <text x="50" y="362" text-anchor="middle" font-size="26" font-weight="bold">-</text>
+    <text x="155" y="150" text-anchor="middle" font-size="16">public</text>
+    <text x="155" y="220" text-anchor="middle" font-size="16">protected</text>
+    <text x="155" y="282" text-anchor="middle" font-size="16">(ไม่เขียน)</text>
+    <text x="155" y="360" text-anchor="middle" font-size="16">private</text>
+  </g>
+  <text x="155" y="302" text-anchor="middle" font-size="14" fill="#4b5563">package-private</text>
+
+  <!-- เซลล์: ✓ เขียว / ✗ แดง -->
+  <g font-size="22" font-weight="bold" text-anchor="middle">
+    <!-- public -->
+    <rect x="245" y="122" width="110" height="46" rx="8" fill="#d1fae5"/><text x="300" y="153" fill="#059669">✓ ได้</text>
+    <rect x="385" y="122" width="110" height="46" rx="8" fill="#d1fae5"/><text x="440" y="153" fill="#059669">✓ ได้</text>
+    <rect x="525" y="122" width="110" height="46" rx="8" fill="#d1fae5"/><text x="580" y="153" fill="#059669">✓ ได้</text>
+    <rect x="655" y="122" width="110" height="46" rx="8" fill="#d1fae5"/><text x="710" y="153" fill="#059669">✓ ได้</text>
+    <!-- protected -->
+    <rect x="245" y="192" width="110" height="46" rx="8" fill="#d1fae5"/><text x="300" y="223" fill="#059669">✓ ได้</text>
+    <rect x="385" y="192" width="110" height="46" rx="8" fill="#d1fae5"/><text x="440" y="223" fill="#059669">✓ ได้</text>
+    <rect x="525" y="192" width="110" height="46" rx="8" fill="#d1fae5"/><text x="580" y="223" fill="#059669">✓ ได้</text>
+    <rect x="655" y="192" width="110" height="46" rx="8" fill="#fee2e2"/><text x="710" y="223" fill="#dc2626">✗ ไม่ได้</text>
+    <!-- default -->
+    <rect x="245" y="262" width="110" height="46" rx="8" fill="#d1fae5"/><text x="300" y="293" fill="#059669">✓ ได้</text>
+    <rect x="385" y="262" width="110" height="46" rx="8" fill="#d1fae5"/><text x="440" y="293" fill="#059669">✓ ได้</text>
+    <rect x="525" y="262" width="110" height="46" rx="8" fill="#fee2e2"/><text x="580" y="293" fill="#dc2626">✗ ไม่ได้</text>
+    <rect x="655" y="262" width="110" height="46" rx="8" fill="#fee2e2"/><text x="710" y="293" fill="#dc2626">✗ ไม่ได้</text>
+    <!-- private -->
+    <rect x="245" y="332" width="110" height="46" rx="8" fill="#d1fae5"/><text x="300" y="363" fill="#059669">✓ ได้</text>
+    <rect x="385" y="332" width="110" height="46" rx="8" fill="#fee2e2"/><text x="440" y="363" fill="#dc2626">✗ ไม่ได้</text>
+    <rect x="525" y="332" width="110" height="46" rx="8" fill="#fee2e2"/><text x="580" y="363" fill="#dc2626">✗ ไม่ได้</text>
+    <rect x="655" y="332" width="110" height="46" rx="8" fill="#fee2e2"/><text x="710" y="363" fill="#dc2626">✗ ไม่ได้</text>
+  </g>
+  <text x="390" y="410" text-anchor="middle" font-size="15" fill="#4b5563">ยิ่งลงล่าง ยิ่งเปิดให้น้อยลง  protected ของ Java ให้คลาสในแพ็กเกจเดียวกันใช้ได้ด้วย</text>
+</svg>

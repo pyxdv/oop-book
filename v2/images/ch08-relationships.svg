@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 646" width="780" height="646" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">สัญลักษณ์ความสัมพันธ์ 6 แบบในแผนภาพคลาส</text>
+
+  <g font-size="15" font-weight="bold" fill="#4b5563">
+    <text x="24" y="78">ความสัมพันธ์</text>
+    <text x="310" y="78" text-anchor="middle">สัญลักษณ์</text>
+    <text x="445" y="78">หน้าตาในโค้ด</text>
+    <text x="612" y="78">ตัวอย่าง</text>
+  </g>
+  <line x1="20" y1="90" x2="760" y2="90" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- แถวพื้นสลับ -->
+  <rect x="20" y="180" width="740" height="84" fill="#f3f4f6"/>
+  <rect x="20" y="348" width="740" height="84" fill="#f3f4f6"/>
+  <rect x="20" y="516" width="740" height="84" fill="#f3f4f6"/>
+
+  <!-- ชื่อความสัมพันธ์ -->
+  <g fill="#1f2937">
+    <text x="24" y="130" font-size="17" font-weight="bold">Dependency</text>
+    <text x="24" y="152" font-size="15" fill="#4b5563">การพึ่งพา (ใช้ชั่วคราว)</text>
+    <text x="24" y="214" font-size="17" font-weight="bold">Association</text>
+    <text x="24" y="236" font-size="15" fill="#4b5563">การเชื่อมโยง (รู้จักกัน)</text>
+    <text x="24" y="298" font-size="17" font-weight="bold">Aggregation</text>
+    <text x="24" y="320" font-size="15" fill="#4b5563">มีส่วนประกอบ แบบหลวม</text>
+    <text x="24" y="382" font-size="17" font-weight="bold">Composition</text>
+    <text x="24" y="404" font-size="15" fill="#4b5563">มีส่วนประกอบ แบบแน่น</text>
+    <text x="24" y="466" font-size="17" font-weight="bold">Inheritance</text>
+    <text x="24" y="488" font-size="15" fill="#4b5563">การสืบทอด (is-a)</text>
+    <text x="24" y="550" font-size="17" font-weight="bold">Realization</text>
+    <text x="24" y="572" font-size="15" fill="#4b5563">ทำตามอินเทอร์เฟซ</text>
+  </g>
+
+  <!-- กล่อง A และ B ทุกแถว (กึ่งกลางแถว: 138, 222, 306, 390, 474, 558) -->
+  <g fill="#ffffff" stroke="#1f2937" stroke-width="1.8">
+    <rect x="200" y="120" width="45" height="36"/><rect x="345" y="120" width="90" height="36"/>
+    <rect x="200" y="204" width="45" height="36"/><rect x="345" y="204" width="90" height="36"/>
+    <rect x="200" y="288" width="45" height="36"/><rect x="345" y="288" width="90" height="36"/>
+    <rect x="200" y="372" width="45" height="36"/><rect x="345" y="372" width="90" height="36"/>
+    <rect x="200" y="456" width="45" height="36"/><rect x="345" y="456" width="90" height="36"/>
+    <rect x="200" y="534" width="45" height="48"/><rect x="345" y="534" width="90" height="48"/>
+  </g>
+  <g font-size="16" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    <text x="222" y="144">A</text><text x="390" y="144">B</text>
+    <text x="222" y="228">A</text><text x="390" y="228">B</text>
+    <text x="222" y="312">A</text><text x="390" y="312">B</text>
+    <text x="222" y="396">A</text><text x="390" y="396">B</text>
+    <text x="222" y="480">A</text><text x="390" y="480">B</text>
+    <text x="222" y="564">A</text><text x="390" y="576">B</text>
+  </g>
+  <text x="390" y="554" text-anchor="middle" font-size="14" fill="#4b5563">«interface»</text>
+
+  <!-- 1 Dependency: เส้นประ หัวลูกศรเปิด -->
+  <line x1="245" y1="138" x2="344" y2="138" stroke="#1f2937" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <polyline points="331,131 344,138 331,145" fill="none" stroke="#1f2937" stroke-width="1.8"/>
+  <!-- 2 Association: เส้นทึบ -->
+  <line x1="245" y1="222" x2="345" y2="222" stroke="#1f2937" stroke-width="1.8"/>
+  <!-- 3 Aggregation: เพชรโปร่งที่ฝั่ง A (ตัวรวม) -->
+  <line x1="273" y1="306" x2="345" y2="306" stroke="#1f2937" stroke-width="1.8"/>
+  <polygon points="245,306 259,298 273,306 259,314" fill="#ffffff" stroke="#1f2937" stroke-width="1.8"/>
+  <!-- 4 Composition: เพชรทึบที่ฝั่ง A (เจ้าของ) -->
+  <line x1="273" y1="390" x2="345" y2="390" stroke="#1f2937" stroke-width="1.8"/>
+  <polygon points="245,390 259,382 273,390 259,398" fill="#1f2937" stroke="#1f2937" stroke-width="1.8"/>
+  <!-- 5 Inheritance: เส้นทึบ สามเหลี่ยมโปร่งชี้คลาสแม่ -->
+  <line x1="245" y1="474" x2="328" y2="474" stroke="#1f2937" stroke-width="1.8"/>
+  <polygon points="345,474 328,464 328,484" fill="#ffffff" stroke="#1f2937" stroke-width="1.8"/>
+  <!-- 6 Realization: เส้นประ สามเหลี่ยมโปร่ง -->
+  <line x1="245" y1="558" x2="328" y2="558" stroke="#1f2937" stroke-width="1.8" stroke-dasharray="7 5"/>
+  <polygon points="345,558 328,548 328,568" fill="#ffffff" stroke="#1f2937" stroke-width="1.8"/>
+
+  <!-- โค้ด -->
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="445" y="143">void m(B b)</text>
+    <text x="445" y="227">private B b;</text>
+    <text x="445" y="311">add(B b)</text>
+    <text x="445" y="395">b = new B();</text>
+    <text x="445" y="479">A extends B</text>
+    <text x="445" y="563">A implements B</text>
+  </g>
+
+  <!-- ตัวอย่าง -->
+  <g font-size="15" fill="#1f2937">
+    <text x="612" y="132">Receipt รับ Payable</text>
+    <text x="612" y="152" fill="#4b5563">มาใช้ในเมธอด</text>
+    <text x="612" y="216">Student จำ Course</text>
+    <text x="612" y="236" fill="#4b5563">ไว้ในแอตทริบิวต์</text>
+    <text x="612" y="300">ภาควิชา มี อาจารย์</text>
+    <text x="612" y="320" fill="#4b5563">ภาคยุบ อาจารย์ยังอยู่</text>
+    <text x="612" y="384">รถ มี เครื่องยนต์</text>
+    <text x="612" y="404" fill="#4b5563">รถพัง เครื่องหายด้วย</text>
+    <text x="612" y="468">Dog เป็น Animal</text>
+    <text x="612" y="488" fill="#4b5563">หัวลูกศรชี้คลาสแม่</text>
+    <text x="612" y="552">Invoice ทำตาม</text>
+    <text x="612" y="572" fill="#4b5563">สัญญา Payable</text>
+  </g>
+  <text x="390" y="628" text-anchor="middle" font-size="15" fill="#4b5563">เพชรอยู่ฝั่ง "ตัวรวม/เจ้าของ" เสมอ  สามเหลี่ยมอยู่ฝั่ง "คลาสแม่/อินเทอร์เฟซ" เสมอ</text>
+</svg>

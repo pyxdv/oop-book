@@ -15,3 +15,20 @@
   * [บทที่ 10: Maintainable Code Principles](lessons/10-maintainable-code.md)
   * [Final Exam Guideline](lessons/final-exam-guideline.md)
   * [🎓 Summary](lessons/summary.md)
+
+## ใบความรู้ เวอร์ชัน 2
+
+* [OOP เวอร์ชัน 2 (ภาษาไทยอ่านง่าย พร้อมภาพประกอบ)](v2/README.md)
+  * [บทที่ 1: โครงสร้างโปรแกรมและไวยากรณ์พื้นฐานของ Java](v2/01-java-basics.md)
+  * [บทที่ 2: คำสั่งเงื่อนไขและลูป](v2/02-control-flow.md)
+  * [บทที่ 3: อาร์เรย์](v2/03-arrays.md)
+  * [บทที่ 4: เริ่มต้น OOP และ Abstraction](v2/04-oop-abstraction.md)
+  * [แนวข้อสอบกลางภาค](v2/midterm-exam-guideline.md)
+  * [บทที่ 5: การห่อหุ้ม (Encapsulation)](v2/05-encapsulation.md)
+  * [บทที่ 6: การสืบทอด (Inheritance)](v2/06-inheritance.md)
+  * [บทที่ 7: พหุสัณฐาน (Polymorphism)](v2/07-polymorphism.md)
+  * [บทที่ 8: แผนภาพคลาส (UML Class Diagram) และการเขียนโค้ดตามโมเดล](v2/08-uml-diagrams.md)
+  * [บทที่ 9: การจัดการข้อผิดพลาด (Error Handling)](v2/09-error-handling.md)
+  * [บทที่ 10: เขียนโค้ดให้ดูแลต่อได้ง่าย (Maintainable Code)](v2/10-maintainable-code.md)
+  * [แนวข้อสอบปลายภาค](v2/final-exam-guideline.md)
+  * [สรุปรายวิชา](v2/summary.md)

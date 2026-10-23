@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 590" width="780" height="590" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">Multiplicity บอกว่า "กี่ตัว" ที่ปลายแต่ละด้าน</text>
+
+  <!-- ตัวอย่างหลัก -->
+  <rect x="70" y="72" width="150" height="46" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <text x="145" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">Teacher</text>
+  <rect x="560" y="72" width="150" height="46" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <text x="635" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">Student</text>
+  <line x1="220" y1="95" x2="560" y2="95" stroke="#1f2937" stroke-width="2"/>
+  <text x="232" y="86" font-size="18" font-weight="bold" fill="#2563eb">1</text>
+  <text x="548" y="86" text-anchor="end" font-size="18" font-weight="bold" fill="#d97706">0..*</text>
+  <text x="390" y="86" text-anchor="middle" font-size="16" fill="#4b5563">advises ▸</text>
+
+  <!-- วิธีอ่าน -->
+  <line x1="145" y1="148" x2="620" y2="148" stroke="#d97706" stroke-width="2"/>
+  <polygon points="632,148 618,141 618,155" fill="#d97706"/>
+  <text x="390" y="140" text-anchor="middle" font-size="15" fill="#1f2937">อาจารย์ 1 คน ดูแลนักศึกษาได้ตั้งแต่ 0 ถึงหลายคน (อ่านเลขที่ฝั่ง Student)</text>
+  <line x1="635" y1="190" x2="160" y2="190" stroke="#2563eb" stroke-width="2"/>
+  <polygon points="148,190 162,183 162,197" fill="#2563eb"/>
+  <text x="390" y="182" text-anchor="middle" font-size="15" fill="#1f2937">นักศึกษา 1 คน มีอาจารย์ที่ปรึกษา 1 คนพอดี (อ่านเลขที่ฝั่ง Teacher)</text>
+
+  <!-- ตารางสัญลักษณ์ -->
+  <line x1="20" y1="222" x2="760" y2="222" stroke="#9ca3af" stroke-width="1"/>
+  <g font-size="15" font-weight="bold" fill="#4b5563">
+    <text x="90" y="252" text-anchor="middle">สัญลักษณ์</text>
+    <text x="170" y="252">ความหมาย</text>
+    <text x="420" y="252">ตัวอย่างใกล้ตัว</text>
+  </g>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" fill="#1f2937">
+    <rect x="40" y="268" width="100" height="40" rx="20" fill="#dbeafe"/><text x="90" y="294">1</text>
+    <rect x="40" y="326" width="100" height="40" rx="20" fill="#dbeafe"/><text x="90" y="352">0..1</text>
+    <rect x="40" y="384" width="100" height="40" rx="20" fill="#dbeafe"/><text x="90" y="410">*</text>
+    <rect x="40" y="442" width="100" height="40" rx="20" fill="#dbeafe"/><text x="90" y="468">1..*</text>
+    <rect x="40" y="500" width="100" height="40" rx="20" fill="#dbeafe"/><text x="90" y="526">5..10</text>
+  </g>
+  <g font-size="16" fill="#1f2937">
+    <text x="170" y="294">หนึ่งเดียวพอดี</text>
+    <text x="170" y="352">ไม่มีก็ได้ มีได้ 1</text>
+    <text x="170" y="410">0 ขึ้นไป (เขียน 0..* ก็ได้)</text>
+    <text x="170" y="468">อย่างน้อย 1</text>
+    <text x="170" y="526">ตั้งแต่ 5 ถึง 10</text>
+    <text x="420" y="294">นักศึกษา 1 คน มีบัตรนักศึกษา 1 ใบ</text>
+    <text x="420" y="352">นักศึกษามีสติกเกอร์จอดรถ 0 หรือ 1 ใบ</text>
+    <text x="420" y="410">ลูกค้าใหม่ยังไม่มีออร์เดอร์เลยก็ได้</text>
+    <text x="420" y="468">ใบสั่งยาต้องมียาอย่างน้อย 1 รายการ</text>
+    <text x="420" y="526">กลุ่มโปรเจกต์มีสมาชิก 5 ถึง 10 คน</text>
+  </g>
+  <text x="390" y="572" text-anchor="middle" font-size="14" fill="#4b5563">ถ้าไม่เขียนตัวเลขเลย หมายถึง "ยังไม่ระบุ" ไม่ได้แปลว่า 1</text>
+</svg>
