@@ -881,7 +881,7 @@ class Penguin extends Bird {
 ✓ รองรับ CLO7: Develop clean, maintainable software
 ```
 
-ถ้ารันบน Windows แล้วภาษาไทยหรือเส้นกรอบกลายเป็น `?` ให้รันด้วย `java -Dstdout.encoding=UTF-8 MaintainableCodeExample` (Java 18 ขึ้นไป)
+ถ้ารันบน Windows แล้วภาษาไทยหรือเส้นกรอบกลายเป็น `?` ให้รันด้วย `java -Dstdout.encoding=UTF-8 MaintainableCodeExample` (JDK 19 ขึ้นไป) หรือตั้ง encoding ของ terminal เป็น UTF-8
 
 ตัวอย่างนี้ยังไม่สมบูรณ์แบบ อย่างที่เห็นในภาพที่ 10.7 `displayPriceSummary` คิดส่วนลดและภาษีซ้ำกับ `applyDiscount` และ `addTax` ลองแก้เป็นแบบฝึกหัดข้อ 5 ได้
 
@@ -1121,4 +1121,4 @@ class Report {
 
 ***
 
-[< บทก่อนหน้า: Error Handling](09-error-handling.md) | [กลับไปหน้าหลัก](../)
+[< บทก่อนหน้า: การจัดการข้อผิดพลาด](09-error-handling.md) | [กลับไปหน้าหลัก](README.md)

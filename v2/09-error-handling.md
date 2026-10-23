@@ -1098,4 +1098,4 @@ public class Calculator {
 
 ***
 
-[< บทก่อนหน้า: UML Diagrams](08-uml-diagrams.md) | [กลับไปหน้าหลัก](../) | [บทถัดไป: Maintainable Code >](10-maintainable-code.md)
+[< บทก่อนหน้า: แผนภาพคลาส](08-uml-diagrams.md) | [กลับไปหน้าหลัก](README.md) | [บทถัดไป: เขียนโค้ดให้ดูแลต่อได้ง่าย >](10-maintainable-code.md)

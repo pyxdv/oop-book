@@ -48,7 +48,7 @@ description: ใบความรู้วิชาการเขียนโ�
 
 ### ส่วนที่ 1: พื้นฐาน Java
 
-#### [บทที่ 1: โครงสร้างโปรแกรมและไวยากรณ์พื้นฐาน (Program Structure และ Basic Syntax)](01-java-basics.md)
+#### [บทที่ 1: โครงสร้างโปรแกรมและไวยากรณ์พื้นฐานของ Java](01-java-basics.md)
 
 * โครงสร้างโปรแกรม Java
 * ตัวแปร (variable) และชนิดข้อมูล (data type)
@@ -56,14 +56,14 @@ description: ใบความรู้วิชาการเขียนโ�
 * ตัวดำเนินการ (operator) ทางคณิตศาสตร์ การเปรียบเทียบ และตรรกะ
 * **รองรับ CLO1**
 
-#### [บทที่ 2: คำสั่งเงื่อนไขและลูป (Control Flow และ Loops)](02-control-flow.md)
+#### [บทที่ 2: คำสั่งเงื่อนไขและลูป](02-control-flow.md)
 
 * คำสั่งเงื่อนไข (conditional statement) `if` `else` `switch`
 * ลูป (loop) `for` `while` `do-while`
 * `break` และ `continue`
 * **รองรับ CLO1**
 
-#### [บทที่ 3: อาร์เรย์ (Arrays)](03-arrays.md)
+#### [บทที่ 3: อาร์เรย์](03-arrays.md)
 
 * ประกาศและใช้งานอาร์เรย์ (array)
 * จัดการข้อมูลในอาร์เรย์
@@ -72,7 +72,7 @@ description: ใบความรู้วิชาการเขียนโ�
 
 ### ส่วนที่ 2: หลักการพื้นฐานของ OOP
 
-#### [บทที่ 4: แนวคิด OOP และ Abstraction (Introduction to OOP และ Abstraction)](04-oop-abstraction.md)
+#### [บทที่ 4: เริ่มต้น OOP และ Abstraction](04-oop-abstraction.md)
 
 * OOP คืออะไร
 * หลักการ Abstraction
@@ -82,7 +82,7 @@ description: ใบความรู้วิชาการเขียนโ�
 
 #### [แนวข้อสอบกลางภาค (Midterm Exam Guideline)](midterm-exam-guideline.md)
 
-#### [บทที่ 5: การห่อหุ้ม (Encapsulation และ Access Control)](05-encapsulation.md)
+#### [บทที่ 5: การห่อหุ้ม (Encapsulation)](05-encapsulation.md)
 
 * การห่อหุ้ม (encapsulation) คืออะไร
 * ตัวกำหนดสิทธิ์การเข้าถึง (access modifier) `public` `private` `protected` และแบบไม่ระบุ (default)
@@ -108,7 +108,7 @@ description: ใบความรู้วิชาการเขียนโ�
 
 ### ส่วนที่ 3: การออกแบบและแนวปฏิบัติที่ดี
 
-#### [บทที่ 8: แผนภาพคลาสและการเขียนโค้ดตามแบบ (UML Class Diagrams และ Model-Based Coding)](08-uml-diagrams.md)
+#### [บทที่ 8: แผนภาพคลาส (UML Class Diagram) และการเขียนโค้ดตามโมเดล](08-uml-diagrams.md)
 
 * แผนภาพคลาส (UML class diagram) เบื้องต้น
 * ความสัมพันธ์ระหว่างคลาส ได้แก่ association, inheritance และ composition
@@ -123,7 +123,7 @@ description: ใบความรู้วิชาการเขียนโ�
 * แนวทางพื้นฐานในการรับมือข้อผิดพลาด
 * **รองรับ CLO7**
 
-#### [บทที่ 10: หลักการเขียนโค้ดที่ดูแลรักษาง่าย (Maintainable Code Principles)](10-maintainable-code.md)
+#### [บทที่ 10: เขียนโค้ดให้ดูแลต่อได้ง่าย (Maintainable Code)](10-maintainable-code.md)
 
 * หลักการเขียนโค้ดสะอาด (clean code)
 * จัดระเบียบโค้ด
@@ -134,7 +134,7 @@ description: ใบความรู้วิชาการเขียนโ�
 
 #### [แนวข้อสอบปลายภาค (Final Exam Guideline)](final-exam-guideline.md)
 
-#### [สรุปรายวิชา (Summary)](summary.md)
+#### [สรุปรายวิชา](summary.md)
 
 ## ใช้เอกสารนี้อย่างไร
 
