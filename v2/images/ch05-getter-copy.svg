@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-label="getter ที่คืนลิสต์ตัวจริงทำให้คนนอกแก้ข้อมูลในออบเจกต์ได้ ส่วน getter ที่คืนสำเนาไม่กระทบตัวจริง">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/></marker>
+    <marker id="gr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+  </defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" font-size="22" font-weight="700" text-anchor="middle">getter คืนของจริง กับ getter คืนสำเนา</text>
+
+    <!-- ออบเจกต์ Course -->
+    <rect x="30" y="150" width="200" height="110" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="130" y="178" font-size="16" font-weight="700" text-anchor="middle" fill="#2563eb">ออบเจกต์ oop</text>
+    <text x="130" y="198" font-size="14" text-anchor="middle" fill="#4b5563">(คลาส Course)</text>
+    <rect x="48" y="212" width="164" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="60" y="235" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">private students</text>
+
+    <!-- ลิสต์ตัวจริง -->
+    <rect x="330" y="150" width="230" height="110" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="445" y="178" font-size="16" font-weight="700" text-anchor="middle">ลิสต์ตัวจริง</text>
+    <text x="445" y="206" font-size="15" text-anchor="middle">ก้อง, ขวัญ, คิม</text>
+    <text x="445" y="240" font-size="15" text-anchor="middle" fill="#dc2626" font-weight="700">+ แอบเพิ่ม 2 ✗</text>
+    <line x1="212" y1="229" x2="326" y2="205" stroke="#2563eb" stroke-width="2" marker-end="url(#b)"/>
+
+    <!-- real -->
+    <rect x="640" y="90" width="140" height="44" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="710" y="118" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">real</text>
+    <path d="M640,112 L600,112 L600,170 L564,170" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#r)"/>
+    <text x="330" y="80" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626">real = oop.getStudentsUnsafe();</text>
+    <text x="330" y="102" font-size="14" fill="#dc2626">ได้ตัวชี้ไปที่ลิสต์เดียวกัน แก้แล้วกระทบของจริง</text>
+    <text x="330" y="124" font-size="14" fill="#dc2626">ข้ามการเช็กโควตา 3 คนไปเลย</text>
+
+    <!-- สำเนา -->
+    <rect x="330" y="300" width="230" height="90" rx="12" fill="#ffffff" stroke="#059669" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="445" y="328" font-size="16" font-weight="700" text-anchor="middle" fill="#059669">ลิสต์สำเนา (อันใหม่)</text>
+    <text x="445" y="352" font-size="15" text-anchor="middle">ก้อง, ขวัญ, คิม</text>
+    <text x="445" y="376" font-size="15" text-anchor="middle" fill="#4b5563">+ แอบเพิ่ม 1 (แก้แค่ตรงนี้)</text>
+    <line x1="445" y1="262" x2="445" y2="296" stroke="#059669" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#gr)"/>
+    <text x="455" y="284" font-size="14" fill="#059669">คัดลอก</text>
+
+    <rect x="640" y="324" width="140" height="44" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="710" y="352" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">copy</text>
+    <line x1="640" y1="346" x2="564" y2="346" stroke="#059669" stroke-width="2.5" marker-end="url(#gr)"/>
+    <text x="30" y="318" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#059669">copy = oop.getStudents();</text>
+    <text x="30" y="342" font-size="14" fill="#059669">✓ ของจริงยังเป็น</text>
+    <text x="30" y="364" font-size="14" fill="#059669">ก้อง, ขวัญ, คิม เหมือนเดิม</text>
+  </g>
+</svg>

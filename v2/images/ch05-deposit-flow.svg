@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" role="img" aria-label="ผังการทำงานของ deposit ถ้าจำนวนเงินไม่มากกว่า 0 จะปฏิเสธและยอดเงินไม่เปลี่ยน">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker>
+  </defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" font-size="22" font-weight="700" text-anchor="middle">setter ตรวจค่าก่อนเก็บ: ขั้นตอนของ deposit(amount)</text>
+
+    <!-- เริ่ม -->
+    <rect x="150" y="62" width="200" height="44" rx="22" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="250" y="90" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">deposit(amount)</text>
+    <line x1="250" y1="106" x2="250" y2="136" stroke="#4b5563" stroke-width="2" marker-end="url(#g)"/>
+
+    <!-- เงื่อนไข -->
+    <polygon points="250,138 360,198 250,258 140,198" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="250" y="196" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" text-anchor="middle">amount &gt; 0 ?</text>
+    <text x="250" y="218" font-size="14" text-anchor="middle" fill="#4b5563">(ตรวจก่อน)</text>
+
+    <!-- ใช่ -->
+    <line x1="140" y1="198" x2="110" y2="198" stroke="#4b5563" stroke-width="2"/>
+    <line x1="110" y1="198" x2="110" y2="296" stroke="#4b5563" stroke-width="2" marker-end="url(#g)"/>
+    <text x="96" y="186" font-size="15" font-weight="700" fill="#059669" text-anchor="middle">ใช่</text>
+    <rect x="30" y="298" width="170" height="50" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="115" y="328" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" text-anchor="middle">balance += amount</text>
+    <line x1="115" y1="348" x2="115" y2="384" stroke="#4b5563" stroke-width="2" marker-end="url(#g)"/>
+    <rect x="30" y="386" width="170" height="50" rx="10" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+    <text x="115" y="416" font-size="15" text-anchor="middle" fill="#059669">✓ ฝากสำเร็จ</text>
+
+    <!-- ไม่ใช่ -->
+    <line x1="360" y1="198" x2="390" y2="198" stroke="#4b5563" stroke-width="2"/>
+    <line x1="390" y1="198" x2="390" y2="296" stroke="#4b5563" stroke-width="2" marker-end="url(#g)"/>
+    <text x="408" y="186" font-size="15" font-weight="700" fill="#dc2626" text-anchor="middle">ไม่ใช่</text>
+    <rect x="290" y="298" width="200" height="50" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="390" y="328" font-size="15" text-anchor="middle" fill="#dc2626">✗ แจ้งว่าค่าไม่ถูกต้อง</text>
+    <line x1="390" y1="348" x2="390" y2="384" stroke="#4b5563" stroke-width="2" marker-end="url(#g)"/>
+    <rect x="290" y="386" width="200" height="50" rx="10" fill="#ffffff" stroke="#dc2626" stroke-width="2"/>
+    <text x="390" y="408" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" text-anchor="middle">return</text>
+    <text x="390" y="428" font-size="14" text-anchor="middle" fill="#4b5563">balance ไม่เปลี่ยน</text>
+
+    <!-- ตัวอย่างรันจริง -->
+    <rect x="525" y="62" width="250" height="374" rx="12" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="650" y="92" font-size="17" font-weight="700" text-anchor="middle">ลองรันจริง</text>
+    <text x="545" y="126" font-size="14" fill="#4b5563">เริ่มต้น balance = 0.0</text>
+
+    <text x="545" y="164" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">deposit(5000)</text>
+    <text x="545" y="188" font-size="14">5000 &gt; 0 → ใช่</text>
+    <rect x="545" y="198" width="210" height="34" rx="8" fill="#d1fae5"/>
+    <text x="555" y="221" font-size="14" fill="#059669">✓ balance: 0.0 → 5000.0</text>
+
+    <text x="545" y="272" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">deposit(-100)</text>
+    <text x="545" y="296" font-size="14">-100 &gt; 0 → ไม่ใช่</text>
+    <rect x="545" y="306" width="210" height="34" rx="8" fill="#fee2e2"/>
+    <text x="555" y="329" font-size="14" fill="#dc2626">✗ balance: 5000.0 (เท่าเดิม)</text>
+
+    <text x="545" y="376" font-size="14" fill="#4b5563">ค่าผิดเข้าไปไม่ถึง balance</text>
+    <text x="545" y="398" font-size="14" fill="#4b5563">เพราะถูกกันไว้ที่ประตูเดียว</text>
+    <text x="545" y="420" font-size="14" fill="#4b5563">คือเมธอด deposit()</text>
+
+    <text x="400" y="480" font-size="14" text-anchor="middle" fill="#4b5563">ตัวเลขในกล่องขวามาจากผลรัน BankDemo ในบทนี้</text>
+  </g>
+</svg>
