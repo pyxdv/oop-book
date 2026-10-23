@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">คลาสคือแม่พิมพ์ ออบเจกต์คือขนมที่กดออกมา</text>
+  <!-- mold -->
+  <rect x="30" y="80" width="250" height="250" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="155" y="108" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">แม่พิมพ์: class Student</text>
+  <text x="155" y="130" text-anchor="middle" font-size="14" fill="#4b5563">บอกแค่ว่ามีช่องอะไร ยังไม่มีค่า</text>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <rect x="50" y="146" width="210" height="34" rx="8" fill="#ffffff" stroke="#d97706" stroke-dasharray="5 4"/>
+    <text x="64" y="168">studentId : ___</text>
+    <rect x="50" y="188" width="210" height="34" rx="8" fill="#ffffff" stroke="#d97706" stroke-dasharray="5 4"/>
+    <text x="64" y="210">name      : ___</text>
+    <rect x="50" y="230" width="210" height="34" rx="8" fill="#ffffff" stroke="#d97706" stroke-dasharray="5 4"/>
+    <text x="64" y="252">gpa       : ___</text>
+    <text x="64" y="292">study()</text>
+    <text x="64" y="314">displayInfo()</text>
+  </g>
+  <!-- arrows -->
+  <g stroke="#4b5563" stroke-width="2" fill="none">
+    <path d="M280,170 C340,170 360,118 470,118" marker-end="url(#ar)"/>
+    <path d="M280,205 L470,205" marker-end="url(#ar)"/>
+    <path d="M280,240 C340,240 360,292 470,292" marker-end="url(#ar)"/>
+  </g>
+  <text x="375" y="196" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">new Student()</text>
+  <text x="375" y="232" text-anchor="middle" font-size="14" fill="#4b5563">กดออกมาทีละชิ้น</text>
+  <!-- objects -->
+  <g font-size="14" fill="#1f2937">
+    <rect x="472" y="84" width="300" height="68" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="488" y="108" font-weight="bold">student1</text>
+    <text x="488" y="134" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">"001", "สมชาย", 3.5</text>
+    <rect x="472" y="171" width="300" height="68" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="488" y="195" font-weight="bold">student2</text>
+    <text x="488" y="221" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">"002", "สมหญิง", 3.75</text>
+    <rect x="472" y="258" width="300" height="68" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+    <text x="488" y="282" font-weight="bold">student3</text>
+    <text x="488" y="308" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">"003", "สมศรี", 2.9</text>
+  </g>
+  <text x="400" y="364" text-anchor="middle" font-size="15" fill="#1f2937">แม่พิมพ์มีอันเดียว แต่กดขนมได้กี่ชิ้นก็ได้ แต่ละชิ้นใส่ไส้ (ค่าแอตทริบิวต์) ต่างกันได้</text>
+  <text x="400" y="386" text-anchor="middle" font-size="14" fill="#4b5563">ทุกชิ้นมีเมธอดชุดเดียวกัน เพราะออกมาจากแม่พิมพ์เดียวกัน</text>
+</svg>

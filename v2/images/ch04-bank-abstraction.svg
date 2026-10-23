@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">คนเรียกเห็นแค่ deposit() ขั้นตอนจริงซ่อนอยู่ข้างใน</text>
+  <!-- caller -->
+  <rect x="24" y="150" width="150" height="80" rx="12" fill="#f3f4f6" stroke="#9ca3af"/>
+  <text x="99" y="182" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">main</text>
+  <text x="99" y="206" text-anchor="middle" font-size="14" fill="#4b5563">(คนเรียกใช้)</text>
+  <!-- class boundary -->
+  <rect x="220" y="66" width="560" height="330" rx="14" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="236" y="90" font-size="15" font-weight="bold" fill="#2563eb">class BankAccount</text>
+  <!-- public -->
+  <rect x="236" y="150" width="150" height="80" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="311" y="180" text-anchor="middle" font-size="14" fill="#2563eb">public</text>
+  <text x="311" y="206" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" fill="#1f2937">deposit()</text>
+  <path d="M174,190 L232,190" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="194" y="178" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">5000</text>
+  <!-- hidden area -->
+  <rect x="410" y="104" width="356" height="276" rx="12" fill="#f9fafb" stroke="#9ca3af" stroke-dasharray="6 5"/>
+  <text x="424" y="128" font-size="14" fill="#4b5563">private ข้างนอกมองไม่เห็น</text>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" fill="#1f2937" text-anchor="middle">
+    <rect x="440" y="142" width="200" height="44" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="540" y="169">validateAmount()</text>
+    <rect x="440" y="224" width="200" height="44" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="540" y="251">performDeposit()</text>
+    <rect x="440" y="306" width="200" height="44" rx="8" fill="#ffffff" stroke="#9ca3af"/>
+    <text x="540" y="333">logTransaction()</text>
+  </g>
+  <path d="M386,175 C410,175 415,164 436,164" stroke="#4b5563" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <path d="M540,186 L540,220" stroke="#059669" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="550" y="209" font-size="14" fill="#059669">✓ มากกว่า 0</text>
+  <path d="M540,268 L540,302" stroke="#4b5563" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="550" y="291" font-size="14" fill="#4b5563">balance += 5000</text>
+  <path d="M640,164 L700,164 L700,200" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+  <text x="703" y="222" text-anchor="middle" font-size="14" fill="#dc2626">✗ ติดลบ</text>
+  <text x="703" y="242" text-anchor="middle" font-size="14" fill="#dc2626">หยุด ไม่ฝาก</text>
+  <text x="311" y="300" text-anchor="middle" font-size="14" fill="#1f2937">คนเรียกรู้แค่</text>
+  <text x="311" y="320" text-anchor="middle" font-size="14" fill="#1f2937">"ฝาก 5000"</text>
+  <text x="311" y="340" text-anchor="middle" font-size="14" fill="#4b5563">ไม่ต้องรู้ 3 ขั้นข้างใน</text>
+</svg>
