@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 720" width="800" height="720" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" role="img" aria-label="แผนภาพคลาสของ Employee และคลาสลูก Manager Programmer Designer">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">ลำดับชั้นคลาสใน InheritanceExample.java</text>
+
+  <!-- Employee -->
+  <g>
+    <rect x="240" y="64" width="320" height="236" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="400" y="90" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Employee (คลาสแม่)</text>
+    <line x1="240" y1="102" x2="560" y2="102" stroke="#2563eb" stroke-width="1.5"/>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+      <text x="256" y="124"># employeeId : String</text>
+      <text x="256" y="146"># name : String</text>
+      <text x="256" y="168"># department : String</text>
+      <text x="256" y="190"># baseSalary : double</text>
+    </g>
+    <line x1="240" y1="202" x2="560" y2="202" stroke="#2563eb" stroke-width="1.5"/>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+      <text x="256" y="224">+ calculateSalary()</text>
+      <text x="256" y="246">+ displayInfo()</text>
+      <text x="256" y="268">+ work()</text>
+      <text x="256" y="290">+ takeBreak()</text>
+    </g>
+  </g>
+
+  <!-- inheritance arrow: hollow triangle at Employee bottom -->
+  <polygon points="400,300 388,320 412,320" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+  <line x1="400" y1="320" x2="400" y2="352" stroke="#1f2937" stroke-width="2"/>
+  <line x1="140" y1="352" x2="660" y2="352" stroke="#1f2937" stroke-width="2"/>
+  <line x1="140" y1="352" x2="140" y2="384" stroke="#1f2937" stroke-width="2"/>
+  <line x1="400" y1="352" x2="400" y2="384" stroke="#1f2937" stroke-width="2"/>
+  <line x1="660" y1="352" x2="660" y2="384" stroke="#1f2937" stroke-width="2"/>
+  <text x="420" y="340" font-size="15" fill="#4b5563">extends (สืบทอดจาก)</text>
+
+  <!-- Manager -->
+  <rect x="20" y="384" width="240" height="198" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+  <text x="140" y="410" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Manager</text>
+  <line x1="20" y1="422" x2="260" y2="422" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="32" y="444">- managementBonus</text>
+    <text x="32" y="466">- teamSize</text>
+  </g>
+  <line x1="20" y1="478" x2="260" y2="478" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+    <text x="32" y="500" fill="#d97706">* calculateSalary()</text>
+    <text x="32" y="522" fill="#d97706">* displayInfo()</text>
+    <text x="32" y="544" fill="#1f2937">+ conductMeeting()</text>
+    <text x="32" y="566" fill="#1f2937">+ evaluateEmployee()</text>
+  </g>
+
+  <!-- Programmer -->
+  <rect x="280" y="384" width="240" height="236" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+  <text x="400" y="410" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Programmer</text>
+  <line x1="280" y1="422" x2="520" y2="422" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="292" y="444">- programmingLanguage</text>
+    <text x="292" y="466">- projectCount</text>
+    <text x="292" y="488">- projectBonus</text>
+  </g>
+  <line x1="280" y1="500" x2="520" y2="500" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+    <text x="292" y="522" fill="#d97706">* calculateSalary()</text>
+    <text x="292" y="544" fill="#d97706">* displayInfo()</text>
+    <text x="292" y="566" fill="#1f2937">+ writeCode()</text>
+    <text x="292" y="588" fill="#1f2937">+ completeProject()</text>
+    <text x="292" y="610" fill="#1f2937">+ debugCode()</text>
+  </g>
+
+  <!-- Designer -->
+  <rect x="540" y="384" width="240" height="176" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+  <text x="660" y="410" text-anchor="middle" font-size="18" font-weight="700" fill="#1f2937">Designer</text>
+  <line x1="540" y1="422" x2="780" y2="422" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="552" y="444">- designTool</text>
+    <text x="552" y="466">- designCount</text>
+  </g>
+  <line x1="540" y1="478" x2="780" y2="478" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+    <text x="552" y="500" fill="#d97706">* displayInfo()</text>
+    <text x="552" y="522" fill="#1f2937">+ createDesign()</text>
+    <text x="552" y="544" fill="#1f2937">+ presentDesign()</text>
+  </g>
+
+  <!-- legend -->
+  <rect x="20" y="640" width="760" height="64" rx="8" fill="#f9fafb" stroke="#9ca3af"/>
+  <g font-size="15" fill="#4b5563">
+    <g font-family="'JetBrains Mono', Consolas, monospace" fill="#1f2937"><text x="36" y="664">#</text><text x="176" y="664">-</text><text x="300" y="664">+</text><text x="420" y="664" fill="#d97706">*</text></g>
+    <text x="54" y="664">protected</text><text x="194" y="664">private</text><text x="318" y="664">public</text><text x="438" y="664" fill="#d97706">override เมธอดของคลาสแม่ (สีส้ม)</text>
+    <text x="36" y="690">คลาสลูกเขียนเฉพาะส่วนที่เพิ่มหรือเปลี่ยน ที่เหลือได้มาจาก Employee ทั้งหมด (ไม่แสดงคอนสตรักเตอร์)</text>
+  </g>
+</svg>

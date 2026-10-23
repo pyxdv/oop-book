@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" role="img" aria-label="Java หาเมธอดจากคลาสจริงของออบเจกต์ก่อน ถ้าไม่เจอจึงไล่ขึ้นไปที่คลาสแม่">
+  <defs><marker id="up" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker></defs>
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">เรียกเมธอดแล้ว Java ไปเจอโค้ดที่ไหน</text>
+<text x="140" y="78" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">manager.work()</text>
+<rect x="30" y="110" width="220" height="64" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="140" y="136" text-anchor="middle" font-size="16" font-weight="700" fill="#9ca3af">Object</text>
+<text x="140" y="160" text-anchor="middle" font-size="15" fill="#4b5563">ไม่ต้องดู</text>
+<rect x="30" y="210" width="220" height="64" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="140" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Employee</text>
+<text x="140" y="260" text-anchor="middle" font-size="15" fill="#059669">✓ เจอ ใช้อันนี้</text>
+<rect x="30" y="310" width="220" height="64" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+<text x="140" y="336" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Manager</text>
+<text x="140" y="360" text-anchor="middle" font-size="15" fill="#dc2626">✗ ไม่มีเมธอดนี้</text>
+<line x1="140" y1="310" x2="140" y2="276" stroke="#1f2937" stroke-width="2" marker-end="url(#up)"/>
+<text x="140" y="400" text-anchor="middle" font-size="14" fill="#4b5563">▲ เริ่มหาที่คลาสจริงของออบเจกต์</text>
+<rect x="20" y="414" width="240" height="34" rx="6" fill="#f3f4f6"/>
+<text x="140" y="436" text-anchor="middle" font-size="14" fill="#1f2937">พิมพ์ "สมชาย ใจดี กำลังทำงาน..."</text>
+<text x="400" y="78" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">manager.calculateSalary()</text>
+<rect x="290" y="110" width="220" height="64" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400" y="136" text-anchor="middle" font-size="16" font-weight="700" fill="#9ca3af">Object</text>
+<text x="400" y="160" text-anchor="middle" font-size="15" fill="#4b5563">ไม่ต้องดู</text>
+<rect x="290" y="210" width="220" height="64" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="#9ca3af">Employee</text>
+<text x="400" y="260" text-anchor="middle" font-size="15" fill="#4b5563">มีอีกเวอร์ชัน แต่ไม่ได้ใช้</text>
+<rect x="290" y="310" width="220" height="64" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="400" y="336" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Manager</text>
+<text x="400" y="360" text-anchor="middle" font-size="15" fill="#059669">✓ เจอ (override ไว้)</text>
+<text x="400" y="400" text-anchor="middle" font-size="14" fill="#4b5563">▲ เริ่มหาที่คลาสจริงของออบเจกต์</text>
+<rect x="280" y="414" width="240" height="34" rx="6" fill="#f3f4f6"/>
+<text x="400" y="436" text-anchor="middle" font-size="14" fill="#1f2937">ได้ 65000.0 (50000 + 15000)</text>
+<text x="660" y="78" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">designer.calculateSalary()</text>
+<rect x="550" y="110" width="220" height="64" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="660" y="136" text-anchor="middle" font-size="16" font-weight="700" fill="#9ca3af">Object</text>
+<text x="660" y="160" text-anchor="middle" font-size="15" fill="#4b5563">ไม่ต้องดู</text>
+<rect x="550" y="210" width="220" height="64" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="660" y="236" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Employee</text>
+<text x="660" y="260" text-anchor="middle" font-size="15" fill="#059669">✓ เจอ ใช้อันนี้</text>
+<rect x="550" y="310" width="220" height="64" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="2"/>
+<text x="660" y="336" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2937">Designer</text>
+<text x="660" y="360" text-anchor="middle" font-size="15" fill="#dc2626">✗ ไม่มีเมธอดนี้</text>
+<line x1="660" y1="310" x2="660" y2="276" stroke="#1f2937" stroke-width="2" marker-end="url(#up)"/>
+<text x="660" y="400" text-anchor="middle" font-size="14" fill="#4b5563">▲ เริ่มหาที่คลาสจริงของออบเจกต์</text>
+<rect x="540" y="414" width="240" height="34" rx="6" fill="#f3f4f6"/>
+<text x="660" y="436" text-anchor="middle" font-size="14" fill="#1f2937">ได้ 32000.0 (baseSalary)</text>
+<text x="400" y="480" text-anchor="middle" font-size="15" fill="#4b5563">หาจากล่างขึ้นบน เจอที่ชั้นไหนก่อนก็ใช้ชั้นนั้นทันที (ผลลัพธ์ตรงกับการรัน InheritanceExample)</text>
+</svg>
