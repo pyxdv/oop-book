@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="400" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">Overloading กับ Overriding ต่างกันตรงไหน</text>
+  <rect x="210" y="60" width="280" height="44" rx="8" fill="#2563eb"/>
+  <text x="350" y="89" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">Overloading</text>
+  <rect x="500" y="60" width="280" height="44" rx="8" fill="#7c3aed"/>
+  <text x="640" y="89" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">Overriding</text>
+  <g font-size="15">
+    <!-- rows: y start 112, height 52 -->
+    <rect x="20" y="112" width="760" height="52" fill="#f3f4f6"/>
+    <rect x="20" y="216" width="760" height="52" fill="#f3f4f6"/>
+    <rect x="20" y="320" width="760" height="52" fill="#f3f4f6"/>
+    <rect x="20" y="424" width="760" height="52" fill="#f3f4f6"/>
+    <rect x="20" y="528" width="760" height="52" fill="#f3f4f6"/>
+
+    <g font-weight="bold" fill="#1f2937">
+      <text x="34" y="144">ชื่อเมธอด</text>
+      <text x="34" y="196">รายการพารามิเตอร์</text>
+      <text x="34" y="248">return type</text>
+      <text x="34" y="300">เขียนไว้ที่ไหน</text>
+      <text x="34" y="352">ตัวกำหนดสิทธิ์</text>
+      <text x="34" y="404">เลือกเมธอดตอนไหน</text>
+      <text x="34" y="456">static / private / final</text>
+      <text x="34" y="508">@Override</text>
+      <text x="34" y="560">ชื่อเรียกอีกชื่อ</text>
+    </g>
+    <g fill="#1f2937">
+      <text x="222" y="144">เหมือนกัน</text>
+      <text x="222" y="186">ต้องต่างกัน</text>
+      <text x="222" y="206" font-size="14" fill="#4b5563">จำนวน ชนิด หรือลำดับชนิด</text>
+      <text x="222" y="238">อะไรก็ได้</text>
+      <text x="222" y="258" font-size="14" fill="#4b5563">แต่ต่างแค่ return type ไม่นับ</text>
+      <text x="222" y="290">คลาสเดียวกัน</text>
+      <text x="222" y="310" font-size="14" fill="#4b5563">หรือเพิ่มในคลาสลูกก็ได้</text>
+      <text x="222" y="352">อะไรก็ได้</text>
+      <text x="222" y="394">ตอนคอมไพล์</text>
+      <text x="222" y="414" font-size="14" fill="#4b5563">ดูชนิดของอาร์กิวเมนต์</text>
+      <text x="222" y="456">✓ overload ได้</text>
+      <text x="222" y="508">ไม่ใช้</text>
+      <text x="222" y="560">compile-time polymorphism</text>
+
+      <text x="512" y="144">เหมือนกัน</text>
+      <text x="512" y="186">ต้องเหมือนเดิมทุกตัว</text>
+      <text x="512" y="206" font-size="14" fill="#4b5563">ทั้งจำนวน ชนิด และลำดับ</text>
+      <text x="512" y="238">เหมือนเดิม</text>
+      <text x="512" y="258" font-size="14" fill="#4b5563">หรือเป็นคลาสลูกของชนิดเดิม</text>
+      <text x="512" y="290">คลาสลูก</text>
+      <text x="512" y="310" font-size="14" fill="#4b5563">เขียนทับเมธอดของคลาสแม่</text>
+      <text x="512" y="352">เท่าเดิมหรือเปิดกว้างกว่า</text>
+      <text x="512" y="394">ตอนรัน</text>
+      <text x="512" y="414" font-size="14" fill="#4b5563">ดูชนิดของออบเจกต์จริง</text>
+      <text x="512" y="456" fill="#dc2626">✗ override ไม่ได้</text>
+      <text x="512" y="508">ควรใส่ทุกครั้ง</text>
+      <text x="512" y="560">runtime polymorphism</text>
+    </g>
+    <line x1="500" y1="112" x2="500" y2="580" stroke="#9ca3af" stroke-width="1"/>
+    <line x1="205" y1="112" x2="205" y2="580" stroke="#9ca3af" stroke-width="1"/>
+  </g>
+</svg>

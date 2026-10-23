@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="360" y="38" text-anchor="middle" font-size="21" font-weight="bold" fill="#1f2937">ผลของ s.area() เมื่อวนลูปใน Shape[]</text>
+  <text x="360" y="64" text-anchor="middle" font-size="14" fill="#4b5563">ข้อมูลจากผลรัน ShapeDemo จริง (หน่วยตารางหน่วย) พื้นที่รวม 41.57</text>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="90" y1="272.5" x2="680" y2="272.5"/>
+    <line x1="90" y1="215" x2="680" y2="215"/>
+    <line x1="90" y1="157.5" x2="680" y2="157.5"/>
+    <line x1="90" y1="100" x2="680" y2="100"/>
+  </g>
+  <g font-size="14" fill="#4b5563" text-anchor="end">
+    <text x="80" y="335">0</text><text x="80" y="277">5</text><text x="80" y="220">10</text><text x="80" y="162">15</text><text x="80" y="105">20</text>
+  </g>
+  <path d="M140,330 L140,189.4 Q140,185.4 144,185.4 L236,185.4 Q240,185.4 240,189.4 L240,330 Z" fill="#2563eb"/>
+  <path d="M335,330 L335,104 Q335,100 339,100 L431,100 Q435,100 435,104 L435,330 Z" fill="#2563eb"/>
+  <path d="M530,330 L530,230.5 Q530,226.5 534,226.5 L626,226.5 Q630,226.5 630,230.5 L630,330 Z" fill="#2563eb"/>
+  <line x1="90" y1="330" x2="680" y2="330" stroke="#9ca3af" stroke-width="1.5"/>
+  <g font-size="16" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    <text x="190" y="176">12.57</text><text x="385" y="91">20.00</text><text x="580" y="217">9.00</text>
+  </g>
+  <g text-anchor="middle">
+    <text x="190" y="356" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Circle(2)</text>
+    <text x="385" y="356" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Rectangle(4, 5)</text>
+    <text x="580" y="356" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Triangle(6, 3)</text>
+    <text x="190" y="380" font-size="14" fill="#4b5563">π × 2 × 2</text>
+    <text x="385" y="380" font-size="14" fill="#4b5563">4 × 5</text>
+    <text x="580" y="380" font-size="14" fill="#4b5563">½ × 6 × 3</text>
+  </g>
+  <text x="360" y="420" text-anchor="middle" font-size="14" fill="#4b5563">บรรทัดเดียวกันในลูป แต่ได้สูตรคนละแบบตามออบเจกต์จริง</text>
+</svg>

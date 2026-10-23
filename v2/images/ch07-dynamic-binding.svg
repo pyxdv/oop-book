@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/></marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker>
+    <marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L11,6 L0,12 z" fill="#ffffff" stroke="#4b5563" stroke-width="1.2"/></marker>
+  </defs>
+  <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">Dynamic binding: ชนิดตัวแปรกับชนิดออบเจกต์จริง</text>
+
+  <rect x="30" y="62" width="330" height="72" rx="10" fill="#f3f4f6" stroke="#9ca3af"/>
+  <text x="46" y="92" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Animal a = new Dog();</text>
+  <text x="46" y="118" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">a.makeSound(); a.sleep();</text>
+
+  <!-- variable -->
+  <rect x="30" y="170" width="170" height="74" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="115" y="200" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">ตัวแปร a</text>
+  <text x="115" y="226" text-anchor="middle" font-size="15" fill="#1f2937">ชนิด Animal</text>
+  <!-- object -->
+  <rect x="30" y="330" width="170" height="74" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="115" y="360" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">ออบเจกต์จริง</text>
+  <text x="115" y="386" text-anchor="middle" font-size="15" fill="#1f2937">เป็น Dog</text>
+  <line x1="115" y1="244" x2="115" y2="326" stroke="#4b5563" stroke-width="2" marker-end="url(#ak)"/>
+  <text x="127" y="290" font-size="14" fill="#4b5563">อ้างถึง</text>
+
+  <!-- classes -->
+  <rect x="440" y="62" width="250" height="44" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="565" y="90" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Object</text>
+
+  <rect x="440" y="150" width="250" height="110" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+  <text x="565" y="176" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Animal</text>
+  <line x1="440" y1="188" x2="690" y2="188" stroke="#9ca3af"/>
+  <text x="456" y="214" font-size="15" fill="#4b5563" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">makeSound()</text>
+  <text x="456" y="242" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">sleep()</text>
+  <text x="600" y="242" font-size="14" fill="#059669">✓ ใช้ตัวนี้</text>
+
+  <rect x="440" y="320" width="250" height="110" rx="8" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="565" y="346" text-anchor="middle" font-size="15" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Dog</text>
+  <line x1="440" y1="358" x2="690" y2="358" stroke="#9ca3af"/>
+  <text x="456" y="384" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">makeSound()</text>
+  <text x="600" y="384" font-size="14" fill="#059669">✓ ใช้ตัวนี้</text>
+  <text x="456" y="412" font-size="15" fill="#4b5563" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">fetch()</text>
+
+  <line x1="565" y1="320" x2="565" y2="262" stroke="#4b5563" stroke-width="1.5" marker-end="url(#tri)"/>
+  <line x1="565" y1="150" x2="565" y2="108" stroke="#4b5563" stroke-width="1.5" marker-end="url(#tri)"/>
+  <text x="575" y="296" font-size="14" fill="#4b5563">extends</text>
+
+  <!-- compile-time arrow -->
+  <line x1="200" y1="207" x2="436" y2="207" stroke="#2563eb" stroke-width="2" marker-end="url(#ab)"/>
+  <text x="212" y="196" font-size="14" fill="#2563eb">① ตอนคอมไพล์ ดูชนิดตัวแปร</text>
+  <text x="212" y="228" font-size="14" fill="#2563eb">Animal มีเมธอดนี้ไหม</text>
+  <!-- runtime arrow -->
+  <line x1="200" y1="370" x2="436" y2="370" stroke="#059669" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="212" y="359" font-size="14" fill="#059669">② ตอนรัน ดูออบเจกต์จริง</text>
+  <text x="212" y="391" font-size="14" fill="#059669">เริ่มหาจากคลาส Dog ก่อน</text>
+
+  <!-- climb up for sleep -->
+  <path d="M690,398 L740,398 L740,232 L694,232" fill="none" stroke="#059669" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ag)"/>
+  <text x="762" y="315" font-size="14" fill="#059669" text-anchor="middle" transform="rotate(-90 762 315)">ไม่เจอ sleep() ไล่ขึ้นไปหา</text>
+
+  <text x="400" y="472" text-anchor="middle" font-size="15" fill="#4b5563">คอมไพเลอร์ตัดสินว่า "เรียกได้ไหม" ส่วน JVM ตัดสินตอนรันว่า "ใช้เวอร์ชันของใคร"</text>
+</svg>
