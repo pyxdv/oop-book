@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 670" width="760" height="670" role="img" aria-label="เส้นทางรายวิชา บท 1-3 พื้นฐาน Java บท 4-7 หลัก OOP คั่นด้วยสอบกลางภาคหลังบท 4 บท 8-10 การออกแบบ แล้วสอบปลายภาค" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<text x="380.0" y="42" font-size="22" fill="#1f2937" text-anchor="middle" font-weight="bold">เส้นทางของรายวิชา: 10 บท 3 ส่วน สอบ 2 ครั้ง</text>
+<text x="84" y="88" font-size="15" fill="#4b5563" text-anchor="middle" font-weight="normal">ส่วน</text>
+<text x="230" y="88" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">ลำดับการเรียน</text>
+<text x="660" y="88" font-size="15" fill="#4b5563" text-anchor="middle" font-weight="normal">รองรับ CLO</text>
+<rect x="24" y="102" width="120" height="116" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="84" y="156.0" font-size="16" fill="#2563eb" text-anchor="middle" font-weight="bold">ส่วนที่ 1</text>
+<text x="84" y="178.0" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">พื้นฐาน Java</text>
+<rect x="24" y="222" width="120" height="196" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+<text x="84" y="316.0" font-size="16" fill="#059669" text-anchor="middle" font-weight="bold">ส่วนที่ 2</text>
+<text x="84" y="338.0" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">หลัก OOP</text>
+<rect x="24" y="422" width="120" height="116" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="84" y="476.0" font-size="16" fill="#7c3aed" text-anchor="middle" font-weight="bold">ส่วนที่ 3</text>
+<text x="84" y="498.0" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">ออกแบบและ</text>
+<text x="84" y="516.0" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">แนวปฏิบัติที่ดี</text>
+<line x1="190" y1="120" x2="190" y2="600" stroke="#9ca3af" stroke-width="3"/>
+<circle cx="190" cy="120" r="15" fill="#2563eb"/>
+<text x="190" y="126" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+<text x="230" y="126" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 1 โครงสร้างโปรแกรมและไวยากรณ์พื้นฐาน</text>
+<rect x="625" y="107" width="70" height="26" rx="13" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="660" y="126" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO1</text>
+<circle cx="190" cy="160" r="15" fill="#2563eb"/>
+<text x="190" y="166" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+<text x="230" y="166" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 2 คำสั่งเงื่อนไขและลูป</text>
+<rect x="625" y="147" width="70" height="26" rx="13" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="660" y="166" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO1</text>
+<circle cx="190" cy="200" r="15" fill="#2563eb"/>
+<text x="190" y="206" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+<text x="230" y="206" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 3 อาร์เรย์</text>
+<rect x="625" y="187" width="70" height="26" rx="13" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="660" y="206" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO1</text>
+<circle cx="190" cy="240" r="15" fill="#059669"/>
+<text x="190" y="246" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">4</text>
+<text x="230" y="246" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 4 แนวคิด OOP และ Abstraction</text>
+<rect x="625" y="227" width="70" height="26" rx="13" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+<text x="660" y="246" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO2</text>
+<polygon points="190,259 214,280 190,301 166,280" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="190" y="285" font-size="14" fill="#d97706" text-anchor="middle" font-weight="bold">สอบ</text>
+<rect x="220" y="264" width="380" height="32" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="234" y="286" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">สอบกลางภาค</text>
+<circle cx="190" cy="320" r="15" fill="#059669"/>
+<text x="190" y="326" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">5</text>
+<text x="230" y="326" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 5 การห่อหุ้ม</text>
+<rect x="625" y="307" width="70" height="26" rx="13" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+<text x="660" y="326" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO3</text>
+<circle cx="190" cy="360" r="15" fill="#059669"/>
+<text x="190" y="366" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">6</text>
+<text x="230" y="366" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 6 การสืบทอด</text>
+<rect x="625" y="347" width="70" height="26" rx="13" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+<text x="660" y="366" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO4</text>
+<circle cx="190" cy="400" r="15" fill="#059669"/>
+<text x="190" y="406" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">7</text>
+<text x="230" y="406" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 7 พหุสัณฐาน</text>
+<rect x="625" y="387" width="70" height="26" rx="13" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+<text x="660" y="406" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO5</text>
+<circle cx="190" cy="440" r="15" fill="#7c3aed"/>
+<text x="190" y="446" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">8</text>
+<text x="230" y="446" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 8 แผนภาพคลาสและการเขียนโค้ดตามแบบ</text>
+<rect x="625" y="427" width="70" height="26" rx="13" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="660" y="446" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO6</text>
+<circle cx="190" cy="480" r="15" fill="#7c3aed"/>
+<text x="190" y="486" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">9</text>
+<text x="230" y="486" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 9 การจัดการข้อผิดพลาด</text>
+<rect x="625" y="467" width="70" height="26" rx="13" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="660" y="486" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO7</text>
+<circle cx="190" cy="520" r="15" fill="#7c3aed"/>
+<text x="190" y="526" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">10</text>
+<text x="230" y="526" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">บทที่ 10 โค้ดที่ดูแลรักษาง่าย</text>
+<rect x="625" y="507" width="70" height="26" rx="13" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="660" y="526" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">CLO7</text>
+<polygon points="190,539 214,560 190,581 166,560" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="190" y="565" font-size="14" fill="#d97706" text-anchor="middle" font-weight="bold">สอบ</text>
+<rect x="220" y="544" width="380" height="32" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="234" y="566" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">สอบปลายภาค</text>
+<circle cx="190" cy="600" r="15" fill="#ffffff" stroke="#4b5563" stroke-width="2"/>
+<text x="190" y="606" font-size="16" fill="#4b5563" text-anchor="middle" font-weight="bold">✓</text>
+<text x="230" y="606" font-size="16" fill="#1f2937" text-anchor="start" font-weight="normal">สรุปรายวิชา</text>
+</svg>

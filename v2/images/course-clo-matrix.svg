@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 460" width="790" height="460" role="img" aria-label="ตาราง CLO กับบท: CLO1 บท 1-3, CLO2 บท 4, CLO3 บท 5, CLO4 บท 6, CLO5 บท 7, CLO6 บท 8, CLO7 บท 9-10" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<text x="395.0" y="40" font-size="22" fill="#1f2937" text-anchor="middle" font-weight="bold">แต่ละ CLO เรียนจากบทไหน</text>
+<text x="395.0" y="66" font-size="15" fill="#4b5563" text-anchor="middle" font-weight="normal">ข้อมูลจากหัวข้อ "รองรับ CLO" ของแต่ละบทในหน้านี้</text>
+<text x="560" y="98" font-size="15" fill="#4b5563" text-anchor="middle" font-weight="normal">บทที่</text>
+<text x="425.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">1</text>
+<text x="455.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">2</text>
+<text x="485.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">3</text>
+<text x="515.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">4</text>
+<text x="545.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">5</text>
+<text x="575.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">6</text>
+<text x="605.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">7</text>
+<text x="635.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">8</text>
+<text x="665.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">9</text>
+<text x="695.0" y="116" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="bold">10</text>
+<text x="746" y="116" font-size="15" fill="#4b5563" text-anchor="middle" font-weight="normal">รวม</text>
+<line x1="500" y1="126" x2="500" y2="406" stroke="#4b5563" stroke-width="2" stroke-dasharray="4 3"/>
+<line x1="620" y1="126" x2="620" y2="406" stroke="#4b5563" stroke-width="2" stroke-dasharray="4 3"/>
+<rect x="16" y="126" width="758" height="40" fill="#f9fafb"/>
+<text x="24" y="152" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO1</text>
+<text x="80" y="152" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">เขียนโปรแกรมด้วยไวยากรณ์และลำดับการทำงาน</text>
+<rect x="413" y="132" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="425.0" y="152" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="443" y="132" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="455.0" y="152" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="473" y="132" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="485.0" y="152" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="503" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="132" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="152" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">3 บท</text>
+<text x="24" y="192" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO2</text>
+<text x="80" y="192" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">ใช้ Abstraction กำหนดหน้าที่ของคลาส</text>
+<rect x="413" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="172" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="515.0" y="192" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="533" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="172" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="192" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">1 บท</text>
+<rect x="16" y="206" width="758" height="40" fill="#f9fafb"/>
+<text x="24" y="232" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO3</text>
+<text x="80" y="232" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">ออกแบบคลาสด้วยการห่อหุ้ม</text>
+<rect x="413" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="212" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="545.0" y="232" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="563" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="212" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="232" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">1 บท</text>
+<text x="24" y="272" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO4</text>
+<text x="80" y="272" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">สร้างโครงสร้างที่ใช้ซ้ำด้วยการสืบทอด</text>
+<rect x="413" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="252" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="575.0" y="272" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="593" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="252" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="272" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">1 บท</text>
+<rect x="16" y="286" width="758" height="40" fill="#f9fafb"/>
+<text x="24" y="312" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO5</text>
+<text x="80" y="312" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">ใช้พหุสัณฐานเปลี่ยนพฤติกรรมออบเจกต์</text>
+<rect x="413" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="292" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="605.0" y="312" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="623" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="292" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="312" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">1 บท</text>
+<text x="24" y="352" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO6</text>
+<text x="80" y="352" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">เขียนโค้ดตามแผนภาพคลาส</text>
+<rect x="413" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="332" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="635.0" y="352" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="653" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="683" y="332" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<text x="746" y="352" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">1 บท</text>
+<rect x="16" y="366" width="758" height="40" fill="#f9fafb"/>
+<text x="24" y="392" font-size="16" fill="#2563eb" text-anchor="start" font-weight="bold">CLO7</text>
+<text x="80" y="392" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">เขียนโค้ด OOP ที่สะอาดและดูแลง่าย</text>
+<rect x="413" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="443" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="473" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="503" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="533" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="563" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="593" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="623" y="372" width="24" height="28" rx="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="653" y="372" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="665.0" y="392" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<rect x="683" y="372" width="24" height="28" rx="5" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+<text x="695.0" y="392" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">✓</text>
+<text x="746" y="392" font-size="15" fill="#1f2937" text-anchor="middle" font-weight="normal">2 บท</text>
+<text x="455.0" y="436" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">ส่วนที่ 1</text>
+<text x="560" y="436" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">ส่วนที่ 2</text>
+<text x="665.0" y="436" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">ส่วนที่ 3</text>
+</svg>
