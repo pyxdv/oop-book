@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#1f2937">checkStock: เทียบ 2 อาร์เรย์ทีละตำแหน่ง i</text>
+  <text x="40" y="70" font-size="15" fill="#4b5563">ข้อมูลจากโค้ดตัวอย่างในบทนี้ (ผลรันจริง [7, 0, -1, -1])</text>
+  <g font-size="15" fill="#4b5563" text-anchor="middle">
+    <text x="275" y="104">i = 0</text><text x="405" y="104">i = 1</text><text x="535" y="104">i = 2</text><text x="665" y="104">i = 3</text>
+  </g>
+  <g font-size="17" font-weight="700" fill="#1f2937">
+    <text x="40" y="146" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">stock</text>
+    <text x="40" y="218" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">order</text>
+    <text x="40" y="282">ตรวจ</text>
+    <text x="40" y="362" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">remaining</text>
+  </g>
+  <g fill="#dbeafe" stroke="#2563eb" stroke-width="2">
+    <rect x="220" y="116" width="110" height="46" rx="6"/><rect x="350" y="116" width="110" height="46" rx="6"/><rect x="480" y="116" width="110" height="46" rx="6"/><rect x="610" y="116" width="110" height="46" rx="6"/>
+  </g>
+  <g fill="#ede9fe" stroke="#7c3aed" stroke-width="2">
+    <rect x="220" y="188" width="110" height="46" rx="6"/><rect x="350" y="188" width="110" height="46" rx="6"/><rect x="480" y="188" width="110" height="46" rx="6"/><rect x="610" y="188" width="110" height="46" rx="6"/>
+  </g>
+  <g font-size="20" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="700" fill="#1f2937" text-anchor="middle">
+    <text x="275" y="146">10</text><text x="405" y="146">5</text><text x="535" y="146">8</text><text x="665" y="146">0</text>
+    <text x="275" y="218">3</text><text x="405" y="218">5</text><text x="535" y="218">12</text><text x="665" y="218">1</text>
+  </g>
+  <g font-size="15" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" text-anchor="middle">
+    <text x="275" y="272" fill="#059669">10&gt;=3 ✓</text><text x="405" y="272" fill="#059669">5&gt;=5 ✓</text><text x="535" y="272" fill="#dc2626">8&gt;=12 ✗</text><text x="665" y="272" fill="#dc2626">0&gt;=1 ✗</text>
+    <text x="275" y="294" fill="#4b5563">10-3</text><text x="405" y="294" fill="#4b5563">5-5</text><text x="535" y="294" fill="#4b5563">ของขาด</text><text x="665" y="294" fill="#4b5563">ของขาด</text>
+  </g>
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="275" y1="302" x2="275" y2="328"/><line x1="405" y1="302" x2="405" y2="328"/><line x1="535" y1="302" x2="535" y2="328"/><line x1="665" y1="302" x2="665" y2="328"/>
+  </g>
+  <rect x="220" y="332" width="110" height="46" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect x="350" y="332" width="110" height="46" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <rect x="480" y="332" width="110" height="46" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="610" y="332" width="110" height="46" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <g font-size="20" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="700" fill="#1f2937" text-anchor="middle">
+    <text x="275" y="362">7</text><text x="405" y="362">0</text><text x="535" y="362">-1</text><text x="665" y="362">-1</text>
+  </g>
+  <text x="40" y="420" font-size="15" fill="#4b5563">ใช้ index i ตัวเดียวกันอ่านทั้งสองแถว แล้วเขียนผลลงช่อง i ของอาร์เรย์ใหม่</text>
+</svg>
