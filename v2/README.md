@@ -104,6 +104,7 @@ description: ใบความรู้วิชาการเขียนโ�
 * method overloading
 * method overriding
 * dynamic binding
+* คลาสนามธรรม (abstract class) และอินเทอร์เฟซ (interface) เบื้องต้น
 * **รองรับ CLO5**
 
 ### ส่วนที่ 3: การออกแบบและแนวปฏิบัติที่ดี

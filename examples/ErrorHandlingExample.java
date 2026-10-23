@@ -49,11 +49,14 @@ public class ErrorHandlingExample {
         }
         
         // Example 4: finally block
+        // ใช้ Scanner ที่อ่านจาก String ไม่ใช่ System.in
+        // เพราะถ้าปิด Scanner ของ System.in ตรงนี้ System.in จะปิดตามไปด้วย
+        // แล้วตัวอย่างที่ 5 จะอ่านค่าไม่ได้ (NoSuchElementException)
         System.out.println("\n>>> Example 4: finally block");
         Scanner scanner = null;
         try {
-            scanner = new Scanner(System.in);
-            System.out.println("Scanner created");
+            scanner = new Scanner("42");
+            System.out.println("Scanner created, read: " + scanner.nextInt());
         } catch (Exception e) {
             System.out.println("Error creating scanner");
         } finally {
@@ -65,8 +68,11 @@ public class ErrorHandlingExample {
         }
         
         // Example 5: Input validation with error handling
+        // สร้าง Scanner ของ System.in ตัวเดียว และปิดครั้งเดียวด้วย try-with-resources
         System.out.println("\n>>> Example 5: Input validation");
-        demonstrateInputValidation();
+        try (Scanner input = new Scanner(System.in)) {
+            demonstrateInputValidation(input);
+        }
         
         System.out.println("\n═══════════════════════════════════════════════════");
         System.out.println("✓ Error handling ทำให้โปรแกรมไม่ crash");
@@ -75,8 +81,7 @@ public class ErrorHandlingExample {
         System.out.println("✓ รองรับ CLO7: Develop robust, maintainable software\n");
     }
     
-    public static void demonstrateInputValidation() {
-        Scanner scanner = new Scanner(System.in);
+    public static void demonstrateInputValidation(Scanner scanner) {
         int number = 0;
         boolean validInput = false;
         
@@ -97,7 +102,5 @@ public class ErrorHandlingExample {
                 scanner.nextLine();  // Clear buffer
             }
         }
-        
-        scanner.close();
     }
 }
