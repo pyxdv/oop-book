@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6b7280"/></marker></defs>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#1f2937">บทเรียนไหนใช้ตอบข้อสอบหัวข้อไหน</text>
+  <text x="40" y="70" font-size="15" fill="#4b5563">ซ้าย: บทที่ 1-4 · ขวา: หัวข้อในตารางข้อสอบ (เส้นลากจากบทที่ต้องใช้)</text>
+  <!-- lines -->
+  <g stroke="#9ca3af" stroke-width="2" fill="none" marker-end="url(#ar)">
+    <path d="M330,135 C400,135 400,245 468,245"/>
+    <path d="M330,135 C400,135 400,465 468,465"/>
+    <path d="M330,245 C400,245 400,465 468,465"/>
+    <path d="M330,355 C400,355 400,465 468,465"/>
+    <path d="M330,465 C400,465 400,135 468,135"/>
+    <path d="M330,465 C400,465 400,245 468,245"/>
+    <path d="M330,465 C400,465 400,355 468,355"/>
+  </g>
+  <!-- left -->
+  <g>
+    <rect x="30" y="95" width="300" height="80" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="128" font-size="17" font-weight="700" fill="#1f2937">บทที่ 1 พื้นฐาน Java</text>
+    <text x="46" y="156" font-size="15" fill="#4b5563">ชนิดข้อมูล ตัวแปร ตัวดำเนินการ</text>
+    <rect x="30" y="205" width="300" height="80" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="238" font-size="17" font-weight="700" fill="#1f2937">บทที่ 2 เงื่อนไขและลูป</text>
+    <text x="46" y="266" font-size="15" fill="#4b5563">if, for, for-each, &amp;&amp; กับ ||</text>
+    <rect x="30" y="315" width="300" height="80" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="348" font-size="17" font-weight="700" fill="#1f2937">บทที่ 3 อาร์เรย์</text>
+    <text x="46" y="376" font-size="15" fill="#4b5563">index, length, นับ, ผลรวม</text>
+    <rect x="30" y="425" width="300" height="80" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+    <text x="46" y="458" font-size="17" font-weight="700" fill="#1f2937">บทที่ 4 OOP และ Abstraction</text>
+    <text x="46" y="486" font-size="15" fill="#4b5563">คลาส ออบเจกต์ เมธอด new</text>
+  </g>
+  <!-- right -->
+  <g>
+    <rect x="470" y="95" width="300" height="80" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="486" y="128" font-size="17" font-weight="700" fill="#1f2937">1. แนวคิดเชิงวัตถุ</text>
+    <text x="486" y="156" font-size="15" fill="#4b5563">ปรนัย · 30 คะแนน</text>
+    <rect x="470" y="205" width="300" height="80" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="486" y="238" font-size="17" font-weight="700" fill="#1f2937">2.1 โครงสร้างคลาส</text>
+    <text x="486" y="266" font-size="15" fill="#4b5563">เติมคำ / โค้ดสั้น · 20 คะแนน</text>
+    <rect x="470" y="315" width="300" height="80" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="486" y="348" font-size="17" font-weight="700" fill="#1f2937">2.2 สถานะของออบเจกต์</text>
+    <text x="486" y="376" font-size="15" fill="#4b5563">เขียนโปรแกรม · 10 คะแนน</text>
+    <rect x="470" y="425" width="300" height="80" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+    <text x="486" y="458" font-size="17" font-weight="700" fill="#1f2937">3. อัลกอริทึมบนอาร์เรย์</text>
+    <text x="486" y="486" font-size="15" fill="#4b5563">เขียนโปรแกรม · 40 คะแนน</text>
+  </g>
+</svg>

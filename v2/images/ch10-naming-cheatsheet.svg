@@ -1,0 +1,58 @@
+<svg style="font-variant-ligatures:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 478" width="780" height="478" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="24" y="42" font-size="22" font-weight="bold" fill="#1f2937">ตั้งชื่อแบบไหน ใช้กับอะไรใน Java</text>
+<rect x="16" y="64" width="748" height="40" rx="8" fill="#dbeafe"/>
+<text x="24" y="90" font-size="16" font-weight="bold" fill="#1f2937">สิ่งที่ตั้งชื่อ</text>
+<text x="138" y="90" font-size="16" font-weight="bold" fill="#1f2937">รูปแบบ</text>
+<text x="356" y="90" font-size="16" font-weight="bold" fill="#1f2937">ชนิดคำ</text>
+<text x="470" y="90" font-size="16" font-weight="bold" fill="#059669">✓ ตัวอย่างที่ดี</text>
+<text x="640" y="90" font-size="16" font-weight="bold" fill="#dc2626">✗ ตัวอย่างที่ไม่ดี</text>
+<line x1="16" y1="170" x2="764" y2="170" stroke="#e5e7eb" stroke-width="1"/>
+<text x="24" y="144" font-size="17" font-weight="bold" fill="#1f2937">คลาส</text>
+<text x="138" y="132" font-size="16" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#7c3aed">PascalCase</text>
+<text x="138" y="154" font-size="14" fill="#4b5563">ขึ้นต้นตัวใหญ่ทุกคำ</text>
+<text x="356" y="144" font-size="15" fill="#1f2937">คำนาม</text>
+<text x="470" y="132" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">Student</text>
+<text x="470" y="154" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">BankAccount</text>
+<text x="640" y="132" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">student</text>
+<text x="640" y="154" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">Bank_account</text>
+<rect x="16" y="170" width="748" height="66" fill="#f9fafb"/>
+<line x1="16" y1="236" x2="764" y2="236" stroke="#e5e7eb" stroke-width="1"/>
+<text x="24" y="210" font-size="17" font-weight="bold" fill="#1f2937">เมธอด</text>
+<text x="138" y="198" font-size="16" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#7c3aed">camelCase</text>
+<text x="138" y="220" font-size="14" fill="#4b5563">คำแรกตัวเล็ก คำถัดไปตัวใหญ่</text>
+<text x="356" y="210" font-size="15" fill="#1f2937">คำกริยา</text>
+<text x="470" y="198" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">calculateTotal()</text>
+<text x="470" y="220" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">isValid()</text>
+<text x="640" y="198" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">Total()</text>
+<text x="640" y="220" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">calc()</text>
+<line x1="16" y1="302" x2="764" y2="302" stroke="#e5e7eb" stroke-width="1"/>
+<text x="24" y="276" font-size="17" font-weight="bold" fill="#1f2937">ตัวแปร</text>
+<text x="138" y="264" font-size="16" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#7c3aed">camelCase</text>
+<text x="138" y="286" font-size="14" fill="#4b5563">คำแรกตัวเล็ก คำถัดไปตัวใหญ่</text>
+<text x="356" y="276" font-size="15" fill="#1f2937">คำนาม</text>
+<text x="470" y="264" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">firstName</text>
+<text x="470" y="286" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">studentCount</text>
+<text x="640" y="264" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">d</text>
+<text x="640" y="286" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">s1</text>
+<rect x="16" y="302" width="748" height="66" fill="#f9fafb"/>
+<line x1="16" y1="368" x2="764" y2="368" stroke="#e5e7eb" stroke-width="1"/>
+<text x="24" y="342" font-size="17" font-weight="bold" fill="#1f2937">ค่าคงที่</text>
+<text x="138" y="330" font-size="16" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#7c3aed">UPPER_SNAKE_CASE</text>
+<text x="138" y="352" font-size="14" fill="#4b5563">ตัวใหญ่หมด คั่นด้วย _</text>
+<text x="356" y="342" font-size="15" fill="#1f2937">คำนาม</text>
+<text x="470" y="330" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">MAX_STUDENTS</text>
+<text x="470" y="352" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">TAX_RATE</text>
+<text x="640" y="330" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">maxStudents</text>
+<text x="640" y="352" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">x</text>
+<line x1="16" y1="434" x2="764" y2="434" stroke="#e5e7eb" stroke-width="1"/>
+<text x="24" y="408" font-size="17" font-weight="bold" fill="#1f2937">แพ็กเกจ</text>
+<text x="138" y="396" font-size="16" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#7c3aed">lowercase</text>
+<text x="138" y="418" font-size="14" fill="#4b5563">ตัวเล็กหมด คั่นด้วยจุด</text>
+<text x="356" y="408" font-size="15" fill="#1f2937">โดเมนกลับด้าน</text>
+<text x="470" y="396" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">com.cafe.order</text>
+<text x="470" y="418" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#059669">th.ac.uni.reg</text>
+<text x="640" y="396" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">Com.Cafe.Order</text>
+<text x="640" y="418" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#dc2626">th.ac.Uni.Reg</text>
+<text x="24" y="462" font-size="14" fill="#4b5563">แค่เห็นรูปแบบของชื่อก็รู้ว่าเป็นอะไร เช่น MAX_STUDENTS เป็นค่าคงที่ Student เป็นคลาส</text>
+</svg>

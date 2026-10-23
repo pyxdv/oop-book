@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 774" width="800" height="774" role="img" aria-label="ลำดับชั้นคลาสของ Throwable ใน Java แยกสี checked และ unchecked">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="400" y="38" text-anchor="middle" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">ลำดับชั้นของ Throwable ใน Java (ตัวที่ใช้บ่อย)</text>
+<rect x="32" y="58" width="22" height="18" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+<text x="62" y="72" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">checked (คอมไพเลอร์บังคับ)</text>
+<rect x="262" y="58" width="22" height="18" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="292" y="72" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">unchecked (สาย RuntimeException)</text>
+<rect x="560" y="58" width="22" height="18" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="590" y="72" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">unchecked (สาย Error)</text>
+<text x="40" y="100" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">* ตาม Java ตัว Throwable เองนับเป็น checked แต่ในทางปฏิบัติเราแทบไม่ catch หรือ throw ตัวมันตรง ๆ</text>
+<text x="28" y="130" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" font-weight="bold" fill="#4b5563">คลาส</text>
+<text x="470" y="130" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" font-weight="bold" fill="#4b5563">เกิดเมื่อ</text>
+<text x="725" y="130" text-anchor="middle" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="15" font-weight="bold" fill="#4b5563">ประเภท</text>
+<line x1="20" y1="138" x2="780" y2="138" stroke="#9ca3af" stroke-width="1"/>
+<path d="M38 163.0 V183 H58" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M68 196.0 V216 H88" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 229.0 V249 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 229.0 V282 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M38 163.0 V315 H58" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M68 328.0 V348 H88" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 361.0 V381 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M68 328.0 V414 H88" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M68 328.0 V447 H88" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 460.0 V480 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 460.0 V513 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 460.0 V546 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M128 559.0 V579 H148" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 460.0 V612 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M128 625.0 V645 H148" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M98 460.0 V678 H118" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<path d="M128 691.0 V711 H148" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+<rect x="28" y="137.0" width="95" height="26" rx="6" fill="#f3f4f6" stroke="#4b5563" stroke-width="1.5"/>
+<text x="37" y="155" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">Throwable</text>
+<text x="470" y="155" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ทุกอย่างที่ throw ได้</text>
+<text x="725" y="155" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#4b5563" font-weight="bold">checked*</text>
+<rect x="58" y="170.0" width="61" height="26" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="67" y="188" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">Error</text>
+<text x="470" y="188" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ปัญหาร้ายแรงของ JVM</text>
+<text x="725" y="188" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626" font-weight="bold">unchecked</text>
+<rect x="88" y="203.0" width="181" height="26" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="97" y="221" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">VirtualMachineError</text>
+<text x="470" y="221" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">JVM ทำงานต่อไม่ได้</text>
+<text x="725" y="221" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626" font-weight="bold">unchecked</text>
+<rect x="118" y="236.0" width="156" height="26" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="127" y="254" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">OutOfMemoryError</text>
+<text x="470" y="254" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">หน่วยความจำหมด</text>
+<text x="725" y="254" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626" font-weight="bold">unchecked</text>
+<rect x="118" y="269.0" width="173" height="26" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/>
+<text x="127" y="287" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">StackOverflowError</text>
+<text x="470" y="287" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">recursion ไม่มีจุดจบ</text>
+<text x="725" y="287" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#dc2626" font-weight="bold">unchecked</text>
+<rect x="58" y="302.0" width="95" height="26" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="67" y="320" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">Exception</text>
+<text x="470" y="320" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ปัญหาที่โปรแกรมรับมือได้</text>
+<text x="725" y="320" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#d97706" font-weight="bold">checked</text>
+<rect x="88" y="335.0" width="113" height="26" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="97" y="353" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">IOException</text>
+<text x="470" y="353" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">อ่านหรือเขียนข้อมูลพลาด</text>
+<text x="725" y="353" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#d97706" font-weight="bold">checked</text>
+<rect x="118" y="368.0" width="199" height="26" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="127" y="386" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">FileNotFoundException</text>
+<text x="470" y="386" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">หาไฟล์ไม่เจอ</text>
+<text x="725" y="386" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#d97706" font-weight="bold">checked</text>
+<rect x="88" y="401.0" width="121" height="26" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="97" y="419" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">SQLException</text>
+<text x="470" y="419" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">คุยกับฐานข้อมูลพลาด</text>
+<text x="725" y="419" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#d97706" font-weight="bold">checked</text>
+<rect x="88" y="434.0" width="156" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="97" y="452" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">RuntimeException</text>
+<text x="470" y="452" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">มักเป็นบั๊กในโค้ดเรา</text>
+<text x="725" y="452" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="118" y="467.0" width="181" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="127" y="485" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">ArithmeticException</text>
+<text x="470" y="485" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">หารจำนวนเต็มด้วย 0</text>
+<text x="725" y="485" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="118" y="500.0" width="190" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="127" y="518" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">NullPointerException</text>
+<text x="470" y="518" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ใช้ตัวแปรที่เป็น null</text>
+<text x="725" y="518" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="118" y="533.0" width="224" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="127" y="551" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">IllegalArgumentException</text>
+<text x="470" y="551" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ส่งค่าพารามิเตอร์ผิด</text>
+<text x="725" y="551" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="148" y="566.0" width="199" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="157" y="584" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">NumberFormatException</text>
+<text x="470" y="584" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ข้อความไม่ใช่ตัวเลข</text>
+<text x="725" y="584" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="118" y="599.0" width="233" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="127" y="617" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">IndexOutOfBoundsException</text>
+<text x="470" y="617" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">index เกินขอบเขต</text>
+<text x="725" y="617" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="148" y="632.0" width="276" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="157" y="650" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">ArrayIndexOutOfBoundsException</text>
+<text x="470" y="650" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">index อาร์เรย์เกิน</text>
+<text x="725" y="650" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="118" y="665.0" width="207" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="127" y="683" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">NoSuchElementException</text>
+<text x="470" y="683" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ไม่มีข้อมูลให้อ่านแล้ว</text>
+<text x="725" y="683" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+<rect x="148" y="698.0" width="207" height="26" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="157" y="716" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">InputMismatchException</text>
+<text x="470" y="716" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">Scanner ได้ชนิดไม่ตรง</text>
+<text x="725" y="716" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#2563eb" font-weight="bold">unchecked</text>
+</svg>

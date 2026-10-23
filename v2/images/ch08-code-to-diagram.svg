@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="780" height="330" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">ย้อนทาง: อ่านโค้ด Rectangle แล้ววาดเป็นกล่อง</text>
+  <text x="200" y="66" text-anchor="middle" font-size="15" fill="#4b5563">โค้ด Java (ละตัวเมธอดไว้)</text>
+  <text x="600" y="66" text-anchor="middle" font-size="15" fill="#4b5563">แผนภาพคลาส</text>
+
+  <!-- โค้ด -->
+  <rect x="20" y="78" width="360" height="190" rx="10" fill="#f3f4f6"/>
+  <rect x="20" y="86" width="360" height="24" fill="#dbeafe"/>
+  <rect x="20" y="122" width="360" height="50" fill="#d1fae5"/>
+  <rect x="20" y="184" width="360" height="50" fill="#ede9fe"/>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="30" y="103">public class Rectangle {</text>
+    <text x="50" y="141">private double width;</text>
+    <text x="50" y="165">private double height;</text>
+    <text x="50" y="203">public double calculateArea()</text>
+    <text x="50" y="227">public double calculatePerimeter()</text>
+    <text x="30" y="256">}</text>
+  </g>
+
+  <!-- ลูกศร -->
+  <g stroke="#4b5563" stroke-width="1.8">
+    <line x1="384" y1="98" x2="426" y2="98"/>
+    <line x1="384" y1="147" x2="426" y2="147"/>
+    <line x1="384" y1="209" x2="426" y2="209"/>
+  </g>
+  <g fill="#4b5563">
+    <polygon points="434,98 424,93 424,103"/>
+    <polygon points="434,147 424,142 424,152"/>
+    <polygon points="434,209 424,204 424,214"/>
+  </g>
+
+  <!-- กล่องคลาส -->
+  <rect x="436" y="78" width="324" height="38" fill="#dbeafe"/>
+  <rect x="436" y="116" width="324" height="62" fill="#d1fae5"/>
+  <rect x="436" y="178" width="324" height="62" fill="#ede9fe"/>
+  <rect x="436" y="78" width="324" height="162" fill="none" stroke="#1f2937" stroke-width="2"/>
+  <line x1="436" y1="116" x2="760" y2="116" stroke="#1f2937" stroke-width="2"/>
+  <line x1="436" y1="178" x2="760" y2="178" stroke="#1f2937" stroke-width="2"/>
+  <text x="598" y="104" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">Rectangle</text>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="446" y="142">- width : double</text>
+    <text x="446" y="166">- height : double</text>
+    <text x="446" y="204">+ calculateArea() : double</text>
+    <text x="446" y="228">+ calculatePerimeter() : double</text>
+  </g>
+  <text x="390" y="298" text-anchor="middle" font-size="15" fill="#1f2937">private กลายเป็น <tspan font-weight="bold">-</tspan><tspan dx="24">public กลายเป็น </tspan><tspan font-weight="bold">+</tspan><tspan dx="24">ชนิดข้อมูลย้ายไปไว้หลังเครื่องหมาย </tspan><tspan font-weight="bold">:</tspan></text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="font-variant-ligatures:none" viewBox="0 0 760 400" width="760" height="400" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="380" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">break ออกจากลูปทั้งลูป ส่วน continue ข้ามแค่รอบนั้น</text>
+  <text x="60" y="84" font-size="17" font-weight="bold" fill="#1f2937">break: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="normal" font-size="15">if (i % 3 == 0) break</tspan></text>
+  <text x="60" y="256" font-size="17" font-weight="bold" fill="#1f2937">continue: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="normal" font-size="15">if (i % 2 == 0) continue</tspan></text>
+  <line x1="40" y1="222" x2="720" y2="222" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="380" y="390" text-anchor="middle" font-size="14" fill="#4b5563">ทั้งสองแถว i วิ่งจาก 1 ถึง 10 ผลลัพธ์แถวบน: เจอแล้ว: 3   แถวล่าง: 1 3 5 7 9</text>
+    <rect x="60" y="118" width="52" height="52" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="86" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">1</text>
+  <rect x="60" y="290" width="52" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="86" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">1</text>
+  <text x="86" y="362" text-anchor="middle" font-size="14" fill="#2563eb">พิมพ์</text>
+  <rect x="126" y="118" width="52" height="52" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="152" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">2</text>
+  <rect x="126" y="290" width="52" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="152" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">2</text>
+  <text x="152" y="362" text-anchor="middle" font-size="14" fill="#d97706">ข้าม</text>
+  <rect x="192" y="118" width="52" height="52" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/><text x="218" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">3</text>
+  <rect x="192" y="290" width="52" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="218" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">3</text>
+  <text x="218" y="362" text-anchor="middle" font-size="14" fill="#2563eb">พิมพ์</text>
+  <rect x="258" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="284" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">4</text>
+  <rect x="258" y="290" width="52" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="284" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">4</text>
+  <text x="284" y="362" text-anchor="middle" font-size="14" fill="#d97706">ข้าม</text>
+  <rect x="324" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="350" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">5</text>
+  <rect x="324" y="290" width="52" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="350" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">5</text>
+  <text x="350" y="362" text-anchor="middle" font-size="14" fill="#2563eb">พิมพ์</text>
+  <rect x="390" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="416" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">6</text>
+  <rect x="390" y="290" width="52" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="416" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">6</text>
+  <text x="416" y="362" text-anchor="middle" font-size="14" fill="#d97706">ข้าม</text>
+  <rect x="456" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="482" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">7</text>
+  <rect x="456" y="290" width="52" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="482" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">7</text>
+  <text x="482" y="362" text-anchor="middle" font-size="14" fill="#2563eb">พิมพ์</text>
+  <rect x="522" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="548" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">8</text>
+  <rect x="522" y="290" width="52" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="548" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">8</text>
+  <text x="548" y="362" text-anchor="middle" font-size="14" fill="#d97706">ข้าม</text>
+  <rect x="588" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="614" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">9</text>
+  <rect x="588" y="290" width="52" height="52" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="614" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">9</text>
+  <text x="614" y="362" text-anchor="middle" font-size="14" fill="#2563eb">พิมพ์</text>
+  <rect x="654" y="118" width="52" height="52" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 3"/><text x="680" y="151" text-anchor="middle" font-size="18" font-weight="bold" fill="#9ca3af" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">10</text>
+  <rect x="654" y="290" width="52" height="52" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="680" y="323" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">10</text>
+  <text x="680" y="362" text-anchor="middle" font-size="14" fill="#d97706">ข้าม</text>
+  <text x="182" y="192" text-anchor="middle" font-size="14" fill="#059669">เจอ 3 → พิมพ์แล้ว break</text>
+  <text x="475" y="192" text-anchor="middle" font-size="14" fill="#4b5563">✗ ลูปจบไปแล้ว รอบ 4 ถึง 10 ไม่ได้ทำ</text>
+  <line x1="246" y1="104" x2="246" y2="182" stroke="#dc2626" stroke-width="3"/>
+  <text x="252" y="108" font-size="14" font-weight="bold" fill="#dc2626">หยุดตรงนี้</text>
+</svg>

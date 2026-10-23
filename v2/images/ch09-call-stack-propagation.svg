@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="exception จาก Integer.parseInt เดินย้อน call stack ผ่าน parseQuantity และ checkout จนถึง main ที่มี catch">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="pBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2563eb"/></marker>
+    <marker id="pRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#dc2626"/></marker>
+  </defs>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" text-anchor="middle" font-size="22" font-weight="bold">exception เดินย้อนกลับตาม call stack</text>
+    <text x="400" y="62" text-anchor="middle" font-size="15" fill="#4b5563">ตัวอย่างจาก OrderApp เมื่อเรียก checkout("สอง")</text>
+
+    <!-- column headers -->
+    <text x="110" y="96" text-anchor="middle" font-size="15" font-weight="bold" fill="#2563eb">ขาไป: เรียกเมธอด</text>
+    <text x="375" y="96" text-anchor="middle" font-size="15" font-weight="bold" fill="#4b5563">call stack</text>
+    <text x="650" y="96" text-anchor="middle" font-size="15" font-weight="bold" fill="#dc2626">ขากลับ: exception</text>
+
+    <!-- frames (top = newest) -->
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15">
+      <rect x="230" y="110" width="290" height="46" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+      <text x="375" y="138" text-anchor="middle">Integer.parseInt</text>
+      <rect x="230" y="172" width="290" height="46" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+      <text x="375" y="200" text-anchor="middle">parseQuantity</text>
+      <rect x="230" y="234" width="290" height="46" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+      <text x="375" y="262" text-anchor="middle">checkout</text>
+      <rect x="230" y="296" width="290" height="46" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+      <text x="375" y="324" text-anchor="middle">main (มี try-catch)</text>
+    </g>
+
+    <!-- call arrows (left, upward) -->
+    <path d="M200 319 H170 V257 H222" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#pBlue)"/>
+    <path d="M200 257 H150 V195 H222" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#pBlue)"/>
+    <path d="M200 195 H130 V133 H222" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#pBlue)"/>
+    <text x="40" y="232" font-size="14" fill="#2563eb">① เรียกซ้อน</text>
+    <text x="40" y="250" font-size="14" fill="#2563eb">ขึ้นไปทีละชั้น</text>
+
+    <!-- exception arrows (right, downward) -->
+    <path d="M528 133 H560 V187 H528" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#pRed)"/>
+    <path d="M528 195 H580 V249 H528" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#pRed)"/>
+    <path d="M528 257 H600 V311 H528" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#pRed)"/>
+    <text x="616" y="138" font-size="14" fill="#dc2626">② โยน exception ออกมา</text>
+    <text x="616" y="200" font-size="14" fill="#4b5563">ไม่มี catch ส่งต่อ</text>
+    <text x="616" y="262" font-size="14" fill="#4b5563">ไม่มี catch ส่งต่อ</text>
+    <text x="616" y="324" font-size="14" fill="#059669" font-weight="bold">③ ✓ catch จับได้</text>
+
+    <text x="400" y="376" text-anchor="middle" font-size="15" fill="#4b5563">เมธอดที่ exception วิ่งผ่าน จะหยุดทำงานทันที บรรทัดที่เหลือไม่ได้ทำ</text>
+
+    <!-- stack trace panel -->
+    <rect x="30" y="396" width="740" height="180" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+    <text x="48" y="424" font-size="15" font-weight="bold">ถ้า main ไม่มี catch: โปรแกรมหยุด แล้ว JVM พิมพ์ stack trace (บนสุด = ใหม่สุด)</text>
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14">
+      <text x="48" y="456" fill="#dc2626">Exception in thread "main" java.lang.NumberFormatException:</text>
+      <text x="80" y="476" fill="#dc2626">For input string: "สอง"</text>
+      <text x="64" y="500" fill="#4b5563">at java.base/java.lang.Integer.parseInt(Integer.java:662)</text>
+      <text x="64" y="522">at OrderAppCrash.parseQuantity(OrderAppCrash.java:3)</text>
+      <text x="64" y="544">at OrderAppCrash.checkout(OrderAppCrash.java:7)</text>
+      <text x="64" y="566">at OrderAppCrash.main(OrderAppCrash.java:12)</text>
+    </g>
+    <text x="760" y="500" text-anchor="end" font-size="14" fill="#4b5563">ตัดบรรทัดใน JDK ออกบางส่วน</text>
+    <text x="760" y="544" text-anchor="end" font-size="14" fill="#4b5563">ชื่อไฟล์:เลขบรรทัด</text>
+  </g>
+</svg>

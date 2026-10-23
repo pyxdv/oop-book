@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" width="780" height="380" role="img" aria-label="สัดส่วนคะแนนสอบปลายภาค ตอนที่ 1 ปรนัย 40 คะแนน ตอนที่ 2 เติมคำ 20 คะแนน ตอนที่ 3 วิเคราะห์โค้ด 10 คะแนน ตอนที่ 4 เขียนโปรแกรม 30 คะแนน" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<text x="390.0" y="40" font-size="21" fill="#1f2937" text-anchor="middle" font-weight="bold">สัดส่วนคะแนนสอบปลายภาค (เต็ม 100 คะแนน เวลา 3 ชั่วโมง)</text>
+<line x1="290" y1="72" x2="290" y2="344" stroke="#e5e7eb" stroke-width="1"/>
+<text x="290" y="364" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">0</text>
+<line x1="380" y1="72" x2="380" y2="344" stroke="#e5e7eb" stroke-width="1"/>
+<text x="380" y="364" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">10</text>
+<line x1="470" y1="72" x2="470" y2="344" stroke="#e5e7eb" stroke-width="1"/>
+<text x="470" y="364" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">20</text>
+<line x1="560" y1="72" x2="560" y2="344" stroke="#e5e7eb" stroke-width="1"/>
+<text x="560" y="364" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">30</text>
+<line x1="650" y1="72" x2="650" y2="344" stroke="#e5e7eb" stroke-width="1"/>
+<text x="650" y="364" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">40</text>
+<text x="276" y="100" font-size="15" fill="#1f2937" text-anchor="end" font-weight="bold">ตอนที่ 1 ปรนัย</text>
+<text x="276" y="120" font-size="14" fill="#4b5563" text-anchor="end" font-weight="normal">40 ข้อ</text>
+<path d="M290,80 h356 a4,4 0 0 1 4,4 v36 a4,4 0 0 1 -4,4 h-356 z" fill="#2563eb"/>
+<text x="660" y="109" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">40 คะแนน</text>
+<text x="276" y="166" font-size="15" fill="#1f2937" text-anchor="end" font-weight="bold">ตอนที่ 2 เติมคำในช่องว่าง</text>
+<text x="276" y="186" font-size="14" fill="#4b5563" text-anchor="end" font-weight="normal">20 จุด</text>
+<path d="M290,146 h176 a4,4 0 0 1 4,4 v36 a4,4 0 0 1 -4,4 h-176 z" fill="#059669"/>
+<text x="480" y="175" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">20 คะแนน</text>
+<text x="276" y="232" font-size="15" fill="#1f2937" text-anchor="end" font-weight="bold">ตอนที่ 3 วิเคราะห์โค้ด</text>
+<text x="276" y="252" font-size="14" fill="#4b5563" text-anchor="end" font-weight="normal">เขียนตอบสั้น 5 ข้อ</text>
+<path d="M290,212 h86 a4,4 0 0 1 4,4 v36 a4,4 0 0 1 -4,4 h-86 z" fill="#d97706"/>
+<text x="390" y="241" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">10 คะแนน</text>
+<text x="276" y="298" font-size="15" fill="#1f2937" text-anchor="end" font-weight="bold">ตอนที่ 4 เขียนโปรแกรม</text>
+<text x="276" y="318" font-size="14" fill="#4b5563" text-anchor="end" font-weight="normal">และอธิบายทฤษฎี</text>
+<path d="M290,278 h266 a4,4 0 0 1 4,4 v36 a4,4 0 0 1 -4,4 h-266 z" fill="#7c3aed"/>
+<text x="570" y="307" font-size="16" fill="#1f2937" text-anchor="start" font-weight="bold">30 คะแนน</text>
+<text x="470" y="388" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">คะแนน</text>
+</svg>

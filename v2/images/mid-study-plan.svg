@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#1f2937">ลำดับทบทวนที่แนะนำก่อนสอบกลางภาค</text>
+  <text x="40" y="70" font-size="15" fill="#4b5563">เป็นแผนแนะนำ ไม่ใช่กำหนดการสอบจริง · ตัวเลขท้ายบรรทัดคือคะแนนของหัวข้อนั้น</text>
+  <line x1="80" y1="110" x2="80" y2="510" stroke="#9ca3af" stroke-width="3"/>
+  <g>
+    <circle cx="80" cy="115" r="18" fill="#2563eb"/><text x="80" y="121" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+    <text x="115" y="112" font-size="17" font-weight="700" fill="#1f2937">ทวนแนวคิด: คลาสกับออบเจกต์ต่างกันอย่างไร</text>
+    <text x="115" y="136" font-size="15" fill="#4b5563">การห่อหุ้ม, Abstraction, public / private · ข้อ 1 (30)</text>
+    <circle cx="80" cy="215" r="18" fill="#7c3aed"/><text x="80" y="221" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+    <text x="115" y="212" font-size="17" font-weight="700" fill="#1f2937">เขียนคลาสเปล่าด้วยมือจนคล่อง</text>
+    <text x="115" y="236" font-size="15" fill="#4b5563">แอตทริบิวต์ + ชนิดข้อมูล, หัวเมธอด, new · ข้อ 2.1 (20)</text>
+    <circle cx="80" cy="315" r="18" fill="#059669"/><text x="80" y="321" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+    <text x="115" y="312" font-size="17" font-weight="700" fill="#1f2937">getter / setter และเมธอดที่เปลี่ยนค่า</text>
+    <text x="115" y="336" font-size="15" fill="#4b5563">ฝากเงินแล้ว balance เพิ่ม, โดนโจมตีแล้ว hp ลด · ข้อ 2.2 (10)</text>
+    <circle cx="80" cy="415" r="18" fill="#059669"/><text x="80" y="421" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+    <text x="115" y="412" font-size="17" font-weight="700" fill="#1f2937">ซ้อม 3 รูปแบบอาร์เรย์ (ให้เวลามากที่สุด)</text>
+    <text x="115" y="436" font-size="15" fill="#4b5563">นับตามเงื่อนไข, เทียบ 2 อาร์เรย์, ผลรวมในช่วง · ข้อ 3 (40)</text>
+    <circle cx="80" cy="505" r="18" fill="#d97706"/><text x="80" y="511" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+    <text x="115" y="502" font-size="17" font-weight="700" fill="#1f2937">เขียนบนกระดาษเหมือนวันสอบ แล้วตรวจตาม Checklist</text>
+    <text x="115" y="526" font-size="15" fill="#4b5563">ไม่มี IDE ช่วยเตือน ต้องหา ; และ } ที่ขาดเอง</text>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 600" width="780" height="600" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">ความสัมพันธ์แต่ละแบบ ผูกคลาสไว้แน่นแค่ไหน</text>
+  <text x="390" y="62" text-anchor="middle" font-size="15" fill="#d97706">ภาพแนวคิด ไม่ใช่ข้อมูลวัดจริง (เรียงตามแนวทางที่ตำราส่วนใหญ่ใช้)</text>
+
+  <!-- เส้นฐาน -->
+  <line x1="250" y1="84" x2="250" y2="508" stroke="#9ca3af" stroke-width="1.5"/>
+
+  <!-- แถว: ชื่อ, แท่ง, คำอธิบาย (A ต้องแก้แค่ไหนเมื่อ B เปลี่ยน) -->
+  <g font-size="17" font-weight="bold" fill="#1f2937">
+    <text x="30" y="112">Dependency</text>
+    <text x="30" y="182">Association</text>
+    <text x="30" y="252">Aggregation</text>
+    <text x="30" y="322">Composition</text>
+    <text x="30" y="392">Realization</text>
+    <text x="30" y="462">Inheritance</text>
+  </g>
+  <g font-size="14" fill="#4b5563">
+    <text x="30" y="132">การพึ่งพา</text>
+    <text x="30" y="202">การเชื่อมโยง</text>
+    <text x="30" y="272">ส่วนประกอบแบบหลวม</text>
+    <text x="30" y="342">ส่วนประกอบแบบแน่น</text>
+    <text x="30" y="412">ทำตามอินเทอร์เฟซ</text>
+    <text x="30" y="482">การสืบทอด</text>
+  </g>
+
+  <rect x="250" y="96" width="80" height="22" rx="4" fill="#bfdbfe"/>
+  <rect x="250" y="166" width="160" height="22" rx="4" fill="#93c5fd"/>
+  <rect x="250" y="236" width="240" height="22" rx="4" fill="#60a5fa"/>
+  <rect x="250" y="306" width="320" height="22" rx="4" fill="#3b82f6"/>
+  <rect x="250" y="376" width="400" height="22" rx="4" fill="#2563eb"/>
+  <rect x="250" y="446" width="480" height="22" rx="4" fill="#1d4ed8"/>
+
+  <g font-size="15" fill="#1f2937">
+    <text x="252" y="138">ใช้ B แค่ในเมธอด กระทบเฉพาะเมธอดนั้น</text>
+    <text x="252" y="208">เก็บ B ไว้ในแอตทริบิวต์ตลอดอายุออบเจกต์</text>
+    <text x="252" y="278">ถือ B เป็นส่วนหนึ่ง แต่ B มีชีวิตของตัวเอง</text>
+    <text x="252" y="348">คุมการเกิดและการตายของ B เอง</text>
+    <text x="252" y="418">ต้องมีทุกเมธอดตามสัญญาของ B</text>
+    <text x="252" y="488">ได้ทุกอย่างของ B ติดมา B เปลี่ยน A เปลี่ยนตาม</text>
+  </g>
+
+  <!-- แกน -->
+  <line x1="260" y1="540" x2="720" y2="540" stroke="#1f2937" stroke-width="2"/>
+  <polygon points="732,540 718,533 718,547" fill="#1f2937"/>
+  <text x="250" y="570" font-size="15" fill="#1f2937">ผูกกันหลวม แก้ทีหลังง่าย</text>
+  <text x="732" y="570" text-anchor="end" font-size="15" fill="#1f2937">ผูกกันแน่น แก้ทีหลังยาก</text>
+</svg>

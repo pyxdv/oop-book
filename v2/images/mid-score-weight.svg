@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="40" y="46" font-size="22" font-weight="700" fill="#1f2937">คะแนนสอบกลางภาคแยกตามหัวข้อ (เต็ม 100)</text>
+  <text x="40" y="72" font-size="15" fill="#4b5563">ตัวเลขตามตารางในแนวข้อสอบ สีของแท่งบอกรูปแบบข้อสอบ</text>
+  <!-- grid -->
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="40" y1="96" x2="40" y2="380"/>
+    <line x1="170" y1="96" x2="170" y2="380"/>
+    <line x1="300" y1="96" x2="300" y2="380"/>
+    <line x1="430" y1="96" x2="430" y2="380"/>
+    <line x1="560" y1="96" x2="560" y2="380"/>
+  </g>
+  <g font-size="14" fill="#4b5563" text-anchor="middle">
+    <text x="40" y="398">0</text><text x="170" y="398">10</text><text x="300" y="398">20</text><text x="430" y="398">30</text><text x="560" y="398">40</text>
+  </g>
+  <!-- row 1 -->
+  <text x="40" y="112" font-size="16" font-weight="700" fill="#1f2937">1. แนวคิดเชิงวัตถุ</text>
+  <text x="235" y="112" font-size="15" fill="#4b5563">ปรนัย (กากบาท)</text>
+  <rect x="40" y="122" width="390" height="30" rx="4" fill="#2563eb"/>
+  <text x="442" y="143" font-size="16" font-weight="700" fill="#1f2937">30 คะแนน</text>
+  <!-- row 2 -->
+  <text x="40" y="182" font-size="16" font-weight="700" fill="#1f2937">2.1 โครงสร้างคลาสและไวยากรณ์ Java</text>
+  <text x="372" y="182" font-size="15" fill="#4b5563">เติมคำ / เขียนโค้ดสั้น</text>
+  <rect x="40" y="192" width="260" height="30" rx="4" fill="#7c3aed"/>
+  <text x="312" y="213" font-size="16" font-weight="700" fill="#1f2937">20 คะแนน</text>
+  <!-- row 3 -->
+  <text x="40" y="252" font-size="16" font-weight="700" fill="#1f2937">2.2 การจัดการสถานะของออบเจกต์</text>
+  <text x="340" y="252" font-size="15" fill="#4b5563">เขียนโปรแกรม</text>
+  <rect x="40" y="262" width="130" height="30" rx="4" fill="#059669"/>
+  <text x="182" y="283" font-size="16" font-weight="700" fill="#1f2937">10 คะแนน</text>
+  <!-- row 4 -->
+  <text x="40" y="322" font-size="16" font-weight="700" fill="#1f2937">3. อัลกอริทึมพื้นฐานบนอาร์เรย์</text>
+  <text x="318" y="322" font-size="15" fill="#4b5563">เขียนโปรแกรม</text>
+  <rect x="40" y="332" width="520" height="30" rx="4" fill="#059669"/>
+  <text x="572" y="353" font-size="16" font-weight="700" fill="#1f2937">40 คะแนน (มากที่สุด)</text>
+  <!-- stacked by format -->
+  <line x1="40" y1="424" x2="760" y2="424" stroke="#9ca3af"/>
+  <text x="40" y="454" font-size="17" font-weight="700" fill="#1f2937">รวมตามรูปแบบข้อสอบ: ครึ่งหนึ่งเป็นข้อเขียนโปรแกรม</text>
+  <rect x="40" y="468" width="214" height="34" rx="4" fill="#2563eb"/>
+  <rect x="256" y="468" width="142" height="34" fill="#7c3aed"/>
+  <rect x="400" y="468" width="360" height="34" rx="4" fill="#059669"/>
+  <g font-size="15" font-weight="700" fill="#ffffff">
+    <text x="52" y="490">ปรนัย 30</text>
+    <text x="266" y="490">เติมคำ 20</text>
+    <text x="412" y="490">เขียนโปรแกรม 50 (ข้อ 2.2 + ข้อ 3)</text>
+  </g>
+  <text x="40" y="534" font-size="15" fill="#4b5563">เต็ม 100 คะแนน คิดเป็น 25% ของคะแนนรวมรายวิชา · เวลาสอบ 3 ชั่วโมง</text>
+</svg>

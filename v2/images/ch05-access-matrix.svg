@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="ตารางเทียบตัวกำหนดสิทธิ์การเข้าถึงทั้ง 4 แบบ ว่าเข้าถึงได้จากที่ใดบ้าง">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="400" y="38" font-size="22" font-weight="700" text-anchor="middle">ใครเข้าถึงได้บ้าง: ตัวกำหนดสิทธิ์การเข้าถึง 4 แบบ</text>
+
+    <!-- หัวคอลัมน์ -->
+    <g font-size="15" font-weight="700" text-anchor="middle">
+      <text x="272" y="80">คลาสเดียวกัน</text>
+      <text x="272" y="100" font-weight="400" fill="#4b5563" font-size="14">(ในตัวคลาสนั้นเอง)</text>
+      <text x="417" y="80">แพ็กเกจเดียวกัน</text>
+      <text x="417" y="100" font-weight="400" fill="#4b5563" font-size="14">(คลาสอื่นในแพ็กเกจ)</text>
+      <text x="562" y="80">คลาสลูก</text>
+      <text x="562" y="100" font-weight="400" fill="#4b5563" font-size="14">(อยู่ต่างแพ็กเกจ)</text>
+      <text x="707" y="80">ที่อื่นทั้งหมด</text>
+      <text x="707" y="100" font-weight="400" fill="#4b5563" font-size="14">(ต่างแพ็กเกจ ไม่ใช่ลูก)</text>
+    </g>
+
+    <!-- ป้ายแถว -->
+    <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="17" font-weight="700">
+      <text x="30" y="150" fill="#2563eb">public</text>
+      <text x="30" y="220" fill="#7c3aed">protected</text>
+      <text x="30" y="282" fill="#d97706">(ไม่ใส่)</text>
+      <text x="30" y="360" fill="#dc2626">private</text>
+    </g>
+    <g font-size="14" fill="#4b5563">
+      <text x="30" y="170">เปิดให้ทุกที่</text>
+      <text x="30" y="240">+ คลาสลูก</text>
+      <text x="30" y="302">default หรือ</text>
+      <text x="30" y="320">package-private</text>
+      <text x="30" y="380">เฉพาะในคลาส</text>
+    </g>
+
+    <!-- เซลล์ -->
+    <g font-size="16" font-weight="700" text-anchor="middle">
+      <!-- public -->
+      <rect x="202" y="120" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="272" y="156" fill="#059669">✓ ได้</text>
+      <rect x="347" y="120" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="417" y="156" fill="#059669">✓ ได้</text>
+      <rect x="492" y="120" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="562" y="156" fill="#059669">✓ ได้</text>
+      <rect x="637" y="120" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="707" y="156" fill="#059669">✓ ได้</text>
+      <!-- protected -->
+      <rect x="202" y="190" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="272" y="226" fill="#059669">✓ ได้</text>
+      <rect x="347" y="190" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="417" y="226" fill="#059669">✓ ได้</text>
+      <rect x="492" y="190" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="562" y="226" fill="#059669">✓ ได้ *</text>
+      <rect x="637" y="190" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="707" y="226" fill="#dc2626">✗ ไม่ได้</text>
+      <!-- default -->
+      <rect x="202" y="260" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="272" y="296" fill="#059669">✓ ได้</text>
+      <rect x="347" y="260" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="417" y="296" fill="#059669">✓ ได้</text>
+      <rect x="492" y="260" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="562" y="296" fill="#dc2626">✗ ไม่ได้</text>
+      <rect x="637" y="260" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="707" y="296" fill="#dc2626">✗ ไม่ได้</text>
+      <!-- private -->
+      <rect x="202" y="330" width="140" height="60" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/><text x="272" y="366" fill="#059669">✓ ได้</text>
+      <rect x="347" y="330" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="417" y="366" fill="#dc2626">✗ ไม่ได้</text>
+      <rect x="492" y="330" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="562" y="366" fill="#dc2626">✗ ไม่ได้</text>
+      <rect x="637" y="330" width="140" height="60" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="1.5"/><text x="707" y="366" fill="#dc2626">✗ ไม่ได้</text>
+    </g>
+
+    <!-- ลูกศรระดับ -->
+    <text x="30" y="420" font-size="14" fill="#4b5563">เรียงจากเปิดกว้างไปปิดแน่น: public &gt; protected &gt; (ไม่ใส่) &gt; private</text>
+    <text x="30" y="446" font-size="14" fill="#4b5563">* คลาสลูกต่างแพ็กเกจใช้ได้ผ่านการสืบทอดในโค้ดของคลาสลูกเอง (เช่น เรียก owner ตรง ๆ ในเมธอดของคลาสลูก)</text>
+    <text x="30" y="468" font-size="14" fill="#4b5563">ทุกช่องตรวจกับ javac (JDK 21) แล้ว ช่อง ✗ คือคอมไพล์ไม่ผ่าน</text>
+  </g>
+</svg>

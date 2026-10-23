@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780" height="440" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="390" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">คลาส Order เดียวกัน วาดได้ 3 ระดับรายละเอียด</text>
+
+  <!-- ป้ายระดับ -->
+  <g text-anchor="middle">
+    <text x="120" y="74" font-size="17" font-weight="bold" fill="#2563eb">Conceptual</text>
+    <text x="120" y="96" font-size="15" fill="#4b5563">ระดับแนวคิด</text>
+    <text x="345" y="74" font-size="17" font-weight="bold" fill="#059669">Specification</text>
+    <text x="345" y="96" font-size="15" fill="#4b5563">ระดับออกแบบ</text>
+    <text x="615" y="74" font-size="17" font-weight="bold" fill="#7c3aed">Implementation</text>
+    <text x="615" y="96" font-size="15" fill="#4b5563">ระดับลงมือเขียน</text>
+  </g>
+
+  <g fill="#ffffff" stroke="#1f2937" stroke-width="2">
+    <rect x="20" y="110" width="200" height="40"/>
+    <rect x="240" y="110" width="210" height="180"/>
+    <rect x="470" y="110" width="290" height="228"/>
+  </g>
+  <g fill="#dbeafe">
+    <rect x="21" y="111" width="198" height="38"/>
+    <rect x="241" y="111" width="208" height="37"/>
+    <rect x="471" y="111" width="288" height="37"/>
+  </g>
+  <g stroke="#1f2937" stroke-width="2">
+    <line x1="240" y1="148" x2="450" y2="148"/><line x1="240" y1="230" x2="450" y2="230"/>
+    <line x1="470" y1="148" x2="760" y2="148"/><line x1="470" y1="254" x2="760" y2="254"/>
+  </g>
+  <g font-size="18" font-weight="bold" fill="#1f2937" text-anchor="middle">
+    <text x="120" y="136">Order</text>
+    <text x="345" y="136">Order</text>
+    <text x="615" y="136">Order</text>
+  </g>
+  <g font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">
+    <text x="252" y="172">orderId</text>
+    <text x="252" y="196">items</text>
+    <text x="252" y="220">total</text>
+    <text x="252" y="254">addItem()</text>
+    <text x="252" y="278">calculateTotal()</text>
+
+    <text x="480" y="172">- orderId : String</text>
+    <text x="480" y="196">- customer : Customer</text>
+    <text x="480" y="220">- items : List&lt;OrderItem&gt;</text>
+    <text x="480" y="244">- total : double</text>
+    <text x="480" y="278">+ addItem(p : Product, q : int)</text>
+    <text x="480" y="302">+ calculateTotal() : void</text>
+    <text x="480" y="326">+ getTotal() : double</text>
+  </g>
+
+  <g font-size="15" fill="#1f2937" text-anchor="middle">
+    <text x="120" y="190">มีแค่ชื่อคลาส</text>
+    <text x="120" y="212">กับเส้นความสัมพันธ์</text>
+    <text x="345" y="318">ชื่อแอตทริบิวต์และเมธอดหลัก</text>
+    <text x="345" y="340">ยังไม่ใส่ชนิดข้อมูล</text>
+    <text x="615" y="366">ครบทุกอย่าง ชนิดข้อมูล</text>
+    <text x="615" y="388">สิทธิ์การเข้าถึง พารามิเตอร์</text>
+  </g>
+  <g font-size="15" fill="#4b5563" text-anchor="middle">
+    <text x="120" y="240">ใช้ตอนคุยไอเดียกับทีม</text>
+    <text x="345" y="366">ใช้ตอนวางโครงระบบ</text>
+    <text x="615" y="414">ใช้ก่อนลงมือเขียนโค้ดจริง</text>
+  </g>
+</svg>

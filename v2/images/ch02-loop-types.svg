@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="font-variant-ligatures:none" viewBox="0 0 780 540" width="780" height="540" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+  <text x="390" y="38" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">ลูปสามแบบ นับ 1 ถึง 5 เหมือนกัน แต่เช็กเงื่อนไขคนละจังหวะ</text>
+  <line x1="260" y1="62" x2="260" y2="445" stroke="#e5e7eb" stroke-width="2"/>
+  <line x1="520" y1="62" x2="520" y2="445" stroke="#e5e7eb" stroke-width="2"/>
+    <text x="130" y="78" text-anchor="middle" font-size="20" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">for</text>
+  <rect x="55.0" y="96" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="130" y="120.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">int i = 1</text>
+  <polyline points="130,134 130,150" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <polygon points="45,184 130,152 215,184 130,216" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="130" y="189" text-anchor="middle" font-size="14" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">i &lt;= 5 ?</text>
+  <polyline points="130,216 130,238" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="138" y="232" font-size="14" fill="#4b5563" text-anchor="start">จริง</text>
+  <rect x="55.0" y="240" width="150" height="38" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="130" y="264.0" text-anchor="middle" font-size="15" fill="#1f2937">พิมพ์ i</text>
+  <polyline points="130,278 130,298" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="55.0" y="300" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="130" y="324.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">i++</text>
+  <polyline points="55,319 22,319 22,184 43,184" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <polyline points="215,184 238,184 238,420 192,420" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="222" y="174" font-size="14" fill="#4b5563" text-anchor="start">เท็จ</text>
+  <rect x="70.0" y="401" width="120" height="38" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/><text x="130" y="425.0" text-anchor="middle" font-size="15" fill="#1f2937">จบลูป</text>
+  <text x="130" y="370" font-size="14" fill="#4b5563" text-anchor="middle">วนกลับไปเช็กใหม่</text>
+  <text x="390" y="78" text-anchor="middle" font-size="20" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">while</text>
+  <rect x="315.0" y="96" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="390" y="120.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">int count = 1</text>
+  <polyline points="390,134 390,150" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <polygon points="305,184 390,152 475,184 390,216" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="390" y="189" text-anchor="middle" font-size="14" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">count &lt;= 5 ?</text>
+  <polyline points="390,216 390,238" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="398" y="232" font-size="14" fill="#4b5563" text-anchor="start">จริง</text>
+  <rect x="315.0" y="240" width="150" height="38" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="390" y="264.0" text-anchor="middle" font-size="15" fill="#1f2937">พิมพ์ count</text>
+  <polyline points="390,278 390,298" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="315.0" y="300" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="390" y="324.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">count++</text>
+  <polyline points="315,319 282,319 282,184 303,184" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <polyline points="475,184 498,184 498,420 452,420" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="482" y="174" font-size="14" fill="#4b5563" text-anchor="start">เท็จ</text>
+  <rect x="330.0" y="401" width="120" height="38" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/><text x="390" y="425.0" text-anchor="middle" font-size="15" fill="#1f2937">จบลูป</text>
+  <text x="390" y="370" font-size="14" fill="#4b5563" text-anchor="middle">วนกลับไปเช็กใหม่</text>
+  <text x="650" y="78" text-anchor="middle" font-size="20" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">do-while</text>
+  <rect x="575.0" y="96" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="650" y="120.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">int number = 1</text>
+  <polyline points="650,134 650,158" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="575.0" y="160" width="150" height="38" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="650" y="184.0" text-anchor="middle" font-size="15" fill="#1f2937">พิมพ์ number</text>
+  <polyline points="650,198 650,218" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="575.0" y="220" width="150" height="38" rx="8" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/><text x="650" y="244.0" text-anchor="middle" font-size="15" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">number++</text>
+  <polyline points="650,258 650,286" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <polygon points="565,320 650,288 735,320 650,352" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="650" y="325" text-anchor="middle" font-size="14" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">number &lt;= 5 ?</text>
+  <polyline points="565,320 542,320 542,179 573,179" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="546" y="340" font-size="14" fill="#4b5563" text-anchor="start">จริง</text>
+  <polyline points="650,352 650,399" fill="none" stroke="#4b5563" stroke-width="2" marker-end="url(#a)"/>
+  <text x="658" y="380" font-size="14" fill="#4b5563" text-anchor="start">เท็จ</text>
+  <rect x="590.0" y="401" width="120" height="38" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/><text x="650" y="425.0" text-anchor="middle" font-size="15" fill="#1f2937">จบลูป</text>
+  <rect x="12" y="458" width="236" height="62" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="484" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">เช็กก่อนทำ</text>
+  <text x="130" y="508" text-anchor="middle" font-size="14" fill="#1f2937">ถ้าเท็จตั้งแต่แรก ทำ 0 รอบ</text>
+  <rect x="272" y="458" width="236" height="62" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="390" y="484" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">เช็กก่อนทำ</text>
+  <text x="390" y="508" text-anchor="middle" font-size="14" fill="#1f2937">ถ้าเท็จตั้งแต่แรก ทำ 0 รอบ</text>
+  <rect x="532" y="458" width="236" height="62" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="650" y="484" text-anchor="middle" font-size="16" font-weight="bold" fill="#1f2937">ทำก่อนแล้วค่อยเช็ก</text>
+  <text x="650" y="508" text-anchor="middle" font-size="14" fill="#1f2937">ทำอย่างน้อย 1 รอบเสมอ</text>
+</svg>

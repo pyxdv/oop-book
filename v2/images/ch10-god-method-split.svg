@@ -1,0 +1,39 @@
+<svg style="font-variant-ligatures:none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" width="780" height="430" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="24" y="40" font-size="22" font-weight="bold" fill="#1f2937">แยกเมธอดที่ทำทุกอย่าง ออกเป็นเมธอดเล็กที่ทำทีละงาน</text>
+<text x="24" y="78" font-size="16" font-weight="bold" fill="#dc2626">✗ ก่อน: เมธอดเดียวทำ 4 งาน</text>
+<text x="430" y="78" font-size="16" font-weight="bold" fill="#059669">✓ หลัง: เมธอดหลักอ่านเหมือนสารบัญ</text>
+<rect x="24" y="92" width="300" height="300" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<text x="40" y="120" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#1f2937">processUserData()</text>
+<rect x="40" y="136" width="268" height="52" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="56" y="168" font-size="16" fill="#1f2937">1. ตรวจข้อมูลผู้ใช้</text>
+<rect x="40" y="198" width="268" height="52" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+<text x="56" y="230" font-size="16" fill="#1f2937">2. บันทึกลงฐานข้อมูล</text>
+<rect x="40" y="260" width="268" height="52" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="56" y="292" font-size="16" fill="#1f2937">3. ส่งอีเมลต้อนรับ</text>
+<rect x="40" y="322" width="268" height="52" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="56" y="354" font-size="16" fill="#1f2937">4. เขียน log</text>
+<text x="24" y="416" font-size="14" fill="#4b5563">ต้องอ่านทั้งก้อนถึงจะรู้ว่าทำอะไร แก้ตรงไหนก็กระทบทั้งเมธอด</text>
+<line x1="332" y1="242" x2="420" y2="242" stroke="#4b5563" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="376" y="230" font-size="14" text-anchor="middle" fill="#4b5563">Extract</text>
+<text x="376" y="266" font-size="14" text-anchor="middle" fill="#4b5563">Method</text>
+<rect x="430" y="92" width="326" height="104" rx="10" fill="#f9fafb" stroke="#9ca3af" stroke-width="2"/>
+<text x="446" y="118" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold" fill="#1f2937">processUserData()</text>
+<text x="462" y="142" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#4b5563">if (!isValidUser(u)) return;</text>
+<text x="462" y="162" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#4b5563">saveUser(u); sendWelcome...</text>
+<text x="462" y="182" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#4b5563">logUserActivity(u);</text>
+<rect x="500" y="222" width="256" height="38" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="514" y="247" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">isValidUser()</text>
+<polyline points="452,196 452,241 498,241" fill="none" stroke="#4b5563" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="500" y="268" width="256" height="38" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+<text x="514" y="293" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">saveUser()</text>
+<polyline points="452,196 452,287 498,287" fill="none" stroke="#4b5563" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="500" y="314" width="256" height="38" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+<text x="514" y="339" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">sendWelcomeEmail()</text>
+<polyline points="452,196 452,333 498,333" fill="none" stroke="#4b5563" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="500" y="360" width="256" height="38" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="514" y="385" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">logUserActivity()</text>
+<polyline points="452,196 452,379 498,379" fill="none" stroke="#4b5563" stroke-width="1.5" marker-end="url(#ah)"/>
+<text x="440" y="416" font-size="14" fill="#4b5563">แต่ละเมธอดมีชื่อบอกงาน แก้งานไหนก็เปิดเมธอดนั้น</text>
+</svg>

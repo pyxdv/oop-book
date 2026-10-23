@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 610" width="800" height="610" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" role="img" aria-label="แผนภูมิจำนวนบรรทัดโค้ดต่อคลาส เมื่อใช้ extends เทียบกับไม่ใช้ นับจาก InheritanceExample.java">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">จำนวนบรรทัดโค้ดต่อคลาส: ใช้ extends กับไม่ใช้</text>
+  <text x="400" y="62" text-anchor="middle" font-size="15" fill="#4b5563">นับจาก InheritanceExample.java เฉพาะบรรทัดที่ไม่ว่างและไม่ใช่คอมเมนต์</text>
+<g font-size="15" fill="#1f2937">
+  <rect x="104" y="80" width="16" height="16" rx="3" fill="#2563eb"/><text x="126" y="94">ใช้ extends</text>
+  <rect x="250" y="80" width="16" height="16" rx="3" fill="#fef3c7" stroke="#d97706"/><text x="272" y="94">ไม่ใช้ extends: โค้ดของคลาสเอง</text>
+  <rect x="528" y="80" width="16" height="16" rx="3" fill="#d97706"/><text x="550" y="94">ส่วนที่ก๊อปมาจาก Employee</text>
+</g>
+<line x1="190" y1="116" x2="190" y2="440" stroke="#9ca3af" stroke-width="1"/>
+<text x="190" y="460" text-anchor="middle" font-size="14" fill="#4b5563">0</text>
+<line x1="270" y1="116" x2="270" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="270" y="460" text-anchor="middle" font-size="14" fill="#4b5563">10</text>
+<line x1="350" y1="116" x2="350" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="350" y="460" text-anchor="middle" font-size="14" fill="#4b5563">20</text>
+<line x1="430" y1="116" x2="430" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="430" y="460" text-anchor="middle" font-size="14" fill="#4b5563">30</text>
+<line x1="510" y1="116" x2="510" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="510" y="460" text-anchor="middle" font-size="14" fill="#4b5563">40</text>
+<line x1="590" y1="116" x2="590" y2="440" stroke="#e5e7eb" stroke-width="1"/>
+<text x="590" y="460" text-anchor="middle" font-size="14" fill="#4b5563">50</text>
+<text x="440" y="482" text-anchor="middle" font-size="14" fill="#4b5563">จำนวนบรรทัด</text>
+<text x="178" y="160" text-anchor="end" font-size="16" font-weight="700" fill="#1f2937">Employee</text>
+<rect x="190" y="126" width="232" height="24" rx="4" fill="#2563eb"/>
+<text x="430" y="144" font-size="15" fill="#1f2937">29</text>
+<text x="198" y="174" font-size="15" fill="#4b5563">0 ไม่ต้องมีคลาสนี้</text>
+<text x="178" y="240" text-anchor="end" font-size="16" font-weight="700" fill="#1f2937">Manager</text>
+<rect x="190" y="206" width="240" height="24" rx="4" fill="#2563eb"/>
+<text x="438" y="224" font-size="15" fill="#1f2937">30</text>
+<rect x="190" y="236" width="208" height="24" rx="4" fill="#fef3c7" stroke="#d97706"/>
+<rect x="400" y="236" width="158" height="24" rx="4" fill="#d97706"/>
+<text x="566" y="254" font-size="15" fill="#1f2937">46 <tspan fill="#4b5563">(ก๊อปซ้ำ 20)</tspan></text>
+<text x="178" y="320" text-anchor="end" font-size="16" font-weight="700" fill="#1f2937">Programmer</text>
+<rect x="190" y="286" width="312" height="24" rx="4" fill="#2563eb"/>
+<text x="510" y="304" font-size="15" fill="#1f2937">39</text>
+<rect x="190" y="316" width="280" height="24" rx="4" fill="#fef3c7" stroke="#d97706"/>
+<rect x="472" y="316" width="158" height="24" rx="4" fill="#d97706"/>
+<text x="638" y="334" font-size="15" fill="#1f2937">55 <tspan fill="#4b5563">(ก๊อปซ้ำ 20)</tspan></text>
+<text x="178" y="400" text-anchor="end" font-size="16" font-weight="700" fill="#1f2937">Designer</text>
+<rect x="190" y="366" width="224" height="24" rx="4" fill="#2563eb"/>
+<text x="422" y="384" font-size="15" fill="#1f2937">28</text>
+<rect x="190" y="396" width="200" height="24" rx="4" fill="#fef3c7" stroke="#d97706"/>
+<rect x="392" y="396" width="182" height="24" rx="4" fill="#d97706"/>
+<text x="582" y="414" font-size="15" fill="#1f2937">48 <tspan fill="#4b5563">(ก๊อปซ้ำ 23)</tspan></text>
+<rect x="40" y="498" width="225" height="66" rx="8" fill="#f9fafb" stroke="#9ca3af"/>
+<text x="152.5" y="522" text-anchor="middle" font-size="15" fill="#4b5563">รวม 4 คลาส ใช้ extends</text>
+<text x="152.5" y="552" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">126 บรรทัด</text>
+<rect x="285" y="498" width="225" height="66" rx="8" fill="#f9fafb" stroke="#9ca3af"/>
+<text x="397.5" y="522" text-anchor="middle" font-size="15" fill="#4b5563">รวม 3 คลาส ไม่ใช้ extends</text>
+<text x="397.5" y="552" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">149 บรรทัด</text>
+<rect x="530" y="498" width="225" height="66" rx="8" fill="#f9fafb" stroke="#9ca3af"/>
+<text x="642.5" y="522" text-anchor="middle" font-size="15" fill="#4b5563">บรรทัดที่ต้องก๊อปซ้ำ</text>
+<text x="642.5" y="552" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">63 บรรทัด</text>
+<text x="400" y="592" text-anchor="middle" font-size="14" fill="#4b5563">ไม่นับคลาส main ฉบับไม่ใช้ extends เขียนใหม่ให้ผลรันตรงกับต้นฉบับทุกบรรทัด</text>
+</svg>

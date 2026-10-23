@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#1f2937">จุดที่เสียคะแนนบ่อยในข้อเขียนโปรแกรม</text>
+  <rect x="24" y="64" width="752" height="40" rx="8" fill="#f3f4f6"/>
+  <g font-size="16" font-weight="700">
+    <text x="40" y="90" fill="#1f2937">เรื่อง</text>
+    <text x="230" y="90" fill="#dc2626">✗ เขียนผิด</text>
+    <text x="510" y="90" fill="#059669">✓ เขียนถูก</text>
+  </g>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="24" y1="174" x2="776" y2="174"/><line x1="24" y1="244" x2="776" y2="244"/><line x1="24" y1="314" x2="776" y2="314"/><line x1="24" y1="384" x2="776" y2="384"/><line x1="24" y1="454" x2="776" y2="454"/>
+  </g>
+  <g font-size="16" font-weight="700" fill="#1f2937">
+    <text x="40" y="145">ตัวนับ / ตัวสะสม</text>
+    <text x="40" y="215">ขอบของลูป</text>
+    <text x="40" y="285">คืนค่า</text>
+    <text x="40" y="355">นอกช่วง</text>
+    <text x="40" y="425">ชนิดที่คืน</text>
+    <text x="40" y="495">ไวยากรณ์</text>
+  </g>
+  <g fill="#fee2e2"><rect x="222" y="116" width="270" height="44" rx="6"/><rect x="222" y="186" width="270" height="44" rx="6"/><rect x="222" y="256" width="270" height="44" rx="6"/><rect x="222" y="326" width="270" height="44" rx="6"/><rect x="222" y="396" width="270" height="44" rx="6"/><rect x="222" y="466" width="270" height="44" rx="6"/></g>
+  <g fill="#d1fae5"><rect x="502" y="116" width="270" height="44" rx="6"/><rect x="502" y="186" width="270" height="44" rx="6"/><rect x="502" y="256" width="270" height="44" rx="6"/><rect x="502" y="326" width="270" height="44" rx="6"/><rect x="502" y="396" width="270" height="44" rx="6"/><rect x="502" y="466" width="270" height="44" rx="6"/></g>
+  <g font-size="14" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">
+    <text x="232" y="143">ประกาศ int cnt = 0; ในลูป</text>
+    <text x="512" y="143">ประกาศ int cnt = 0; ก่อนลูป</text>
+    <text x="232" y="213">i &lt;= arr.length</text>
+    <text x="512" y="213">i &lt; arr.length</text>
+    <text x="232" y="283">System.out.println(count);</text>
+    <text x="512" y="283">return count;</text>
+    <text x="232" y="353">x &lt; a &amp;&amp; x &gt; b</text>
+    <text x="512" y="353">x &lt; a || x &gt; b</text>
+    <text x="232" y="423">int[] f(...) { return 0; }</text>
+    <text x="512" y="423">int[] f(...) { return arr; }</text>
+    <text x="232" y="493">ลืม ; หรือ } ตัวปิด</text>
+    <text x="512" y="493">เปิด { แล้วปิด } ทุกครั้ง</text>
+  </g>
+</svg>

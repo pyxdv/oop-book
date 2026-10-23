@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 430" width="780" height="430" role="img" aria-label="กลับด้านอาร์เรย์ 1 2 3 4 5 โดยสลับช่องหัวท้ายเข้าหากัน สองรอบได้ 5 4 3 2 1">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <defs>
+    <marker id="sw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <g style="font-variant-ligatures:none" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937">
+    <text x="390" y="36" font-size="22" font-weight="bold" text-anchor="middle">กลับด้านอาร์เรย์ด้วยการสลับช่องหัวกับท้ายเข้าหากัน</text>
+
+    <!-- index header -->
+    <g font-size="14" text-anchor="middle" fill="#4b5563" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="270" y="72">0</text><text x="330" y="72">1</text><text x="390" y="72">2</text><text x="450" y="72">3</text><text x="510" y="72">4</text>
+    </g>
+
+    <!-- row 1 -->
+    <text x="30" y="108" font-size="16" font-weight="bold">เริ่มต้น</text>
+    <g stroke="#9ca3af" stroke-width="2" fill="#f9fafb">
+      <rect x="240" y="80" width="60" height="44"/><rect x="300" y="80" width="60" height="44"/><rect x="360" y="80" width="60" height="44"/><rect x="420" y="80" width="60" height="44"/><rect x="480" y="80" width="60" height="44"/>
+    </g>
+    <g font-size="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="270" y="109">1</text><text x="330" y="109">2</text><text x="390" y="109">3</text><text x="450" y="109">4</text><text x="510" y="109">5</text>
+    </g>
+    <g font-size="14" text-anchor="middle" font-weight="bold" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="270" y="144" fill="#2563eb">left</text><text x="510" y="144" fill="#d97706">right</text>
+    </g>
+    <text x="570" y="100" font-size="15" fill="#4b5563">left = 0</text>
+    <text x="570" y="122" font-size="15" fill="#4b5563">right = length - 1 = 4</text>
+
+    <!-- row 2 -->
+    <text x="30" y="226" font-size="16" font-weight="bold">รอบที่ 1</text>
+    <text x="30" y="248" font-size="15" fill="#4b5563">สลับช่อง 0 กับ 4</text>
+    <path d="M270,194 C300,164 480,164 510,194" fill="none" stroke="#7c3aed" stroke-width="2" marker-start="url(#sw)" marker-end="url(#sw)"/>
+    <g stroke="#9ca3af" stroke-width="2" fill="#f9fafb">
+      <rect x="240" y="198" width="60" height="44" fill="#ede9fe" stroke="#7c3aed"/><rect x="300" y="198" width="60" height="44"/><rect x="360" y="198" width="60" height="44"/><rect x="420" y="198" width="60" height="44"/><rect x="480" y="198" width="60" height="44" fill="#ede9fe" stroke="#7c3aed"/>
+    </g>
+    <g font-size="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="270" y="227" font-weight="bold">5</text><text x="330" y="227">2</text><text x="390" y="227">3</text><text x="450" y="227">4</text><text x="510" y="227" font-weight="bold">1</text>
+    </g>
+    <text x="570" y="218" font-size="15" fill="#4b5563">temp เก็บ 1 ไว้ก่อน</text>
+    <text x="570" y="240" font-size="15" fill="#4b5563">แล้ว left++ , right--</text>
+
+    <!-- row 3 -->
+    <text x="30" y="334" font-size="16" font-weight="bold">รอบที่ 2</text>
+    <text x="30" y="356" font-size="15" fill="#4b5563">สลับช่อง 1 กับ 3</text>
+    <path d="M330,302 C350,276 430,276 450,302" fill="none" stroke="#7c3aed" stroke-width="2" marker-start="url(#sw)" marker-end="url(#sw)"/>
+    <g stroke="#9ca3af" stroke-width="2" fill="#f9fafb">
+      <rect x="240" y="306" width="60" height="44"/><rect x="300" y="306" width="60" height="44" fill="#ede9fe" stroke="#7c3aed"/><rect x="360" y="306" width="60" height="44"/><rect x="420" y="306" width="60" height="44" fill="#ede9fe" stroke="#7c3aed"/><rect x="480" y="306" width="60" height="44"/>
+    </g>
+    <g font-size="20" text-anchor="middle" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">
+      <text x="270" y="335">5</text><text x="330" y="335" font-weight="bold">4</text><text x="390" y="335">3</text><text x="450" y="335" font-weight="bold">2</text><text x="510" y="335">1</text>
+    </g>
+    <text x="570" y="326" font-size="15" fill="#4b5563">temp เก็บ 2 ไว้ก่อน</text>
+    <text x="570" y="348" font-size="15" fill="#4b5563">แล้ว left++ , right--</text>
+
+    <!-- stop -->
+    <rect x="30" y="378" width="720" height="34" rx="8" fill="#d1fae5"/>
+    <text x="390" y="401" font-size="15" text-anchor="middle" fill="#065f46">✓ ตอนนี้ left = 2 และ right = 2 เงื่อนไข left &lt; right เป็นเท็จ ลูปจบ ช่องกลางไม่ต้องสลับ</text>
+  </g>
+</svg>

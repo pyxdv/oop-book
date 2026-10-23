@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 530" width="780" height="530" role="img" aria-label="Abstraction: จากข้อมูลคนหนึ่งคน ระบบโรงพยาบาลเก็บแค่ข้อมูลสุขภาพในคลาส Patient ระบบร้านค้าเก็บแค่ข้อมูลซื้อขายในคลาส Customer" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<text x="390.0" y="40" font-size="22" fill="#1f2937" text-anchor="middle" font-weight="bold">คนคนเดียว แต่ละระบบเลือกเก็บข้อมูลไม่เหมือนกัน</text>
+<rect x="24" y="120" width="220" height="300" rx="12" fill="#f9fafb" stroke="#9ca3af" stroke-width="1.5"/>
+<text x="134" y="150" font-size="16" fill="#1f2937" text-anchor="middle" font-weight="bold">คนหนึ่งคนในโลกจริง</text>
+<circle cx="48" cy="180" r="6" fill="#059669"/>
+<text x="62" y="185" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">กรุ๊ปเลือด</text>
+<circle cx="48" cy="213" r="6" fill="#059669"/>
+<text x="62" y="218" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">ประวัติการรักษา</text>
+<circle cx="48" cy="246" r="6" fill="#2563eb"/>
+<text x="62" y="251" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">ที่อยู่จัดส่ง</text>
+<circle cx="48" cy="279" r="6" fill="#2563eb"/>
+<text x="62" y="284" font-size="15" fill="#1f2937" text-anchor="start" font-weight="normal">วิธีชำระเงิน</text>
+<circle cx="48" cy="312" r="6" fill="#9ca3af"/>
+<text x="62" y="317" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">สีผม</text>
+<circle cx="48" cy="345" r="6" fill="#9ca3af"/>
+<text x="62" y="350" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">งานอดิเรก</text>
+<circle cx="48" cy="378" r="6" fill="#9ca3af"/>
+<text x="62" y="383" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">ร้านอาหารที่ชอบ</text>
+<text x="456" y="84" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">ระบบโรงพยาบาล</text>
+<rect x="456" y="96" width="300" height="34" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+<text x="606.0" y="119" font-size="16" fill="#1f2937" text-anchor="middle" font-weight="bold" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Patient</text>
+<rect x="456" y="130" width="300" height="88" rx="0" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+<text x="466" y="152" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- patientId : String</text>
+<text x="466" y="178" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- bloodType : String</text>
+<text x="466" y="204" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- medicalHistory : String</text>
+<rect x="456" y="218" width="300" height="62" rx="0" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+<text x="466" y="240" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">+ admitToHospital()</text>
+<text x="466" y="266" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">+ prescribeMedicine()</text>
+<text x="456" y="314" font-size="15" fill="#4b5563" text-anchor="start" font-weight="normal">ระบบร้านค้าออนไลน์</text>
+<rect x="456" y="326" width="300" height="34" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="606.0" y="349" font-size="16" fill="#1f2937" text-anchor="middle" font-weight="bold" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">Customer</text>
+<rect x="456" y="360" width="300" height="88" rx="0" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="466" y="382" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- customerId : String</text>
+<text x="466" y="408" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- shippingAddress : String</text>
+<text x="466" y="434" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">- paymentMethod : String</text>
+<rect x="456" y="448" width="300" height="62" rx="0" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="466" y="470" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">+ addToCart(item)</text>
+<text x="466" y="496" font-size="14" fill="#1f2937" text-anchor="start" font-weight="normal" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">+ checkout()</text>
+<path d="M250,230 C340,230 360,180 450,180" fill="none" stroke="#059669" stroke-width="2" marker-end="url(#arr)"/>
+<text x="350" y="246" font-size="14" fill="#059669" text-anchor="middle" font-weight="normal">เลือกเฉพาะเรื่องสุขภาพ</text>
+<path d="M250,310 C340,310 360,400 450,400" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+<text x="350" y="304" font-size="14" fill="#2563eb" text-anchor="middle" font-weight="normal">เลือกเฉพาะเรื่องซื้อขาย</text>
+<text x="134" y="446" font-size="14" fill="#4b5563" text-anchor="middle" font-weight="normal">จุดเทา = ไม่มีระบบไหนเก็บ</text>
+</svg>

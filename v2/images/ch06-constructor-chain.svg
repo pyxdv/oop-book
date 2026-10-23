@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="800" height="700" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" role="img" aria-label="ลำดับการเรียกคอนสตรักเตอร์เมื่อสร้าง new Dog: เรียก super ขึ้นไปจนบนสุดก่อน แล้วโค้ดจึงทำงานจากคลาสบนสุดลงมา">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f2937"/></marker>
+    <marker id="ahg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#059669"/></marker>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="400" y="36" text-anchor="middle" font-size="22" font-weight="700" fill="#1f2937">new Dog("เจ้าด่าง", "ไทยหลังอาน") ทำงานตามลำดับไหน</text>
+<rect x="15.0" y="58" width="110" height="40" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+<text x="70" y="84" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">main</text>
+<line x1="70" y1="98" x2="70" y2="600" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="160.0" y="58" width="140" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="230" y="84" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">Dog(...)</text>
+<line x1="230" y1="98" x2="230" y2="600" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="340.0" y="58" width="140" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="410" y="84" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">Mammal(...)</text>
+<line x1="410" y1="98" x2="410" y2="600" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="520.0" y="58" width="140" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="590" y="84" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">Animal(...)</text>
+<line x1="590" y1="98" x2="590" y2="600" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<rect x="685.0" y="58" width="110" height="40" rx="8" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+<text x="740" y="84" text-anchor="middle" font-size="15" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">Object()</text>
+<line x1="740" y1="98" x2="740" y2="600" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="5 5"/>
+<line x1="70" y1="140" x2="226" y2="140" stroke="#1f2937" stroke-width="2" marker-end="url(#ah)"/>
+<text x="158.0" y="130" text-anchor="middle" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">new Dog(...)</text>
+<circle cx="48" cy="140" r="12" fill="#ffffff" stroke="#1f2937" stroke-width="2"/><text x="48" y="145" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">1</text>
+<line x1="230" y1="195" x2="406" y2="195" stroke="#1f2937" stroke-width="2" marker-end="url(#ah)"/>
+<text x="316.0" y="185" text-anchor="middle" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">super(name, true)</text>
+<circle cx="208" cy="195" r="12" fill="#ffffff" stroke="#1f2937" stroke-width="2"/><text x="208" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">2</text>
+<line x1="410" y1="250" x2="586" y2="250" stroke="#1f2937" stroke-width="2" marker-end="url(#ah)"/>
+<text x="508.0" y="240" text-anchor="middle" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">super(name)</text>
+<circle cx="388" cy="250" r="12" fill="#ffffff" stroke="#1f2937" stroke-width="2"/><text x="388" y="255" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">3</text>
+<line x1="590" y1="305" x2="736" y2="305" stroke="#1f2937" stroke-width="2" marker-end="url(#ah)"/>
+<text x="673.0" y="295" text-anchor="middle" font-size="14" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" fill="#1f2937">super()</text>
+<circle cx="568" cy="305" r="12" fill="#ffffff" stroke="#1f2937" stroke-width="2"/><text x="568" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#1f2937">4</text>
+<text x="672" y="330" text-anchor="middle" font-size="14" fill="#4b5563">คอมไพเลอร์</text>
+<text x="672" y="348" text-anchor="middle" font-size="14" fill="#4b5563">แทรกให้เอง</text>
+<line x1="740" y1="380" x2="594" y2="380" stroke="#059669" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#ahg)"/>
+<circle cx="762" cy="380" r="12" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="762" y="385" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">5</text>
+<rect x="515" y="388" width="150" height="30" rx="6" fill="#d1fae5" stroke="#059669"/>
+<text x="590" y="408" text-anchor="middle" font-size="14" fill="#1f2937">พิมพ์ 1) Animal ...</text>
+<line x1="590" y1="450" x2="414" y2="450" stroke="#059669" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#ahg)"/>
+<circle cx="612" cy="450" r="12" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="612" y="455" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">6</text>
+<rect x="335" y="458" width="150" height="30" rx="6" fill="#d1fae5" stroke="#059669"/>
+<text x="410" y="478" text-anchor="middle" font-size="14" fill="#1f2937">พิมพ์ 2) Mammal ...</text>
+<line x1="410" y1="520" x2="234" y2="520" stroke="#059669" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#ahg)"/>
+<circle cx="432" cy="520" r="12" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="432" y="525" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">7</text>
+<rect x="155" y="528" width="150" height="30" rx="6" fill="#d1fae5" stroke="#059669"/>
+<text x="230" y="548" text-anchor="middle" font-size="14" fill="#1f2937">พิมพ์ 3) Dog ...</text>
+<line x1="230" y1="590" x2="74" y2="590" stroke="#059669" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#ahg)"/>
+<circle cx="252" cy="590" r="12" fill="#ffffff" stroke="#059669" stroke-width="2"/><text x="252" y="595" text-anchor="middle" font-size="14" font-weight="700" fill="#059669">8</text>
+<text x="78" y="622" font-size="14" fill="#1f2937">main ได้ออบเจกต์ Dog ที่ประกอบครบทุกชั้น</text>
+<g font-size="15" fill="#1f2937">
+  <line x1="40" y1="650" x2="90" y2="650" stroke="#1f2937" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="100" y="655">ขาขึ้น ① - ④ เรียก super ต่อกันไปจนถึงคลาสบนสุด</text>
+  <line x1="40" y1="678" x2="90" y2="678" stroke="#059669" stroke-width="2" stroke-dasharray="7 4" marker-end="url(#ahg)"/>
+  <text x="100" y="683">ขาลง ⑤ - ⑧ โค้ดที่เหลือในแต่ละคอนสตรักเตอร์ทำงาน จากคลาสแม่ลงมาหาคลาสลูก</text>
+</g>
+</svg>

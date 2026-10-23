@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 672" width="800" height="672" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<text x="400" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">นักศึกษาคนเดียว 20 ลักษณะ แต่ละระบบเก็บไม่เท่ากัน</text>
+<text x="400" y="60" text-anchor="middle" font-size="14" fill="#4b5563">นับจากตัวอย่างการออกแบบในบทนี้ ไม่ใช่ข้อมูลวัดจากระบบจริง</text>
+<text x="30" y="114" font-size="15" font-weight="bold" fill="#1f2937">ลักษณะของนักศึกษาจริง</text>
+<text x="300" y="114" text-anchor="middle" font-size="15" font-weight="bold" fill="#2563eb">ลงทะเบียน</text>
+<text x="385" y="114" text-anchor="middle" font-size="15" font-weight="bold" fill="#059669">ห้องสมุด</text>
+<text x="470" y="114" text-anchor="middle" font-size="15" font-weight="bold" fill="#7c3aed">ห้องพยาบาล</text>
+<rect x="22" y="128" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="145" font-size="14" fill="#1f2937">1. รหัสนักศึกษา</text>
+<circle cx="300" cy="140" r="9" fill="#2563eb"/>
+<path d="M295.5,140 L298.8,143.5 L304.5,136.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="140" r="9" fill="#059669"/>
+<path d="M380.5,140 L383.8,143.5 L389.5,136.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="140" r="9" fill="#7c3aed"/>
+<path d="M465.5,140 L468.8,143.5 L474.5,136.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="169" font-size="14" fill="#1f2937">2. ชื่อ-นามสกุล</text>
+<circle cx="300" cy="164" r="9" fill="#2563eb"/>
+<path d="M295.5,164 L298.8,167.5 L304.5,160.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="164" r="9" fill="#059669"/>
+<path d="M380.5,164 L383.8,167.5 L389.5,160.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="164" r="9" fill="#7c3aed"/>
+<path d="M465.5,164 L468.8,167.5 L474.5,160.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="22" y="176" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="193" font-size="14" fill="#1f2937">3. คณะและสาขา</text>
+<circle cx="300" cy="188" r="9" fill="#2563eb"/>
+<path d="M295.5,188 L298.8,191.5 L304.5,184.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="188" r="9" fill="#059669"/>
+<path d="M380.5,188 L383.8,191.5 L389.5,184.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="188" r="2.5" fill="#9ca3af"/>
+<text x="30" y="217" font-size="14" fill="#1f2937">4. ชั้นปี</text>
+<circle cx="300" cy="212" r="9" fill="#2563eb"/>
+<path d="M295.5,212 L298.8,215.5 L304.5,208.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="212" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="212" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="224" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="241" font-size="14" fill="#1f2937">5. วันเกิด</text>
+<circle cx="300" cy="236" r="9" fill="#2563eb"/>
+<path d="M295.5,236 L298.8,239.5 L304.5,232.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="236" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="236" r="9" fill="#7c3aed"/>
+<path d="M465.5,236 L468.8,239.5 L474.5,232.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="265" font-size="14" fill="#1f2937">6. เกรดเฉลี่ย (GPA)</text>
+<circle cx="300" cy="260" r="9" fill="#2563eb"/>
+<path d="M295.5,260 L298.8,263.5 L304.5,256.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="260" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="260" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="272" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="289" font-size="14" fill="#1f2937">7. วิชาที่ลงทะเบียน</text>
+<circle cx="300" cy="284" r="9" fill="#2563eb"/>
+<path d="M295.5,284 L298.8,287.5 L304.5,280.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="284" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="284" r="2.5" fill="#9ca3af"/>
+<text x="30" y="313" font-size="14" fill="#1f2937">8. อีเมล</text>
+<circle cx="300" cy="308" r="9" fill="#2563eb"/>
+<path d="M295.5,308 L298.8,311.5 L304.5,304.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="308" r="9" fill="#059669"/>
+<path d="M380.5,308 L383.8,311.5 L389.5,304.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="308" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="320" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="337" font-size="14" fill="#1f2937">9. เบอร์โทร</text>
+<circle cx="300" cy="332" r="9" fill="#2563eb"/>
+<path d="M295.5,332 L298.8,335.5 L304.5,328.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="385" cy="332" r="9" fill="#059669"/>
+<path d="M380.5,332 L383.8,335.5 L389.5,328.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="332" r="9" fill="#7c3aed"/>
+<path d="M465.5,332 L468.8,335.5 L474.5,328.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="361" font-size="14" fill="#1f2937">10. กรุ๊ปเลือด</text>
+<circle cx="300" cy="356" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="356" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="356" r="9" fill="#7c3aed"/>
+<path d="M465.5,356 L468.8,359.5 L474.5,352.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="22" y="368" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="385" font-size="14" fill="#1f2937">11. ยาที่แพ้</text>
+<circle cx="300" cy="380" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="380" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="380" r="9" fill="#7c3aed"/>
+<path d="M465.5,380 L468.8,383.5 L474.5,376.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="409" font-size="14" fill="#1f2937">12. น้ำหนัก</text>
+<circle cx="300" cy="404" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="404" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="404" r="9" fill="#7c3aed"/>
+<path d="M465.5,404 L468.8,407.5 L474.5,400.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="22" y="416" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="433" font-size="14" fill="#1f2937">13. ส่วนสูง</text>
+<circle cx="300" cy="428" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="428" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="428" r="9" fill="#7c3aed"/>
+<path d="M465.5,428 L468.8,431.5 L474.5,424.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="457" font-size="14" fill="#1f2937">14. หนังสือที่ยืมอยู่</text>
+<circle cx="300" cy="452" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="452" r="9" fill="#059669"/>
+<path d="M380.5,452 L383.8,455.5 L389.5,448.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="452" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="464" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="481" font-size="14" fill="#1f2937">15. ค่าปรับค้างจ่าย</text>
+<circle cx="300" cy="476" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="476" r="9" fill="#059669"/>
+<path d="M380.5,476 L383.8,479.5 L389.5,472.5" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="470" cy="476" r="2.5" fill="#9ca3af"/>
+<text x="30" y="505" font-size="14" fill="#4b5563">16. สีที่ชอบ</text>
+<circle cx="300" cy="500" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="500" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="500" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="512" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="529" font-size="14" fill="#4b5563">17. เมนูอาหารโปรด</text>
+<circle cx="300" cy="524" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="524" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="524" r="2.5" fill="#9ca3af"/>
+<text x="30" y="553" font-size="14" fill="#4b5563">18. ชื่อสัตว์เลี้ยง</text>
+<circle cx="300" cy="548" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="548" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="548" r="2.5" fill="#9ca3af"/>
+<rect x="22" y="560" width="490" height="24" fill="#f9fafb"/>
+<text x="30" y="577" font-size="14" fill="#4b5563">19. เพลงที่ฟังบ่อย</text>
+<circle cx="300" cy="572" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="572" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="572" r="2.5" fill="#9ca3af"/>
+<text x="30" y="601" font-size="14" fill="#4b5563">20. ทีมฟุตบอลที่เชียร์</text>
+<circle cx="300" cy="596" r="2.5" fill="#9ca3af"/>
+<circle cx="385" cy="596" r="2.5" fill="#9ca3af"/>
+<circle cx="470" cy="596" r="2.5" fill="#9ca3af"/>
+<path d="M520,491 L528,491 L528,605 L520,605" fill="none" stroke="#dc2626" stroke-width="2"/>
+<text x="536" y="544" font-size="14" fill="#dc2626">✗ ไม่มีระบบไหนใช้</text>
+<text x="536" y="564" font-size="14" fill="#dc2626">ตัดทิ้งทั้ง 5 ข้อ</text>
+<text x="560" y="128" font-size="15" font-weight="bold" fill="#1f2937">จำนวนที่เก็บ (จาก 20)</text>
+<text x="560" y="154" font-size="14" fill="#4b5563">ลงทะเบียน</text>
+<rect x="560" y="162" width="210" height="20" rx="4" fill="#f3f4f6"/>
+<rect x="560" y="162" width="94.5" height="20" rx="4" fill="#2563eb"/>
+<text x="662.5" y="178" font-size="15" font-weight="bold" fill="#1f2937">9</text>
+<text x="560" y="216" font-size="14" fill="#4b5563">ห้องสมุด</text>
+<rect x="560" y="224" width="210" height="20" rx="4" fill="#f3f4f6"/>
+<rect x="560" y="224" width="73.5" height="20" rx="4" fill="#059669"/>
+<text x="641.5" y="240" font-size="15" font-weight="bold" fill="#1f2937">7</text>
+<text x="560" y="278" font-size="14" fill="#4b5563">ห้องพยาบาล</text>
+<rect x="560" y="286" width="210" height="20" rx="4" fill="#f3f4f6"/>
+<rect x="560" y="286" width="84" height="20" rx="4" fill="#7c3aed"/>
+<text x="652" y="302" font-size="15" font-weight="bold" fill="#1f2937">8</text>
+<text x="560" y="340" font-size="14" fill="#4b5563">อีก 5 ข้อ ไม่มีใครเก็บ</text>
+<text x="400" y="648" text-anchor="middle" font-size="15" fill="#1f2937">คนเดียวกัน แต่ระบบต่างกันจะเลือกเก็บต่างกัน ขึ้นกับว่าระบบนั้นต้องใช้อะไร</text>
+</svg>

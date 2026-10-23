@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" width="800" height="540" role="img" aria-label="บันไดลำดับความสำคัญของตัวดำเนินการ พร้อมตัวอย่างการคำนวณทีละขั้น">
+<rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker><marker id="up" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4b5563"/></marker></defs>
+<g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" fill="#1f2937"><text x="400" y="38" font-size="22" font-weight="bold" text-anchor="middle">ลำดับความสำคัญของตัวดำเนินการ</text>
+<text x="24" y="76" font-size="15" fill="#2563eb" font-weight="bold">ทำก่อน</text>
+<text x="24" y="510" font-size="15" fill="#4b5563" font-weight="bold">ทำทีหลัง</text></g>
+<line x1="50" y1="92" x2="50" y2="470" stroke="#4b5563" stroke-width="2" marker-start="url(#up)"/>
+<rect x="70" y="90" width="320" height="36" rx="6" fill="#dbeafe" stroke="#9ca3af"/>
+<text x="80" y="114" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">1</text>
+<text x="100" y="114" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">( )</text>
+<text x="240" y="114" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">วงเล็บ</text>
+<rect x="78" y="133" width="320" height="36" rx="6" fill="#dbeafe" stroke="#9ca3af"/>
+<text x="88" y="157" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">2</text>
+<text x="108" y="157" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">++ -- ! (int)</text>
+<text x="248" y="157" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">ค่าเดียว / แปลงชนิด</text>
+<rect x="86" y="176" width="320" height="36" rx="6" fill="#dbeafe" stroke="#9ca3af"/>
+<text x="96" y="200" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">3</text>
+<text x="116" y="200" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">*  /  %</text>
+<text x="256" y="200" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">คูณ หาร เศษ</text>
+<rect x="94" y="219" width="320" height="36" rx="6" fill="#dbeafe" stroke="#9ca3af"/>
+<text x="104" y="243" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">4</text>
+<text x="124" y="243" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">+  -</text>
+<text x="264" y="243" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">บวก ลบ</text>
+<rect x="102" y="262" width="320" height="36" rx="6" fill="#fef3c7" stroke="#9ca3af"/>
+<text x="112" y="286" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">5</text>
+<text x="132" y="286" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">&lt; &gt; &lt;= &gt;=</text>
+<text x="272" y="286" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">เปรียบเทียบ</text>
+<rect x="110" y="305" width="320" height="36" rx="6" fill="#fef3c7" stroke="#9ca3af"/>
+<text x="120" y="329" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">6</text>
+<text x="140" y="329" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">==  !=</text>
+<text x="280" y="329" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">เท่ากัน ไม่เท่ากัน</text>
+<rect x="118" y="348" width="320" height="36" rx="6" fill="#ede9fe" stroke="#9ca3af"/>
+<text x="128" y="372" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">7</text>
+<text x="148" y="372" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">&amp;&amp;</text>
+<text x="288" y="372" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">และ</text>
+<rect x="126" y="391" width="320" height="36" rx="6" fill="#ede9fe" stroke="#9ca3af"/>
+<text x="136" y="415" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">8</text>
+<text x="156" y="415" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">||</text>
+<text x="296" y="415" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">หรือ</text>
+<rect x="134" y="434" width="320" height="36" rx="6" fill="#f3f4f6" stroke="#9ca3af"/>
+<text x="144" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563">9</text>
+<text x="164" y="458" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="15" font-weight="bold" fill="#1f2937">= += -= ...</text>
+<text x="304" y="458" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#1f2937">กำหนดค่า</text>
+<text x="480" y="76" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">ตัวอย่าง: Java คิดทีละขั้น</text>
+<rect x="480" y="95" width="290" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+<text x="490" y="117" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">2 + 3 &gt; 4 &amp;&amp; 10 % 3 == 1</text>
+<line x1="510" y1="130" x2="510" y2="150" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="525" y="146" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#d97706">ทำ % ก่อน</text>
+<rect x="480" y="155" width="290" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+<text x="490" y="177" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">2 + 3 &gt; 4 &amp;&amp; 1 == 1</text>
+<line x1="510" y1="190" x2="510" y2="210" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="525" y="206" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#d97706">ทำ +</text>
+<rect x="480" y="215" width="290" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+<text x="490" y="237" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">5 &gt; 4 &amp;&amp; 1 == 1</text>
+<line x1="510" y1="250" x2="510" y2="270" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="525" y="266" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#d97706">ทำ &gt;</text>
+<rect x="480" y="275" width="290" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+<text x="490" y="297" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">true &amp;&amp; 1 == 1</text>
+<line x1="510" y1="310" x2="510" y2="330" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="525" y="326" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#d97706">ทำ ==</text>
+<rect x="480" y="335" width="290" height="34" rx="6" fill="#ffffff" stroke="#9ca3af"/>
+<text x="490" y="357" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">true &amp;&amp; true</text>
+<line x1="510" y1="370" x2="510" y2="390" stroke="#4b5563" stroke-width="1.5" marker-end="url(#arr)"/>
+<text x="525" y="386" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#d97706">ทำ &amp;&amp; สุดท้าย</text>
+<rect x="480" y="395" width="290" height="34" rx="6" fill="#d1fae5" stroke="#9ca3af"/>
+<text x="490" y="417" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#1f2937">true</text>
+<g font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif" font-size="14" fill="#4b5563"><text x="480" y="460">ชั้นเดียวกัน คิดจากซ้ายไปขวา</text>
+<text x="480" y="483" style="font-variant-ligatures:none" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">10 - 4 - 3</text><text x="580" y="483">ได้ 3 ไม่ใช่ 9</text>
+<text x="480" y="506">ยกเว้นการกำหนดค่า คิดจากขวาไปซ้าย</text></g>
+</svg>
