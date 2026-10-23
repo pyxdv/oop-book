@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="font-variant-ligatures:none" viewBox="0 0 760 320" width="760" height="320" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+  <rect width="100%" height="100%" rx="16" fill="#ffffff"/>
+  <text x="380" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#1f2937">ช่วงคะแนนกับเกรด ตามโค้ด if-else-if</text>
+  <text x="380" y="66" text-anchor="middle" font-size="15" fill="#4b5563">คะแนน 0 ถึง 100 (ความกว้างแต่ละแถบตรงกับจำนวนคะแนนในช่วงนั้นจริง)</text>
+  <g transform="translate(0,22)">
+  <!-- bands: x = 60 + score*6.4 -->
+  <rect x="60" y="100" width="318" height="70" rx="4" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <rect x="382" y="100" width="60" height="70" rx="4" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <rect x="446" y="100" width="60" height="70" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <rect x="510" y="100" width="60" height="70" rx="4" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <rect x="574" y="100" width="126" height="70" rx="4" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="219" y="132" text-anchor="middle" font-size="24" font-weight="bold" fill="#dc2626">F</text>
+  <text x="219" y="157" text-anchor="middle" font-size="14" fill="#1f2937">0-49 (ไม่เข้าเงื่อนไขไหนเลย)</text>
+  <text x="412" y="132" text-anchor="middle" font-size="24" font-weight="bold" fill="#d97706">D</text>
+  <text x="412" y="157" text-anchor="middle" font-size="14" fill="#1f2937">50-59</text>
+  <text x="476" y="132" text-anchor="middle" font-size="24" font-weight="bold" fill="#7c3aed">C</text>
+  <text x="476" y="157" text-anchor="middle" font-size="14" fill="#1f2937">60-69</text>
+  <text x="540" y="132" text-anchor="middle" font-size="24" font-weight="bold" fill="#2563eb">B</text>
+  <text x="540" y="157" text-anchor="middle" font-size="14" fill="#1f2937">70-79</text>
+  <text x="637" y="132" text-anchor="middle" font-size="24" font-weight="bold" fill="#059669">A</text>
+  <text x="637" y="157" text-anchor="middle" font-size="14" fill="#1f2937">80-100</text>
+  <!-- axis -->
+  <line x1="60" y1="185" x2="700" y2="185" stroke="#9ca3af" stroke-width="2"/>
+  <g stroke="#9ca3af" stroke-width="2">
+    <line x1="60" y1="185" x2="60" y2="193"/><line x1="380" y1="185" x2="380" y2="193"/>
+    <line x1="444" y1="185" x2="444" y2="193"/><line x1="508" y1="185" x2="508" y2="193"/>
+    <line x1="572" y1="185" x2="572" y2="193"/><line x1="700" y1="185" x2="700" y2="193"/>
+  </g>
+  <g font-size="14" fill="#4b5563" text-anchor="middle">
+    <text x="60" y="210">0</text><text x="380" y="210">50</text><text x="444" y="210">60</text>
+    <text x="508" y="210">70</text><text x="572" y="210">80</text><text x="700" y="210">100</text>
+  </g>
+  <!-- marker at 85: x = 60 + 85*6.4 = 604 -->
+  <polygon points="604,96 596,82 612,82" fill="#1f2937"/>
+  <line x1="604" y1="96" x2="604" y2="174" stroke="#1f2937" stroke-width="2" stroke-dasharray="4 3"/>
+  <text x="604" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#1f2937">score = 85</text>
+  <!-- check order -->
+  <text x="380" y="248" text-anchor="middle" font-size="15" fill="#1f2937">ลำดับการเช็ก: score &gt;= 80 → &gt;= 70 → &gt;= 60 → &gt;= 50 → else</text>
+  <text x="380" y="274" text-anchor="middle" font-size="15" fill="#4b5563">เช็กจากขอบบนลงล่าง เงื่อนไขแรกที่เป็นจริงชนะ ที่เหลือข้ามหมด</text>
+  </g>
+</svg>
