@@ -32,3 +32,4 @@
   * [บทที่ 10: เขียนโค้ดให้ดูแลต่อได้ง่าย (Maintainable Code)](v2/10-maintainable-code.md)
   * [แนวข้อสอบปลายภาค](v2/final-exam-guideline.md)
   * [สรุปรายวิชา](v2/summary.md)
+  * [ภาคผนวก ก: เครื่องมือนักพัฒนาสำหรับห้องแล็บ](v2/lab-toolkit.md)
