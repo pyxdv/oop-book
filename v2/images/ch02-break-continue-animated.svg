@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="font-variant-ligatures:none" viewBox="0 0 760 430" width="760" height="430" font-family="Sarabun, 'Noto Sans Thai', 'Leelawadee UI', Tahoma, Loma, sans-serif">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#eef2ff"/></linearGradient>
+  <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#1e293b" flood-opacity=".15"/></filter>
+  <style>
+  .box{transform-box:fill-box;transform-origin:center}
+  .ptr{animation:9s infinite}
+  @keyframes ptrTop{4%,9%{transform:translateX(0px)}12%,17%{transform:translateX(66px)}20%,25%{transform:translateX(132px)}100%{transform:translateX(132px)}}
+  #ptrTop{animation-name:ptrTop;animation-timing-function:ease-in-out}
+  @keyframes wall{0%,24%{opacity:0;transform:scaleY(0)}28%{opacity:1;transform:scaleY(1.15)}31%,100%{opacity:1;transform:scaleY(1)}}
+  #wall{transform-box:fill-box;transform-origin:center;animation:wall 9s infinite}
+  @keyframes dead{0%,26%{opacity:1}34%,100%{opacity:.28}}
+  .dead{animation:dead 9s infinite}
+  @keyframes hit{0%,22%{fill:#ffffff;stroke:#9ca3af}25%,100%{fill:#d1fae5;stroke:#059669}}
+  #hit3{animation:hit 9s infinite}
+  @keyframes pass{0%,100%{fill:#ffffff}}
+  @keyframes fadeIn{0%,30%{opacity:0}36%,100%{opacity:1}}
+  .lateTop{animation:fadeIn 9s infinite}
+  @keyframes ptrBot{4%,8%{transform:translateX(0px)}12%,16%{transform:translateX(66px)}20%,24%{transform:translateX(132px)}28%,32%{transform:translateX(198px)}36%,40%{transform:translateX(264px)}44%,48%{transform:translateX(330px)}52%,56%{transform:translateX(396px)}60%,64%{transform:translateX(462px)}68%,72%{transform:translateX(528px)}76%,80%{transform:translateX(594px)}100%{transform:translateX(594px)}}
+  #ptrBot{animation-name:ptrBot;animation-timing-function:ease-in-out}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}.dead{opacity:.28}#hit3{fill:#d1fae5;stroke:#059669}#ptrTop{transform:translateX(132px)}#ptrBot{display:none}}
+@keyframes b1{0%,4%{fill:#f8fafc;stroke:#cbd5e1;transform:scale(1)}6%{fill:#bfdbfe;stroke:#2563eb;transform:scale(1.18)}8%,100%{fill:#dbeafe;stroke:#2563eb;transform:scale(1)}}
+  #b1{animation:b1 9s infinite}@keyframes l1{0%,6%{opacity:0;transform:translateY(6px)}8%,100%{opacity:1;transform:translateY(0)}}
+  #l1{animation:l1 9s infinite}@keyframes b2{0%,12%{fill:#f8fafc;stroke:#cbd5e1;transform:translateX(0)}13%{transform:translateX(-4px)}14%{transform:translateX(4px)}15%{transform:translateX(-2px)}16%,100%{fill:#fef3c7;stroke:#d97706;transform:translateX(0)}}
+  #b2{animation:b2 9s infinite}@keyframes l2{0%,14%{opacity:0;transform:translateY(6px)}16%,100%{opacity:1;transform:translateY(0)}}
+  #l2{animation:l2 9s infinite}@keyframes b3{0%,20%{fill:#f8fafc;stroke:#cbd5e1;transform:scale(1)}22%{fill:#bfdbfe;stroke:#2563eb;transform:scale(1.18)}24%,100%{fill:#dbeafe;stroke:#2563eb;transform:scale(1)}}
+  #b3{animation:b3 9s infinite}@keyframes l3{0%,22%{opacity:0;transform:translateY(6px)}24%,100%{opacity:1;transform:translateY(0)}}
+  #l3{animation:l3 9s infinite}@keyframes b4{0%,28%{fill:#f8fafc;stroke:#cbd5e1;transform:translateX(0)}29%{transform:translateX(-4px)}30%{transform:translateX(4px)}31%{transform:translateX(-2px)}32%,100%{fill:#fef3c7;stroke:#d97706;transform:translateX(0)}}
+  #b4{animation:b4 9s infinite}@keyframes l4{0%,30%{opacity:0;transform:translateY(6px)}32%,100%{opacity:1;transform:translateY(0)}}
+  #l4{animation:l4 9s infinite}@keyframes b5{0%,36%{fill:#f8fafc;stroke:#cbd5e1;transform:scale(1)}38%{fill:#bfdbfe;stroke:#2563eb;transform:scale(1.18)}40%,100%{fill:#dbeafe;stroke:#2563eb;transform:scale(1)}}
+  #b5{animation:b5 9s infinite}@keyframes l5{0%,38%{opacity:0;transform:translateY(6px)}40%,100%{opacity:1;transform:translateY(0)}}
+  #l5{animation:l5 9s infinite}@keyframes b6{0%,44%{fill:#f8fafc;stroke:#cbd5e1;transform:translateX(0)}45%{transform:translateX(-4px)}46%{transform:translateX(4px)}47%{transform:translateX(-2px)}48%,100%{fill:#fef3c7;stroke:#d97706;transform:translateX(0)}}
+  #b6{animation:b6 9s infinite}@keyframes l6{0%,46%{opacity:0;transform:translateY(6px)}48%,100%{opacity:1;transform:translateY(0)}}
+  #l6{animation:l6 9s infinite}@keyframes b7{0%,52%{fill:#f8fafc;stroke:#cbd5e1;transform:scale(1)}54%{fill:#bfdbfe;stroke:#2563eb;transform:scale(1.18)}56%,100%{fill:#dbeafe;stroke:#2563eb;transform:scale(1)}}
+  #b7{animation:b7 9s infinite}@keyframes l7{0%,54%{opacity:0;transform:translateY(6px)}56%,100%{opacity:1;transform:translateY(0)}}
+  #l7{animation:l7 9s infinite}@keyframes b8{0%,60%{fill:#f8fafc;stroke:#cbd5e1;transform:translateX(0)}61%{transform:translateX(-4px)}62%{transform:translateX(4px)}63%{transform:translateX(-2px)}64%,100%{fill:#fef3c7;stroke:#d97706;transform:translateX(0)}}
+  #b8{animation:b8 9s infinite}@keyframes l8{0%,62%{opacity:0;transform:translateY(6px)}64%,100%{opacity:1;transform:translateY(0)}}
+  #l8{animation:l8 9s infinite}@keyframes b9{0%,68%{fill:#f8fafc;stroke:#cbd5e1;transform:scale(1)}70%{fill:#bfdbfe;stroke:#2563eb;transform:scale(1.18)}72%,100%{fill:#dbeafe;stroke:#2563eb;transform:scale(1)}}
+  #b9{animation:b9 9s infinite}@keyframes l9{0%,70%{opacity:0;transform:translateY(6px)}72%,100%{opacity:1;transform:translateY(0)}}
+  #l9{animation:l9 9s infinite}@keyframes b10{0%,76%{fill:#f8fafc;stroke:#cbd5e1;transform:translateX(0)}77%{transform:translateX(-4px)}78%{transform:translateX(4px)}79%{transform:translateX(-2px)}80%,100%{fill:#fef3c7;stroke:#d97706;transform:translateX(0)}}
+  #b10{animation:b10 9s infinite}@keyframes l10{0%,78%{opacity:0;transform:translateY(6px)}80%,100%{opacity:1;transform:translateY(0)}}
+  #l10{animation:l10 9s infinite}</style>
+</defs>
+<rect width="100%" height="100%" rx="18" fill="url(#bg)"/>
+<rect x="0" y="0" width="760" height="56" rx="18" fill="url(#hd)"/><rect x="0" y="38" width="760" height="18" fill="url(#hd)"/>
+<text x="380" y="37" text-anchor="middle" font-size="22" font-weight="bold" fill="#ffffff">break ออกจากลูปทั้งลูป · continue ข้ามแค่รอบนั้น</text>
+<text x="60" y="92" font-size="17" font-weight="bold" fill="#1f2937">break: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="normal" font-size="15" fill="#be123c">if (i % 3 == 0) break;</tspan></text>
+<rect  class="box" x="60" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2.5" filter="url(#sh)"/><text  x="86" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">1</text>
+<rect  class="box" x="126" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2.5" filter="url(#sh)"/><text  x="152" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">2</text>
+<rect id="hit3" class="box" x="192" y="128" width="52" height="52" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2.5" filter="url(#sh)"/><text  x="218" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">3</text>
+<g class="dead"><rect x="258" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="284" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">4</text>
+<g class="dead"><rect x="324" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="350" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">5</text>
+<g class="dead"><rect x="390" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="416" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">6</text>
+<g class="dead"><rect x="456" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="482" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">7</text>
+<g class="dead"><rect x="522" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="548" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">8</text>
+<g class="dead"><rect x="588" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="614" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">9</text>
+<g class="dead"><rect x="654" y="128" width="52" height="52" rx="10" fill="#ffffff" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5 4"/></g><text class="dead" x="680" y="161" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">10</text>
+
+<g id="ptrTop" class="ptr"><g transform="translate(86,124)">
+  <rect x="-17" y="-24" width="34" height="20" rx="10" fill="#059669"/><text y="-9" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">i</text>
+  <path d="M-6 -4 L6 -4 L0 4 Z" fill="#059669"/></g></g>
+<g id="wall"><rect x="248" y="114" width="5" height="80" rx="2" fill="#e11d48"/><text x="256" y="110" font-size="14" font-weight="bold" fill="#e11d48">⛔ หยุดตรงนี้ ออกจากลูป</text></g>
+<text class="lateTop" x="152" y="208" text-anchor="middle" font-size="14" fill="#059669">เจอ 3 → พิมพ์แล้ว break</text>
+<text class="lateTop" x="512" y="208" text-anchor="middle" font-size="14" fill="#64748b">✗ รอบ 4 ถึง 10 ไม่ได้ทำเลย</text>
+<line x1="40" y1="232" x2="720" y2="232" stroke="#c7d2fe" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+<text x="60" y="266" font-size="17" font-weight="bold" fill="#1f2937">continue: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="normal" font-size="15" fill="#be123c">if (i % 2 == 0) continue;</tspan></text>
+<rect id="b1" class="box" x="60" y="300" width="52" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="86" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">1</text>
+  <text id="l1" class="box" x="86" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">พิมพ์ ✓</text>
+<rect id="b2" class="box" x="126" y="300" width="52" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="152" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">2</text>
+  <text id="l2" class="box" x="152" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">ข้าม ↷</text>
+<rect id="b3" class="box" x="192" y="300" width="52" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="218" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">3</text>
+  <text id="l3" class="box" x="218" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">พิมพ์ ✓</text>
+<rect id="b4" class="box" x="258" y="300" width="52" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="284" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">4</text>
+  <text id="l4" class="box" x="284" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">ข้าม ↷</text>
+<rect id="b5" class="box" x="324" y="300" width="52" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="350" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">5</text>
+  <text id="l5" class="box" x="350" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">พิมพ์ ✓</text>
+<rect id="b6" class="box" x="390" y="300" width="52" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="416" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">6</text>
+  <text id="l6" class="box" x="416" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">ข้าม ↷</text>
+<rect id="b7" class="box" x="456" y="300" width="52" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="482" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">7</text>
+  <text id="l7" class="box" x="482" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">พิมพ์ ✓</text>
+<rect id="b8" class="box" x="522" y="300" width="52" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="548" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">8</text>
+  <text id="l8" class="box" x="548" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">ข้าม ↷</text>
+<rect id="b9" class="box" x="588" y="300" width="52" height="52" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="614" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">9</text>
+  <text id="l9" class="box" x="614" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">พิมพ์ ✓</text>
+<rect id="b10" class="box" x="654" y="300" width="52" height="52" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2.5" filter="url(#sh)"/>
+  <text x="680" y="333" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">10</text>
+  <text id="l10" class="box" x="680" y="374" text-anchor="middle" font-size="14" font-weight="bold" fill="#d97706">ข้าม ↷</text>
+
+<g id="ptrBot" class="ptr"><g transform="translate(86,296)">
+  <rect x="-17" y="-24" width="34" height="20" rx="10" fill="#4f46e5"/><text y="-9" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff" font-family="'JetBrains Mono', Consolas, 'Courier New', monospace">i</text>
+  <path d="M-6 -4 L6 -4 L0 4 Z" fill="#4f46e5"/></g></g>
+<rect x="150" y="394" width="460" height="26" rx="13" fill="#ffffff" stroke="#e2e8f0"/>
+<text x="380" y="412" text-anchor="middle" font-size="14" fill="#334155">i วิ่ง 1 ถึง 10 · แถวบนพิมพ์: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold">เจอแล้ว: 3</tspan> · แถวล่างพิมพ์: <tspan font-family="'JetBrains Mono', Consolas, 'Courier New', monospace" font-weight="bold">1 3 5 7 9</tspan></text>
+</svg>
